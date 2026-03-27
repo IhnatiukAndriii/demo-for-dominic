@@ -1,0 +1,135 @@
+'use client'
+
+import { useState } from 'react'
+import { useRouter } from 'next/navigation'
+import Link from 'next/link'
+import { createClient } from '@/lib/supabase/client'
+
+export default function LoginPage() {
+  const router = useRouter()
+  const supabase = createClient()
+
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [error, setError] = useState<string | null>(null)
+  const [loading, setLoading] = useState(false)
+
+  async function handleLogin(e: React.FormEvent) {
+    e.preventDefault()
+    setLoading(true)
+    setError(null)
+
+    const { error } = await supabase.auth.signInWithPassword({ email, password })
+
+    if (error) {
+      setError('E-Mail oder Passwort ist falsch. Bitte erneut versuchen.')
+      setLoading(false)
+      return
+    }
+
+    // Fetch profile to determine role and redirect
+    const {
+      data: { user },
+    } = await supabase.auth.getUser()
+
+    if (user) {
+      const { data: profile } = await supabase
+        .from('profiles')
+        .select('role')
+        .eq('id', user.id)
+        .single()
+
+      if (profile?.role) {
+        router.push(`/dashboard/${profile.role}`)
+      } else {
+        router.push('/dashboard')
+      }
+    }
+
+    router.refresh()
+  }
+
+  return (
+    <div className="bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl border border-white/20 p-8">
+      <div className="mb-8 text-center">
+        <h1 className="text-2xl font-bold text-white">Willkommen zurück</h1>
+        <p className="mt-2 text-sm text-brand-200">
+          Melde dich bei deinem Konto an
+        </p>
+      </div>
+
+      <form onSubmit={handleLogin} className="space-y-5">
+        <div>
+          <label htmlFor="email" className="block text-sm font-medium text-brand-100 mb-1.5">
+            E-Mail-Adresse
+          </label>
+          <input
+            id="email"
+            type="email"
+            required
+            autoComplete="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="name@beispiel.de"
+            className="block w-full px-4 py-2.5 text-sm text-gray-900 bg-white border border-white/30 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-colors"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="password" className="block text-sm font-medium text-brand-100 mb-1.5">
+            Passwort
+          </label>
+          <input
+            id="password"
+            type="password"
+            required
+            autoComplete="current-password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="••••••••"
+            className="block w-full px-4 py-2.5 text-sm text-gray-900 bg-white border border-white/30 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-colors"
+          />
+        </div>
+
+        {error && (
+          <div className="flex items-center gap-2 px-4 py-3 bg-red-500/20 border border-red-400/30 rounded-lg">
+            <svg className="w-4 h-4 text-red-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <p className="text-sm text-red-200">{error}</p>
+          </div>
+        )}
+
+        <button
+          type="submit"
+          disabled={loading}
+          className="w-full flex items-center justify-center px-4 py-3 text-sm font-semibold text-white bg-brand-500 hover:bg-brand-400 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-400 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+        >
+          {loading ? (
+            <>
+              <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+              </svg>
+              Anmelden...
+            </>
+          ) : (
+            'Anmelden'
+          )}
+        </button>
+      </form>
+
+      <div className="mt-6 text-center">
+        <p className="text-sm text-brand-200">
+          Noch kein Konto?{' '}
+          <Link
+            href="/signup"
+            className="font-medium text-white hover:text-brand-100 underline underline-offset-2 transition-colors"
+          >
+            Jetzt registrieren
+          </Link>
+        </p>
+      </div>
+    </div>
+  )
+}

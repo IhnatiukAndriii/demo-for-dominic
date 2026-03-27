@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation'
-import { createClient } from '@/lib/supabase/server'
+import { DEMO_MODE, demoInfluencer, demoCampaigns, getDemoActiveCampaigns, getDemoInfluencerApplications } from '@/lib/demo'
 import type { Campaign, Application } from '@/types'
 
 export const dynamic = 'force-dynamic'
@@ -28,13 +28,30 @@ function ApplicationStatusBadge({ status }: { status: Application['status'] }) {
   )
 }
 
-export default async function InfluencerDashboardPage() {
+async function getData() {
+  if (DEMO_MODE) {
+    const campaigns = getDemoActiveCampaigns()
+    const applications = getDemoInfluencerApplications()
+    // Map demo applications to match expected shape with budget from campaigns
+    const appWithBudget = applications.map(a => {
+      const fullCampaign = demoCampaigns.find(c => c.id === a.campaign_id)
+      return {
+        ...a,
+        campaign: fullCampaign ? { ...fullCampaign } : null,
+      }
+    })
+    return {
+      profileName: demoInfluencer.full_name,
+      userId: demoInfluencer.id,
+      campaigns: campaigns as (Campaign & { brand: { id: string; full_name: string | null; company_name: string | null } | null })[],
+      applications: appWithBudget as (Application & { campaign: Campaign | null })[],
+    }
+  }
+
+  const { createClient } = await import('@/lib/supabase/server')
   const supabase = createClient()
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
-
+  const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
 
   const { data: profile } = await supabase
@@ -45,29 +62,29 @@ export default async function InfluencerDashboardPage() {
 
   if (!profile || profile.role !== 'influencer') redirect('/login')
 
-  // Fetch active campaigns (available to apply for)
   const { data: activeCampaigns } = await supabase
     .from('campaigns')
     .select('*, brand:profiles!brand_id(id, full_name, company_name)')
     .eq('status', 'active')
     .order('created_at', { ascending: false })
 
-  // Fetch this influencer's applications
   const { data: myApplications } = await supabase
     .from('applications')
     .select('*, campaign:campaigns(id, title, description, budget, status, brand_id)')
     .eq('influencer_id', user.id)
     .order('created_at', { ascending: false })
 
-  const campaigns = (activeCampaigns ?? []) as (Campaign & {
-    brand: { id: string; full_name: string | null; company_name: string | null } | null
-  })[]
+  return {
+    profileName: profile.full_name,
+    userId: user.id,
+    campaigns: (activeCampaigns ?? []) as (Campaign & { brand: { id: string; full_name: string | null; company_name: string | null } | null })[],
+    applications: (myApplications ?? []) as (Application & { campaign: Campaign | null })[],
+  }
+}
 
-  const applications = (myApplications ?? []) as (Application & {
-    campaign: Campaign | null
-  })[]
+export default async function InfluencerDashboardPage() {
+  const { profileName, userId, campaigns, applications } = await getData()
 
-  // IDs of campaigns already applied for
   const appliedCampaignIds = new Set(applications.map((a) => a.campaign_id))
 
   const stats = [
@@ -115,17 +132,15 @@ export default async function InfluencerDashboardPage() {
 
   return (
     <div className="space-y-8">
-      {/* Page header */}
       <div>
         <h1 className="text-2xl font-bold text-gray-900">
-          Hallo, {profile.full_name ?? 'Influencer'} 👋
+          Hallo, {profileName ?? 'Influencer'} 👋
         </h1>
         <p className="text-sm text-gray-500 mt-1">
           Entdecke Kampagnen und verwalte deine Bewerbungen
         </p>
       </div>
 
-      {/* Stats */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {stats.map((stat) => (
           <div key={stat.label} className="bg-white rounded-xl border border-gray-200 shadow-sm p-5">
@@ -140,7 +155,6 @@ export default async function InfluencerDashboardPage() {
         ))}
       </div>
 
-      {/* Available campaigns */}
       <div>
         <h2 className="text-lg font-semibold text-gray-900 mb-4">Verfügbare Kampagnen</h2>
         {campaigns.length === 0 ? (
@@ -161,7 +175,6 @@ export default async function InfluencerDashboardPage() {
               const alreadyApplied = appliedCampaignIds.has(campaign.id)
               return (
                 <div key={campaign.id} className="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
-                  {/* Card header */}
                   <div className="px-5 pt-5 pb-3 flex-1">
                     <div className="flex items-start justify-between gap-2 mb-2">
                       <h3 className="font-semibold text-gray-900 leading-snug">{campaign.title}</h3>
@@ -178,7 +191,6 @@ export default async function InfluencerDashboardPage() {
                       <p className="text-sm text-gray-600 line-clamp-3">{campaign.description}</p>
                     )}
                   </div>
-                  {/* Card footer */}
                   <div className="px-5 py-4 bg-gray-50 border-t border-gray-100 flex items-center justify-between gap-3">
                     <div>
                       <p className="text-xs text-gray-500">Budget</p>
@@ -186,7 +198,7 @@ export default async function InfluencerDashboardPage() {
                     </div>
                     <ApplyButton
                       campaignId={campaign.id}
-                      influencerId={user.id}
+                      influencerId={userId}
                       alreadyApplied={alreadyApplied}
                     />
                   </div>
@@ -197,7 +209,6 @@ export default async function InfluencerDashboardPage() {
         )}
       </div>
 
-      {/* My applications */}
       <div>
         <h2 className="text-lg font-semibold text-gray-900 mb-4">Meine Bewerbungen</h2>
         {applications.length === 0 ? (

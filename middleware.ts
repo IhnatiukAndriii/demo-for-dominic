@@ -1,10 +1,24 @@
 import { type NextRequest, NextResponse } from 'next/server'
-import { updateSession } from '@/lib/supabase/middleware'
+
+const DEMO_MODE = process.env.NEXT_PUBLIC_DEMO_MODE === 'true'
 
 export async function middleware(request: NextRequest) {
-  const { supabaseResponse, user, supabase } = await updateSession(request)
-
   const pathname = request.nextUrl.pathname
+
+  // In demo mode, skip all auth — let pages handle demo data directly
+  if (DEMO_MODE) {
+    // If visiting root, redirect to login (which has demo role picker)
+    if (pathname === '/') {
+      const url = request.nextUrl.clone()
+      url.pathname = '/login'
+      return NextResponse.redirect(url)
+    }
+    return NextResponse.next()
+  }
+
+  // ── Production mode: full Supabase auth ───────────────────
+  const { updateSession } = await import('@/lib/supabase/middleware')
+  const { supabaseResponse, user, supabase } = await updateSession(request)
 
   // Public routes that don't require authentication
   const publicRoutes = ['/login', '/signup', '/']

@@ -1,14 +1,18 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import { createClient } from '@/lib/supabase/client'
+
+const DEMO_MODE = process.env.NEXT_PUBLIC_DEMO_MODE === 'true'
 
 export default function LogoutButtonClient() {
   const router = useRouter()
-  const supabase = createClient()
 
   async function handleLogout() {
-    await supabase.auth.signOut()
+    if (!DEMO_MODE) {
+      const { createClient } = await import('@/lib/supabase/client')
+      const supabase = createClient()
+      await supabase.auth.signOut()
+    }
     router.push('/login')
     router.refresh()
   }

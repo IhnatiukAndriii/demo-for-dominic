@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { createClient } from '@/lib/supabase/client'
+
+const DEMO_MODE = process.env.NEXT_PUBLIC_DEMO_MODE === 'true'
 
 interface ApplyButtonProps {
   campaignId: string
@@ -12,13 +13,21 @@ interface ApplyButtonProps {
 
 export default function ApplyButton({ campaignId, influencerId, alreadyApplied }: ApplyButtonProps) {
   const router = useRouter()
-  const supabase = createClient()
   const [loading, setLoading] = useState(false)
   const [applied, setApplied] = useState(alreadyApplied)
 
   async function handleApply() {
     if (applied) return
     setLoading(true)
+
+    if (DEMO_MODE) {
+      setApplied(true)
+      setLoading(false)
+      return
+    }
+
+    const { createClient } = await import('@/lib/supabase/client')
+    const supabase = createClient()
 
     const { error } = await supabase.from('applications').insert({
       campaign_id: campaignId,
@@ -60,9 +69,7 @@ export default function ApplyButton({ campaignId, influencerId, alreadyApplied }
           Wird gesendet...
         </>
       ) : (
-        <>
-          Bewerben
-        </>
+        <>Bewerben</>
       )}
     </button>
   )

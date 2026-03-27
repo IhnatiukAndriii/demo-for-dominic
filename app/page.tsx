@@ -1,9 +1,14 @@
 import { redirect } from 'next/navigation'
-import { createClient } from '@/lib/supabase/server'
+import { DEMO_MODE } from '@/lib/demo'
 
 export const dynamic = 'force-dynamic'
 
 export default async function HomePage() {
+  if (DEMO_MODE) {
+    redirect('/login')
+  }
+
+  const { createClient } = await import('@/lib/supabase/server')
   const supabase = createClient()
 
   const {

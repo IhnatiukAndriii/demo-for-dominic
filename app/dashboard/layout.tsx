@@ -1,10 +1,10 @@
 import { redirect } from 'next/navigation'
 import Link from 'next/link'
-import { createClient } from '@/lib/supabase/server'
-
-export const dynamic = 'force-dynamic'
+import { DEMO_MODE, getDemoProfile } from '@/lib/demo'
 import type { UserRole } from '@/types'
 import LogoutButton from './logout-button'
+
+export const dynamic = 'force-dynamic'
 
 function getRoleLabel(role: UserRole): string {
   switch (role) {
@@ -29,7 +29,7 @@ function getRoleBadgeClass(role: UserRole): string {
 }
 
 function NavLinks({ role }: { role: UserRole }) {
-  const baseLinks = [
+  const links = [
     {
       href: `/dashboard/${role}`,
       label: 'Übersicht',
@@ -43,7 +43,7 @@ function NavLinks({ role }: { role: UserRole }) {
 
   return (
     <>
-      {baseLinks.map((link) => (
+      {links.map((link) => (
         <Link
           key={link.href}
           href={link.href}
@@ -57,11 +57,19 @@ function NavLinks({ role }: { role: UserRole }) {
   )
 }
 
-export default async function DashboardLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+async function getLayoutData(pathname: string) {
+  if (DEMO_MODE) {
+    // Extract role from URL path
+    const segments = pathname.split('/')
+    const urlRole = segments[2] as UserRole | undefined
+    const role = urlRole && ['brand', 'influencer', 'admin'].includes(urlRole)
+      ? urlRole
+      : 'brand'
+    const profile = getDemoProfile(role)
+    return { role, displayName: profile.full_name ?? 'Demo User', initials: (profile.full_name ?? 'D').charAt(0).toUpperCase() }
+  }
+
+  const { createClient } = await import('@/lib/supabase/server')
   const supabase = createClient()
 
   const {
@@ -85,6 +93,24 @@ export default async function DashboardLayout({
   const role = profile.role as UserRole
   const displayName = profile.full_name ?? user.email ?? '?'
   const initials = displayName.charAt(0).toUpperCase()
+  return { role, displayName, initials }
+}
+
+export default async function DashboardLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  // In demo mode we need to infer role from URL; use headers() to get pathname
+  let pathname = '/dashboard/brand'
+  if (DEMO_MODE) {
+    const { headers } = await import('next/headers')
+    const h = headers()
+    // x-invoke-path or referer — Next.js sets x-invoke-path internally
+    pathname = h.get('x-invoke-path') ?? h.get('x-next-url') ?? '/dashboard/brand'
+  }
+
+  const { role, displayName, initials } = await getLayoutData(pathname)
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -100,11 +126,30 @@ export default async function DashboardLayout({
                 </svg>
               </div>
               <span className="text-lg font-bold text-gray-900 tracking-tight">Prüffuchs</span>
+              {DEMO_MODE && (
+                <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-700">
+                  DEMO
+                </span>
+              )}
             </div>
 
             {/* Navigation links */}
             <nav className="hidden md:flex items-center gap-1">
               <NavLinks role={role} />
+              {DEMO_MODE && (
+                <>
+                  <div className="w-px h-5 bg-gray-200 mx-1" />
+                  {(['brand', 'influencer', 'admin'] as const).filter(r => r !== role).map(r => (
+                    <Link
+                      key={r}
+                      href={`/dashboard/${r}`}
+                      className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium text-gray-400 rounded-lg hover:bg-gray-100 hover:text-gray-700 transition-colors"
+                    >
+                      {r === 'brand' ? 'Marke' : r === 'influencer' ? 'Influencer' : 'Admin'}
+                    </Link>
+                  ))}
+                </>
+              )}
             </nav>
 
             {/* User info + logout */}

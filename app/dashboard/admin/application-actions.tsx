@@ -2,8 +2,9 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { createClient } from '@/lib/supabase/client'
 import type { ApplicationStatus } from '@/types'
+
+const DEMO_MODE = process.env.NEXT_PUBLIC_DEMO_MODE === 'true'
 
 interface ApplicationActionsProps {
   applicationId: string
@@ -12,12 +13,20 @@ interface ApplicationActionsProps {
 
 export default function ApplicationActions({ applicationId, currentStatus }: ApplicationActionsProps) {
   const router = useRouter()
-  const supabase = createClient()
   const [loading, setLoading] = useState<string | null>(null)
   const [status, setStatus] = useState<ApplicationStatus>(currentStatus)
 
   async function updateStatus(newStatus: ApplicationStatus) {
     setLoading(newStatus)
+
+    if (DEMO_MODE) {
+      setStatus(newStatus)
+      setLoading(null)
+      return
+    }
+
+    const { createClient } = await import('@/lib/supabase/client')
+    const supabase = createClient()
 
     const { error } = await supabase
       .from('applications')

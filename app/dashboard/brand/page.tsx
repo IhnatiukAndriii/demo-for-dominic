@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation'
-import { createClient } from '@/lib/supabase/server'
+import { DEMO_MODE, demoBrand, getDemoBrandCampaigns } from '@/lib/demo'
 import type { Campaign } from '@/types'
 
 export const dynamic = 'force-dynamic'
@@ -28,7 +28,17 @@ function formatDate(dateStr: string): string {
   return new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' }).format(new Date(dateStr))
 }
 
-export default async function BrandDashboardPage() {
+async function getData() {
+  if (DEMO_MODE) {
+    const campaigns = getDemoBrandCampaigns()
+    return {
+      profileName: demoBrand.full_name,
+      userId: demoBrand.id,
+      campaignList: campaigns,
+    }
+  }
+
+  const { createClient } = await import('@/lib/supabase/server')
   const supabase = createClient()
 
   const {
@@ -45,16 +55,22 @@ export default async function BrandDashboardPage() {
 
   if (!profile || profile.role !== 'brand') redirect('/login')
 
-  // Fetch campaigns for this brand
   const { data: campaigns } = await supabase
     .from('campaigns')
     .select('*, applications:applications(count)')
     .eq('brand_id', user.id)
     .order('created_at', { ascending: false })
 
-  const campaignList = (campaigns ?? []) as (Campaign & { applications: { count: number }[] })[]
+  return {
+    profileName: profile.full_name,
+    userId: user.id,
+    campaignList: (campaigns ?? []) as (Campaign & { applications: { count: number }[] })[],
+  }
+}
 
-  // Compute stats
+export default async function BrandDashboardPage() {
+  const { profileName, userId, campaignList } = await getData()
+
   const totalCampaigns = campaignList.length
   const activeCampaigns = campaignList.filter((c) => c.status === 'active').length
   const totalBudget = campaignList.reduce((sum, c) => sum + (c.budget ?? 0), 0)
@@ -105,20 +121,18 @@ export default async function BrandDashboardPage() {
 
   return (
     <div className="space-y-8">
-      {/* Page header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold text-gray-900">
-            Hallo, {profile.full_name ?? 'Marke'} 👋
+            Hallo, {profileName ?? 'Marke'} 👋
           </h1>
           <p className="text-sm text-gray-500 mt-1">
             Verwalte deine Kampagnen und Kooperationen
           </p>
         </div>
-        <CreateCampaignModal brandId={user.id} />
+        <CreateCampaignModal brandId={userId} />
       </div>
 
-      {/* Stats grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {stats.map((stat) => (
           <div key={stat.label} className="bg-white rounded-xl border border-gray-200 shadow-sm p-5">
@@ -133,7 +147,6 @@ export default async function BrandDashboardPage() {
         ))}
       </div>
 
-      {/* Campaigns table */}
       <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
         <div className="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
           <h2 className="text-base font-semibold text-gray-900">Meine Kampagnen</h2>

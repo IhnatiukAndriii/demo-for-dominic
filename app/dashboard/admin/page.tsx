@@ -1,6 +1,8 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import type { Profile, Campaign, Application } from '@/types'
+
+export const dynamic = 'force-dynamic'
 import ApplicationActions from './application-actions'
 
 function formatCurrency(amount: number | null): string {

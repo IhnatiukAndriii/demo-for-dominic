@@ -1,6 +1,8 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import type { Campaign } from '@/types'
+
+export const dynamic = 'force-dynamic'
 import CreateCampaignModal from './create-campaign-modal'
 
 function StatusBadge({ status }: { status: Campaign['status'] }) {

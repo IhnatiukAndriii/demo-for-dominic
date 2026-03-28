@@ -151,7 +151,7 @@ export default async function AdminDashboardPage() {
   ]
 
   return (
-    <div className="space-y-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
       <div>
         <h1 className="text-2xl font-bold text-gray-900">Admin-Übersicht</h1>
         <p className="text-sm text-gray-500 mt-1">Plattformverwaltung und Statistiken</p>

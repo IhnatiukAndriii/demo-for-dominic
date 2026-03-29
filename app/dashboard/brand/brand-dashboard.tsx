@@ -171,11 +171,7 @@ export default function BrandDashboard() {
       <aside className="hidden lg:flex w-[260px] flex-col bg-white border-r border-gray-200 shrink-0">
         <div className="px-6 py-5 border-b border-gray-100">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-[#3B82F6] flex items-center justify-center shadow-sm">
-              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-            </div>
+            <img src="/fox-icon.png" alt="Prüffuchs" className="w-9 h-9 object-contain" />
             <span className="text-lg font-bold text-gray-900">Prüffuchs</span>
           </div>
         </div>

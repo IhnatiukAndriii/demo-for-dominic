@@ -56,7 +56,7 @@ function DemoLoginPage() {
           DEMO MODUS
         </span>
         <h1 className="text-2xl font-bold text-white">Rolle auswählen</h1>
-        <p className="mt-2 text-sm text-white/70">
+        <p className="mt-2 text-sm text-white/90">
           Wähle eine Rolle, um das Dashboard zu erkunden
         </p>
       </div>
@@ -69,15 +69,15 @@ function DemoLoginPage() {
             onClick={() => router.push(`/dashboard/${role.value}`)}
             className="w-full flex items-start gap-4 p-4 rounded-xl border-2 border-white/20 bg-white/5 hover:border-brand-400 hover:bg-brand-500/20 text-left transition-all group"
           >
-            <div className="flex-shrink-0 p-2.5 rounded-lg bg-white/10 text-white/70 group-hover:bg-brand-400 group-hover:text-white transition-colors">
+            <div className="flex-shrink-0 p-2.5 rounded-lg bg-white/10 text-white/90 group-hover:bg-brand-400 group-hover:text-white transition-colors">
               {role.icon}
             </div>
             <div className="flex-1 min-w-0">
               <p className="font-semibold text-white">{role.label}</p>
-              <p className="text-xs text-white/50 mt-0.5">{role.name} · {role.company}</p>
-              <p className="text-sm text-white/70 mt-1">{role.description}</p>
+              <p className="text-xs text-white mt-0.5">{role.name} · {role.company}</p>
+              <p className="text-sm text-white/90 mt-1">{role.description}</p>
             </div>
-            <svg className="w-5 h-5 text-white/50 group-hover:text-white flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-white group-hover:text-white flex-shrink-0 mt-1 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
@@ -85,7 +85,7 @@ function DemoLoginPage() {
       </div>
 
       <div className="mt-6 pt-4 border-t border-white/10 text-center">
-        <p className="text-xs text-white/50">
+        <p className="text-xs text-white">
           Dies ist eine Demo mit Testdaten. Keine echte Authentifizierung erforderlich.
         </p>
       </div>
@@ -142,14 +142,14 @@ function RealLoginPage() {
     <div className="bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl border border-white/20 p-8">
       <div className="mb-8 text-center">
         <h1 className="text-2xl font-bold text-white">Willkommen zurück</h1>
-        <p className="mt-2 text-sm text-white/70">
+        <p className="mt-2 text-sm text-white/90">
           Melde dich bei deinem Konto an
         </p>
       </div>
 
       <form onSubmit={handleLogin} className="space-y-5">
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-white/80 mb-1.5">
+          <label htmlFor="email" className="block text-sm font-medium text-white mb-1.5">
             E-Mail-Adresse
           </label>
           <input
@@ -165,7 +165,7 @@ function RealLoginPage() {
         </div>
 
         <div>
-          <label htmlFor="password" className="block text-sm font-medium text-white/80 mb-1.5">
+          <label htmlFor="password" className="block text-sm font-medium text-white mb-1.5">
             Passwort
           </label>
           <input
@@ -209,11 +209,11 @@ function RealLoginPage() {
       </form>
 
       <div className="mt-6 text-center">
-        <p className="text-sm text-white/70">
+        <p className="text-sm text-white/90">
           Noch kein Konto?{' '}
           <Link
             href="/signup"
-            className="font-medium text-white hover:text-white/80 underline underline-offset-2 transition-colors"
+            className="font-medium text-white hover:text-white underline underline-offset-2 transition-colors"
           >
             Jetzt registrieren
           </Link>

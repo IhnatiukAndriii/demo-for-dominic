@@ -171,7 +171,7 @@ export default function BrandDashboard() {
       <aside className="hidden lg:flex w-[260px] flex-col bg-white border-r border-gray-200 shrink-0">
         <div className="px-6 py-5 border-b border-gray-100">
           <div className="flex items-center gap-2.5">
-            <img src="/fox-logo.png" alt="Prüffuchs" className="h-10 w-auto object-contain" />
+            <img src="/fox-logo.png" alt="Prüffuchs" className="h-14 w-auto object-contain" />
           </div>
         </div>
 
@@ -212,7 +212,7 @@ export default function BrandDashboard() {
         <div className="p-5 sm:p-6 lg:p-8 max-w-[1400px]">
           {/* Header */}
           <div className="mb-8 flex items-center gap-4">
-            <img src="/fox-mascot-transparent.png" alt="Prüffuchs Mascot" className="w-14 h-14 object-contain" />
+            <img src="/fox-mascot-transparent.png" alt="Prüffuchs Mascot" className="w-20 h-20 object-contain" />
             <div>
               <h1 className="text-2xl font-bold text-gray-900">Brand Dashboard</h1>
               <p className="text-sm text-gray-500 mt-1">

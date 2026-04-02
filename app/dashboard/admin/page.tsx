@@ -1,6 +1,8 @@
 import { redirect } from 'next/navigation'
-import { createClient } from '@/lib/supabase/server'
+import { DEMO_MODE, demoUsers, demoCampaigns, demoApplications } from '@/lib/demo'
 import type { Profile, Campaign, Application } from '@/types'
+
+export const dynamic = 'force-dynamic'
 import ApplicationActions from './application-actions'
 
 function formatCurrency(amount: number | null): string {
@@ -54,13 +56,19 @@ function ApplicationStatusBadge({ status }: { status: Application['status'] }) {
   )
 }
 
-export default async function AdminDashboardPage() {
+async function getData() {
+  if (DEMO_MODE) {
+    return {
+      users: demoUsers,
+      campaigns: demoCampaigns,
+      applications: demoApplications,
+    }
+  }
+
+  const { createClient } = await import('@/lib/supabase/server')
   const supabase = createClient()
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
-
+  const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
 
   const { data: profile } = await supabase
@@ -71,7 +79,6 @@ export default async function AdminDashboardPage() {
 
   if (!profile || profile.role !== 'admin') redirect('/login')
 
-  // Fetch all data
   const [{ data: allUsers }, { data: allCampaigns }, { data: allApplications }] = await Promise.all([
     supabase.from('profiles').select('*').order('created_at', { ascending: false }),
     supabase
@@ -84,14 +91,15 @@ export default async function AdminDashboardPage() {
       .order('created_at', { ascending: false }),
   ])
 
-  const users = (allUsers ?? []) as Profile[]
-  const campaigns = (allCampaigns ?? []) as (Campaign & {
-    brand: { id: string; full_name: string | null; company_name: string | null } | null
-  })[]
-  const applications = (allApplications ?? []) as (Application & {
-    campaign: { id: string; title: string } | null
-    influencer: { id: string; full_name: string | null } | null
-  })[]
+  return {
+    users: (allUsers ?? []) as Profile[],
+    campaigns: (allCampaigns ?? []) as typeof demoCampaigns,
+    applications: (allApplications ?? []) as typeof demoApplications,
+  }
+}
+
+export default async function AdminDashboardPage() {
+  const { users, campaigns, applications } = await getData()
 
   const totalBudget = campaigns.reduce((sum, c) => sum + (c.budget ?? 0), 0)
 
@@ -143,14 +151,12 @@ export default async function AdminDashboardPage() {
   ]
 
   return (
-    <div className="space-y-8">
-      {/* Header */}
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
       <div>
         <h1 className="text-2xl font-bold text-gray-900">Admin-Übersicht</h1>
         <p className="text-sm text-gray-500 mt-1">Plattformverwaltung und Statistiken</p>
       </div>
 
-      {/* Stats */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {stats.map((stat) => (
           <div key={stat.label} className="bg-white rounded-xl border border-gray-200 shadow-sm p-5">
@@ -167,7 +173,6 @@ export default async function AdminDashboardPage() {
       </div>
 
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-        {/* Users table */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
           <div className="px-6 py-4 border-b border-gray-200">
             <h2 className="text-base font-semibold text-gray-900">Alle Nutzer</h2>
@@ -217,7 +222,6 @@ export default async function AdminDashboardPage() {
           </div>
         </div>
 
-        {/* Campaigns table */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
           <div className="px-6 py-4 border-b border-gray-200">
             <h2 className="text-base font-semibold text-gray-900">Alle Kampagnen</h2>
@@ -263,7 +267,6 @@ export default async function AdminDashboardPage() {
         </div>
       </div>
 
-      {/* Applications table */}
       <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
         <div className="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
           <h2 className="text-base font-semibold text-gray-900">Alle Bewerbungen</h2>

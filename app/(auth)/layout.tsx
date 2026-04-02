@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: 'Authentifizierung',
 }
@@ -19,23 +21,10 @@ export default function AuthLayout({
 
       {/* Logo/Brand area */}
       <div className="relative sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="flex items-center justify-center mb-8">
+        <div className="flex flex-col items-center mb-8">
+          <img src="/fox-mascot.png" alt="Prüffuchs Mascot" className="w-32 h-auto mb-4 drop-shadow-lg" />
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-brand-500 rounded-xl flex items-center justify-center shadow-lg">
-              <svg
-                className="w-6 h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </div>
+            <img src="/fox-icon.png" alt="Prüffuchs" className="w-10 h-10 object-contain" />
             <span className="text-2xl font-bold text-white tracking-tight">
               Prüffuchs
             </span>

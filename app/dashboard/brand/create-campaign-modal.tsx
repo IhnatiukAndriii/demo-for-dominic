@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { createClient } from '@/lib/supabase/client'
+
+const DEMO_MODE = process.env.NEXT_PUBLIC_DEMO_MODE === 'true'
 
 interface CreateCampaignModalProps {
   brandId: string
@@ -10,7 +11,6 @@ interface CreateCampaignModalProps {
 
 export default function CreateCampaignModal({ brandId }: CreateCampaignModalProps) {
   const router = useRouter()
-  const supabase = createClient()
 
   const [open, setOpen] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -38,6 +38,16 @@ export default function CreateCampaignModal({ brandId }: CreateCampaignModalProp
     e.preventDefault()
     setLoading(true)
     setError(null)
+
+    if (DEMO_MODE) {
+      // Simulate success in demo mode
+      setLoading(false)
+      handleClose()
+      return
+    }
+
+    const { createClient } = await import('@/lib/supabase/client')
+    const supabase = createClient()
 
     const { error: insertError } = await supabase.from('campaigns').insert({
       brand_id: brandId,
@@ -72,15 +82,12 @@ export default function CreateCampaignModal({ brandId }: CreateCampaignModalProp
 
       {open && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-          {/* Backdrop */}
           <div
             className="absolute inset-0 bg-black/50 backdrop-blur-sm"
             onClick={handleClose}
           />
 
-          {/* Modal */}
           <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg overflow-hidden">
-            {/* Header */}
             <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200">
               <h2 className="text-lg font-semibold text-gray-900">Neue Kampagne erstellen</h2>
               <button
@@ -93,7 +100,6 @@ export default function CreateCampaignModal({ brandId }: CreateCampaignModalProp
               </button>
             </div>
 
-            {/* Form */}
             <form onSubmit={handleSubmit} className="p-6 space-y-4">
               <div>
                 <label htmlFor="campaign-title" className="block text-sm font-medium text-gray-700 mb-1.5">
@@ -173,6 +179,12 @@ export default function CreateCampaignModal({ brandId }: CreateCampaignModalProp
                 </div>
               </div>
 
+              {DEMO_MODE && (
+                <div className="flex items-center gap-2 px-3 py-2.5 bg-amber-50 border border-amber-200 rounded-lg">
+                  <p className="text-xs text-amber-700">Demo-Modus: Kampagnen werden nicht gespeichert.</p>
+                </div>
+              )}
+
               {error && (
                 <div className="flex items-center gap-2 px-3 py-2.5 bg-red-50 border border-red-200 rounded-lg">
                   <svg className="w-4 h-4 text-red-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -182,7 +194,6 @@ export default function CreateCampaignModal({ brandId }: CreateCampaignModalProp
                 </div>
               )}
 
-              {/* Footer */}
               <div className="flex gap-3 pt-2">
                 <button
                   type="button"

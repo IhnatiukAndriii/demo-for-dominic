@@ -1,8 +1,10 @@
 import { redirect } from 'next/navigation'
 import Link from 'next/link'
-import { createClient } from '@/lib/supabase/server'
+import { DEMO_MODE, getDemoProfile } from '@/lib/demo'
 import type { UserRole } from '@/types'
 import LogoutButton from './logout-button'
+
+export const dynamic = 'force-dynamic'
 
 function getRoleLabel(role: UserRole): string {
   switch (role) {
@@ -27,7 +29,7 @@ function getRoleBadgeClass(role: UserRole): string {
 }
 
 function NavLinks({ role }: { role: UserRole }) {
-  const baseLinks = [
+  const links = [
     {
       href: `/dashboard/${role}`,
       label: 'Übersicht',
@@ -41,7 +43,7 @@ function NavLinks({ role }: { role: UserRole }) {
 
   return (
     <>
-      {baseLinks.map((link) => (
+      {links.map((link) => (
         <Link
           key={link.href}
           href={link.href}
@@ -55,11 +57,19 @@ function NavLinks({ role }: { role: UserRole }) {
   )
 }
 
-export default async function DashboardLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+async function getLayoutData(pathname: string) {
+  if (DEMO_MODE) {
+    // Extract role from URL path
+    const segments = pathname.split('/')
+    const urlRole = segments[2] as UserRole | undefined
+    const role = urlRole && ['brand', 'influencer', 'admin'].includes(urlRole)
+      ? urlRole
+      : 'brand'
+    const profile = getDemoProfile(role)
+    return { role, displayName: profile.full_name ?? 'Demo User', initials: (profile.full_name ?? 'D').charAt(0).toUpperCase() }
+  }
+
+  const { createClient } = await import('@/lib/supabase/server')
   const supabase = createClient()
 
   const {
@@ -83,26 +93,59 @@ export default async function DashboardLayout({
   const role = profile.role as UserRole
   const displayName = profile.full_name ?? user.email ?? '?'
   const initials = displayName.charAt(0).toUpperCase()
+  return { role, displayName, initials }
+}
+
+export default async function DashboardLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  // In demo mode we need to infer role from URL; use headers() to get pathname
+  let pathname = '/dashboard/brand'
+  if (DEMO_MODE) {
+    const { headers } = await import('next/headers')
+    const h = headers()
+    // x-invoke-path or referer — Next.js sets x-invoke-path internally
+    pathname = h.get('x-invoke-path') ?? h.get('x-next-url') ?? '/dashboard/brand'
+  }
+
+  const { role, displayName, initials } = await getLayoutData(pathname)
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Top Navigation */}
       <header className="sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center shadow-sm">
-                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
+              <img src="/fox-icon.png" alt="Prüffuchs" className="w-8 h-8 object-contain" />
               <span className="text-lg font-bold text-gray-900 tracking-tight">Prüffuchs</span>
+              {DEMO_MODE && (
+                <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-700">
+                  DEMO
+                </span>
+              )}
             </div>
 
             {/* Navigation links */}
             <nav className="hidden md:flex items-center gap-1">
               <NavLinks role={role} />
+              {DEMO_MODE && (
+                <>
+                  <div className="w-px h-5 bg-gray-200 mx-1" />
+                  {(['brand', 'influencer', 'admin'] as const).filter(r => r !== role).map(r => (
+                    <Link
+                      key={r}
+                      href={`/dashboard/${r}`}
+                      className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium text-gray-400 rounded-lg hover:bg-gray-100 hover:text-gray-700 transition-colors"
+                    >
+                      {r === 'brand' ? 'Marke' : r === 'influencer' ? 'Influencer' : 'Admin'}
+                    </Link>
+                  ))}
+                </>
+              )}
             </nav>
 
             {/* User info + logout */}
@@ -128,7 +171,7 @@ export default async function DashboardLayout({
       </header>
 
       {/* Main content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="flex-1">
         {children}
       </main>
     </div>

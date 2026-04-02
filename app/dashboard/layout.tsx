@@ -1,4 +1,5 @@
 import { redirect } from 'next/navigation'
+import { headers } from 'next/headers'
 import Link from 'next/link'
 import { DEMO_MODE, getDemoProfile } from '@/lib/demo'
 import type { UserRole } from '@/types'
@@ -104,8 +105,7 @@ export default async function DashboardLayout({
   // In demo mode we need to infer role from URL; use headers() to get pathname
   let pathname = '/dashboard/brand'
   if (DEMO_MODE) {
-    const { headers } = await import('next/headers')
-    const h = headers()
+    const h = await headers()
     // x-invoke-path or referer — Next.js sets x-invoke-path internally
     pathname = h.get('x-invoke-path') ?? h.get('x-next-url') ?? '/dashboard/brand'
   }
@@ -120,8 +120,7 @@ export default async function DashboardLayout({
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center gap-2">
-              <img src="/fox-icon.png" alt="Prüffuchs" className="w-8 h-8 object-contain" />
-              <span className="text-lg font-bold text-gray-900 tracking-tight">Prüffuchs</span>
+              <img src="/fox-logo.png" alt="Prüffuchs" className="h-10 w-auto object-contain" />
               {DEMO_MODE && (
                 <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-700">
                   DEMO

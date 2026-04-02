@@ -22,13 +22,8 @@ export default function AuthLayout({
       {/* Logo/Brand area */}
       <div className="relative sm:mx-auto sm:w-full sm:max-w-md">
         <div className="flex flex-col items-center mb-8">
-          <img src="/fox-mascot.png" alt="Prüffuchs Mascot" className="w-32 h-auto mb-4 drop-shadow-lg" />
-          <div className="flex items-center gap-3">
-            <img src="/fox-icon.png" alt="Prüffuchs" className="w-10 h-10 object-contain" />
-            <span className="text-2xl font-bold text-white tracking-tight">
-              Prüffuchs
-            </span>
-          </div>
+          <img src="/fox-mascot-transparent.png" alt="Prüffuchs Mascot" className="w-32 h-auto mb-4 drop-shadow-lg" />
+          <img src="/fox-logo.png" alt="Prüffuchs" className="h-12 w-auto object-contain drop-shadow-md" />
         </div>
       </div>
 

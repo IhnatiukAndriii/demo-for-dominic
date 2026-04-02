@@ -118,7 +118,7 @@ export default function SignupPage() {
           ) : '1'}
         </div>
         <div className={`h-0.5 w-8 rounded transition-colors ${step === 'role' ? 'bg-brand-400' : 'bg-white/20'}`} />
-        <div className={`flex items-center justify-center w-7 h-7 rounded-full text-xs font-bold transition-colors ${step === 'role' ? 'bg-brand-500 text-white' : 'bg-white/20 text-brand-300'}`}>
+        <div className={`flex items-center justify-center w-7 h-7 rounded-full text-xs font-bold transition-colors ${step === 'role' ? 'bg-brand-500 text-white' : 'bg-white/20 text-white/50'}`}>
           2
         </div>
       </div>
@@ -127,14 +127,14 @@ export default function SignupPage() {
         <>
           <div className="mb-6 text-center">
             <h1 className="text-2xl font-bold text-white">Konto erstellen</h1>
-            <p className="mt-1.5 text-sm text-brand-200">
+            <p className="mt-1.5 text-sm text-white/70">
               Tritt der Prüffuchs-Community bei
             </p>
           </div>
 
           <form onSubmit={handleCredentialsSubmit} className="space-y-4">
             <div>
-              <label htmlFor="fullName" className="block text-sm font-medium text-brand-100 mb-1.5">
+              <label htmlFor="fullName" className="block text-sm font-medium text-white/80 mb-1.5">
                 Vollständiger Name
               </label>
               <input
@@ -150,7 +150,7 @@ export default function SignupPage() {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-brand-100 mb-1.5">
+              <label htmlFor="email" className="block text-sm font-medium text-white/80 mb-1.5">
                 E-Mail-Adresse
               </label>
               <input
@@ -166,7 +166,7 @@ export default function SignupPage() {
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-brand-100 mb-1.5">
+              <label htmlFor="password" className="block text-sm font-medium text-white/80 mb-1.5">
                 Passwort
               </label>
               <input
@@ -182,7 +182,7 @@ export default function SignupPage() {
             </div>
 
             <div>
-              <label htmlFor="passwordConfirm" className="block text-sm font-medium text-brand-100 mb-1.5">
+              <label htmlFor="passwordConfirm" className="block text-sm font-medium text-white/80 mb-1.5">
                 Passwort wiederholen
               </label>
               <input
@@ -218,7 +218,7 @@ export default function SignupPage() {
         <>
           <div className="mb-6 text-center">
             <h1 className="text-2xl font-bold text-white">Rolle auswählen</h1>
-            <p className="mt-1.5 text-sm text-brand-200">
+            <p className="mt-1.5 text-sm text-white/70">
               Wie möchtest du Prüffuchs nutzen?
             </p>
           </div>
@@ -235,12 +235,12 @@ export default function SignupPage() {
                     : 'border-white/20 bg-white/5 hover:border-white/40 hover:bg-white/10'
                 }`}
               >
-                <div className={`flex-shrink-0 p-2 rounded-lg ${selectedRole === role.value ? 'bg-brand-400 text-white' : 'bg-white/10 text-brand-200'}`}>
+                <div className={`flex-shrink-0 p-2 rounded-lg ${selectedRole === role.value ? 'bg-brand-400 text-white' : 'bg-white/10 text-white/70'}`}>
                   {role.icon}
                 </div>
                 <div>
                   <p className="font-semibold text-white">{role.label}</p>
-                  <p className="text-sm text-brand-200 mt-0.5">{role.description}</p>
+                  <p className="text-sm text-white/70 mt-0.5">{role.description}</p>
                 </div>
                 {selectedRole === role.value && (
                   <div className="ml-auto flex-shrink-0 w-5 h-5 rounded-full bg-brand-400 flex items-center justify-center">
@@ -293,11 +293,11 @@ export default function SignupPage() {
       )}
 
       <div className="mt-6 text-center">
-        <p className="text-sm text-brand-200">
+        <p className="text-sm text-white/70">
           Bereits registriert?{' '}
           <Link
             href="/login"
-            className="font-medium text-white hover:text-brand-100 underline underline-offset-2 transition-colors"
+            className="font-medium text-white hover:text-white/80 underline underline-offset-2 transition-colors"
           >
             Jetzt anmelden
           </Link>

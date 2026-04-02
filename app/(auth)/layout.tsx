@@ -34,7 +34,7 @@ export default function AuthLayout({
 
       {/* Footer */}
       <div className="relative mt-8 text-center">
-        <p className="text-sm text-brand-300">
+        <p className="text-sm text-white/70">
           © {new Date().getFullYear()} Prüffuchs. Alle Rechte vorbehalten.
         </p>
       </div>

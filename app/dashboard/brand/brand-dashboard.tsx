@@ -27,29 +27,29 @@ const RED = '#EF4444'
 
 const kpiCards = [
   {
-    label: 'Total Influencers',
-    value: '3,403',
+    label: 'Influencer gesamt',
+    value: '3.403',
     change: '+12%',
     sparkline: [40, 70, 45, 80, 60, 90, 75],
     color: BLUE,
   },
   {
-    label: 'Active Campaigns',
-    value: '3,206',
+    label: 'Aktive Kampagnen',
+    value: '3.206',
     change: '+8%',
     sparkline: [30, 50, 40, 60, 55, 70, 65],
     color: BLUE_MID,
   },
   {
-    label: 'Total Revenue',
-    value: '$125,004',
+    label: 'Gesamtumsatz',
+    value: '125.004 €',
     change: '+18%',
     sparkline: [50, 60, 55, 75, 80, 85, 90],
     color: ORANGE,
   },
   {
-    label: 'Completed Posts',
-    value: '1,007',
+    label: 'Erledigte Posts',
+    value: '1.007',
     change: '+24',
     sparkline: [35, 45, 55, 50, 65, 60, 80],
     color: ORANGE_LIGHT,
@@ -57,21 +57,21 @@ const kpiCards = [
 ]
 
 const donutData = [
-  { name: 'Done', value: 2953, color: BLUE },
-  { name: 'Pending', value: 32, color: AMBER },
-  { name: 'Rejected', value: 15, color: RED },
+  { name: 'Erledigt', value: 2953, color: BLUE },
+  { name: 'Ausstehend', value: 32, color: AMBER },
+  { name: 'Abgelehnt', value: 15, color: RED },
 ]
 
 const areaData = [
-  { month: 'Jan', Comments: 1200, Likes: 3200, Impressions: 8500 },
-  { month: 'Feb', Comments: 1800, Likes: 4100, Impressions: 9200 },
-  { month: 'Mar', Comments: 1400, Likes: 3800, Impressions: 8800 },
-  { month: 'Apr', Comments: 2200, Likes: 4600, Impressions: 11000 },
-  { month: 'May', Comments: 2800, Likes: 5200, Impressions: 12500 },
-  { month: 'Jun', Comments: 2400, Likes: 4800, Impressions: 11800 },
-  { month: 'Jul', Comments: 3200, Likes: 5800, Impressions: 14000 },
-  { month: 'Aug', Comments: 2900, Likes: 5400, Impressions: 13200 },
-  { month: 'Sep', Comments: 3600, Likes: 6200, Impressions: 15500 },
+  { month: 'Jan', Kommentare: 1200, Likes: 3200, Impressionen: 8500 },
+  { month: 'Feb', Kommentare: 1800, Likes: 4100, Impressionen: 9200 },
+  { month: 'Mär', Kommentare: 1400, Likes: 3800, Impressionen: 8800 },
+  { month: 'Apr', Kommentare: 2200, Likes: 4600, Impressionen: 11000 },
+  { month: 'Mai', Kommentare: 2800, Likes: 5200, Impressionen: 12500 },
+  { month: 'Jun', Kommentare: 2400, Likes: 4800, Impressionen: 11800 },
+  { month: 'Jul', Kommentare: 3200, Likes: 5800, Impressionen: 14000 },
+  { month: 'Aug', Kommentare: 2900, Likes: 5400, Impressionen: 13200 },
+  { month: 'Sep', Kommentare: 3600, Likes: 6200, Impressionen: 15500 },
 ]
 
 const influencers = [
@@ -79,14 +79,14 @@ const influencers = [
   { name: 'Lisa Chen', followers: '182K', image: 'https://picsum.photos/seed/woman2/400/500' },
   { name: 'Emma Williams', followers: '320K', image: 'https://picsum.photos/seed/woman3/400/500' },
   { name: 'Ana Rivera', followers: '156K', image: 'https://picsum.photos/seed/woman4/400/500' },
-]
+] as const
 
 const sidebarNav = [
   { label: 'Dashboard', active: true },
-  { label: 'Campaigns', active: false },
-  { label: 'Applicants', active: false },
-  { label: 'Billing', active: false },
-  { label: 'Help', active: false },
+  { label: 'Kampagnen', active: false },
+  { label: 'Bewerber', active: false },
+  { label: 'Abrechnung', active: false },
+  { label: 'Hilfe', active: false },
 ]
 
 // ============ ICONS ============
@@ -133,10 +133,10 @@ function HelpIcon() {
 
 const navIcons: Record<string, () => React.JSX.Element> = {
   Dashboard: DashboardIcon,
-  Campaigns: CampaignsIcon,
-  Applicants: ApplicantsIcon,
-  Billing: BillingIcon,
-  Help: HelpIcon,
+  Kampagnen: CampaignsIcon,
+  Bewerber: ApplicantsIcon,
+  Abrechnung: BillingIcon,
+  Hilfe: HelpIcon,
 }
 
 // ============ SUB-COMPONENTS ============
@@ -201,7 +201,7 @@ export default function BrandDashboard() {
             </div>
             <div className="min-w-0">
               <p className="text-sm font-medium text-gray-900 truncate">Dominic S.</p>
-              <p className="text-xs text-gray-500">Brand Manager</p>
+              <p className="text-xs text-gray-500">Markenmanager</p>
             </div>
           </div>
         </div>
@@ -214,9 +214,9 @@ export default function BrandDashboard() {
           <div className="mb-8 flex items-center gap-4">
             <img src="/fox-mascot-transparent.png" alt="Prüffuchs Mascot" className="w-20 h-20 object-contain" />
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Brand Dashboard</h1>
+              <h1 className="text-2xl font-bold text-gray-900">Marken-Dashboard</h1>
               <p className="text-sm text-gray-500 mt-1">
-                Welcome back, Dominic. Here&apos;s what&apos;s happening with your campaigns.
+                Willkommen zurück, Dominic. Hier ist der aktuelle Stand deiner Kampagnen.
               </p>
             </div>
           </div>
@@ -247,9 +247,9 @@ export default function BrandDashboard() {
             {/* Donut Chart */}
             <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
               <h2 className="text-base font-semibold text-gray-900 mb-1">
-                Campaign Completion
+                Kampagnen-Abschluss
               </h2>
-              <p className="text-xs text-gray-400 mb-4">Rate across all campaigns</p>
+              <p className="text-xs text-gray-400 mb-4">Abschlussrate aller Kampagnen</p>
 
               <div className="relative">
                 <ResponsiveContainer width="100%" height={220}>
@@ -276,7 +276,7 @@ export default function BrandDashboard() {
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                   <div className="text-center">
                     <p className="text-3xl font-bold text-gray-900">{completionRate}%</p>
-                    <p className="text-xs text-gray-500">Completed</p>
+                    <p className="text-xs text-gray-500">Abgeschlossen</p>
                   </div>
                 </div>
               </div>
@@ -303,13 +303,13 @@ export default function BrandDashboard() {
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-6">
                 <div>
                   <h2 className="text-base font-semibold text-gray-900">Earned Media Value</h2>
-                  <p className="text-xs text-gray-400">Monthly engagement overview</p>
+                  <p className="text-xs text-gray-400">Monatliche Engagement-Übersicht</p>
                 </div>
                 <div className="flex items-center gap-4">
                   {[
-                    { label: 'Comments', color: BLUE },
+                    { label: 'Kommentare', color: BLUE },
                     { label: 'Likes', color: ORANGE },
-                    { label: 'Impressions', color: ORANGE_LIGHT },
+                    { label: 'Impressionen', color: ORANGE_LIGHT },
                   ].map((item) => (
                     <div key={item.label} className="flex items-center gap-1.5">
                       <div
@@ -366,7 +366,7 @@ export default function BrandDashboard() {
                   />
                   <Area
                     type="monotone"
-                    dataKey="Impressions"
+                    dataKey="Impressionen"
                     stroke={ORANGE_LIGHT}
                     fill="url(#gradImpressions)"
                     strokeWidth={2}
@@ -384,7 +384,7 @@ export default function BrandDashboard() {
                   />
                   <Area
                     type="monotone"
-                    dataKey="Comments"
+                    dataKey="Kommentare"
                     stroke={BLUE}
                     fill="url(#gradComments)"
                     strokeWidth={2}
@@ -400,10 +400,10 @@ export default function BrandDashboard() {
           <div>
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-base font-semibold text-gray-900">
-                Influencer Promotions
+                Influencer-Aktionen
               </h2>
               <button className="text-xs font-medium text-[#3B82F6] hover:underline">
-                View all
+                Alle anzeigen
               </button>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
@@ -434,7 +434,7 @@ export default function BrandDashboard() {
                     {/* Name overlay */}
                     <div className="absolute bottom-0 left-0 right-0 p-4">
                       <p className="text-white font-semibold text-sm">{inf.name}</p>
-                      <p className="text-white/80 text-xs">{inf.followers} followers</p>
+                      <p className="text-white/80 text-xs">{inf.followers} Follower</p>
                     </div>
                   </div>
                 </div>

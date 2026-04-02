@@ -23,7 +23,7 @@ export default function AuthLayout({
       <div className="relative sm:mx-auto sm:w-full sm:max-w-md">
         <div className="flex flex-col items-center mb-8">
           <img src="/fox-mascot-transparent.png" alt="Prüffuchs Mascot" className="w-32 h-auto mb-4 drop-shadow-lg" />
-          <img src="/fox-logo.png" alt="Prüffuchs" className="h-12 w-auto object-contain drop-shadow-md" />
+          <img src="/fox-logo-white.png" alt="Prüffuchs" className="h-12 w-auto object-contain drop-shadow-md" />
         </div>
       </div>
 

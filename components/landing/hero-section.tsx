@@ -95,7 +95,7 @@ export default function HeroSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Text content */}
-          <div className="max-w-xl">
+          <div className="max-w-xl overflow-hidden">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-brand-50 text-brand-700 text-xs sm:text-sm font-medium px-3 sm:px-4 py-1.5 rounded-full border border-brand-100 mb-6 max-w-full">
               <span className="flex-shrink-0">🦊</span>
@@ -118,14 +118,14 @@ export default function HeroSection() {
                 href="https://calendly.com/amzideal/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-brand-500 hover:bg-brand-600 text-white font-semibold rounded-xl shadow-sm hover:shadow-md transition-all duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-brand-500 hover:bg-brand-600 text-white font-semibold rounded-xl shadow-sm hover:shadow-md transition-all duration-200"
               >
                 {t('ctaBrand')}
                 <ArrowRight className="w-4 h-4" />
               </a>
               <Link
                 href="/signup"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 text-gray-800 font-semibold rounded-xl border-2 border-gray-200 hover:border-gray-300 transition-all duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 text-gray-800 font-semibold rounded-xl border-2 border-gray-200 hover:border-gray-300 transition-all duration-200"
               >
                 {t('ctaInfluencer')}
               </Link>

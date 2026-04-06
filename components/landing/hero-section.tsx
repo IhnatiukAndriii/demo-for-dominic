@@ -6,7 +6,7 @@ function FlowIllustration() {
   const t = useTranslations('landing.hero')
 
   return (
-    <div className="relative w-full overflow-x-auto pt-4">
+    <div className="relative w-full max-w-full overflow-x-auto pt-4">
       {/* Connecting line */}
       <div className="absolute top-1/2 left-[20%] right-[20%] h-0.5 bg-gradient-to-r from-brand-200 via-secondary-200 to-brand-200 -translate-y-1/2 hidden sm:block" />
 
@@ -93,9 +93,9 @@ export default function HeroSection() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Text content */}
-          <div className="max-w-xl overflow-hidden">
+          <div className="min-w-0 w-full">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-brand-50 text-brand-700 text-xs sm:text-sm font-medium px-3 sm:px-4 py-1.5 rounded-full border border-brand-100 mb-6 max-w-full">
               <span className="flex-shrink-0">🦊</span>
@@ -108,12 +108,12 @@ export default function HeroSection() {
             </h1>
 
             {/* Subline */}
-            <p className="text-base sm:text-lg text-gray-500 leading-relaxed mb-8 break-words">
+            <p className="text-base sm:text-lg text-gray-500 leading-relaxed mb-8 break-words w-full">
               {t('subline')}
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-3 w-full">
               <a
                 href="https://calendly.com/amzideal/30min"
                 target="_blank"
@@ -133,7 +133,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right: Flow illustration */}
-          <div className="lg:pl-8">
+          <div className="min-w-0 lg:pl-8">
             <FlowIllustration />
 
             {/* Trust signals */}

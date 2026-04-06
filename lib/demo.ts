@@ -1,4 +1,4 @@
-import type { Profile, Campaign, Application } from '@/types'
+import type { Profile, Campaign } from '@/types'
 
 export const DEMO_MODE = process.env.NEXT_PUBLIC_DEMO_MODE === 'true'
 

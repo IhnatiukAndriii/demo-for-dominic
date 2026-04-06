@@ -1,44 +1,7 @@
-import type { Metadata } from 'next'
-import './globals.css'
-import { Geist } from "next/font/google";
-import { cn } from "@/lib/utils";
+import type { ReactNode } from 'react'
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
-
-export const metadata: Metadata = {
-  title: {
-    template: '%s | Prüffuchs',
-    default: 'Prüffuchs – Influencer Marketing Plattform',
-  },
-  description:
-    'Prüffuchs verbindet Marken mit Influencern für authentisches Marketing. Erstelle Kampagnen, finde die richtigen Creator und verwalte deine Kooperationen.',
-  keywords: ['Influencer Marketing', 'Kampagnen', 'Creator', 'Marken', 'Kooperationen'],
-  authors: [{ name: 'Prüffuchs' }],
-  openGraph: {
-    type: 'website',
-    locale: 'de_DE',
-    siteName: 'Prüffuchs',
-  },
-}
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="de" suppressHydrationWarning className={cn("font-sans", geist.variable)}>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="min-h-screen bg-gray-50">
-        {children}
-      </body>
-    </html>
-  )
+// Root layout required by Next.js.
+// HTML structure, fonts, and providers are defined in app/[locale]/layout.tsx.
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return children as unknown as React.ReactElement
 }

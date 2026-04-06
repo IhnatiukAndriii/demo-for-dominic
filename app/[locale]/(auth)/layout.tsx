@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 
 export const dynamic = 'force-dynamic'
 
@@ -22,8 +23,8 @@ export default function AuthLayout({
       {/* Logo/Brand area */}
       <div className="relative sm:mx-auto sm:w-full sm:max-w-md">
         <div className="flex flex-col items-center mb-8">
-          <img src="/fox-mascot-transparent.png" alt="Prüffuchs Mascot" className="w-32 h-auto mb-4 drop-shadow-lg" />
-          <img src="/fox-logo-white.png" alt="Prüffuchs" className="h-12 w-auto object-contain drop-shadow-md" />
+          <Image src="/fox-mascot-transparent.png" alt="Prüffuchs Mascot" priority width={128} height={128} style={{ height: 'auto' }} className="w-32 mb-4 drop-shadow-lg" />
+          <Image src="/fox-logo-white.png" alt="Prüffuchs" width={200} height={48} style={{ width: 'auto', height: '3rem' }} className="object-contain drop-shadow-md" />
         </div>
       </div>
 

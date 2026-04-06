@@ -1,0 +1,241 @@
+{
+  "common": {
+    "loading": "Laden...",
+    "error": "Fehler",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "create": "Erstellen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "confirm": "Bestätigen",
+    "close": "Schließen",
+    "search": "Suchen",
+    "filter": "Filtern",
+    "noResults": "Keine Ergebnisse gefunden",
+    "required": "Pflichtfeld"
+  },
+  "nav": {
+    "overview": "Übersicht",
+    "campaigns": "Kampagnen",
+    "applications": "Bewerbungen",
+    "settings": "Einstellungen",
+    "logout": "Abmelden"
+  },
+  "roles": {
+    "brand": "Marke",
+    "influencer": "Influencer",
+    "admin": "Administrator"
+  },
+  "meta": {
+    "landing": {
+      "title": "Prüffuchs – Authentisches Influencer Marketing",
+      "description": "Prüffuchs verbindet Brands mit Micro-Influencern für echte Produktbewertungen und authentischen Content. Transparent, messbar, erfolgreich.",
+      "ogTitle": "Prüffuchs – Influencer Marketing für Brands & Creator",
+      "ogDescription": "Echte Käufe. Echter Content. Echte Ergebnisse. Jetzt kostenlos starten."
+    }
+  },
+  "landing": {
+    "nav": {
+      "forBrands": "Für Brands",
+      "forInfluencers": "Für Influencer",
+      "faq": "FAQ",
+      "register": "Jetzt registrieren",
+      "login": "Anmelden",
+      "openMenu": "Menü öffnen",
+      "closeMenu": "Menü schließen"
+    },
+    "hero": {
+      "badge": "Influencer Marketing neu gedacht",
+      "headline": "Echte Käufe. Echter Content. Echte Ergebnisse.",
+      "subline": "Prüffuchs verbindet Brands mit Micro-Influencern für authentisches Marketing — transparent, messbar und ohne Streuverlust.",
+      "ctaBrand": "Als Brand starten",
+      "ctaInfluencer": "Als Influencer bewerben",
+      "flowBrand": "Brand",
+      "flowBrandAction": "Kampagne erstellen",
+      "flowPlatform": "Prüffuchs",
+      "flowPlatformAction": "Matching & Koordination",
+      "flowInfluencer": "Influencer",
+      "flowInfluencerAction": "Kaufen & Posten",
+      "flowRefund": "Kaufpreis zurück"
+    },
+    "howItWorks": {
+      "title": "So funktioniert Prüffuchs",
+      "subtitle": "In drei einfachen Schritten zu authentischem Influencer Marketing",
+      "step1Number": "01",
+      "step1Title": "Brand erstellt Kampagne",
+      "step1Desc": "Du definierst Produkt, Budget und Zielgruppe. Wir erstellen die Kampagne und finden passende Micro-Influencer.",
+      "step2Number": "02",
+      "step2Title": "Influencer kauft & postet",
+      "step2Desc": "Der Influencer kauft dein Produkt als echter Kunde, erstellt authentischen Content und veröffentlicht ihn auf seinen Kanälen.",
+      "step3Number": "03",
+      "step3Title": "Rückerstattung & Abrechnung",
+      "step3Desc": "Nach Freigabe des Posts erhält der Influencer den Kaufpreis zurück. Du zahlst nur für verifizierte Ergebnisse."
+    },
+    "brands": {
+      "badge": "Für Brands & Unternehmen",
+      "title": "Marketing das wirklich wirkt",
+      "subtitle": "Skaliere dein Marketing mit echten Produktkäufen und authentischem User Generated Content.",
+      "benefit1Title": "Echte Käufe",
+      "benefit1Desc": "Influencer kaufen dein Produkt als echte Kunden — für maximale Authentizität und ehrliche Bewertungen.",
+      "benefit2Title": "UGC Content",
+      "benefit2Desc": "Erhalte hochwertigen User Generated Content für deine eigenen Kanäle und Werbeanzeigen.",
+      "benefit3Title": "Ranking Boost",
+      "benefit3Desc": "Mehr echte Käufe verbessern dein Amazon-Ranking und deine Sichtbarkeit in Suchmaschinen.",
+      "benefit4Title": "Pay for Results",
+      "benefit4Desc": "Du zahlst nur für verifizierte, veröffentlichte Posts — kein Risiko, keine versteckten Kosten.",
+      "pricingTeaser": "Ab 28,50 €/Credit bei Volumen — transparent & fair",
+      "cta": "Kostenloses Erstgespräch buchen"
+    },
+    "influencers": {
+      "badge": "Für Influencer & Creator",
+      "title": "Teste Produkte, erhalte Geld zurück",
+      "subtitle": "Bewirb dich auf Kampagnen, kaufe Produkte und erhalte den vollen Kaufpreis nach deinem Post zurück.",
+      "benefit1Title": "Gratis Produkte",
+      "benefit1Desc": "Kaufe Produkte und erhalte nach Veröffentlichung deines Posts den vollen Kaufpreis zurück.",
+      "benefit2Title": "Einfache Bewerbung",
+      "benefit2Desc": "Registriere dich, durchsuche aktive Kampagnen und bewirb dich mit wenigen Klicks.",
+      "benefit3Title": "Schnelle Auszahlung",
+      "benefit3Desc": "Nach Freigabe deines Beitrags wird die Rückerstattung direkt auf dein Konto überwiesen.",
+      "requirementsTitle": "Voraussetzungen",
+      "req1": "Mindestens 200 Follower auf einem Social-Media-Kanal",
+      "req2": "Wohnsitz in Deutschland oder Österreich",
+      "req3": "Aktives, öffentliches Profil",
+      "cta": "Jetzt kostenlos registrieren"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Alle Antworten auf deine wichtigsten Fragen",
+      "q1": "Wie funktioniert Prüffuchs?",
+      "a1": "Prüffuchs verbindet Brands mit Micro-Influencern. Influencer kaufen Produkte als echte Kunden, erstellen ehrlichen Content und erhalten den Kaufpreis zurück. Brands zahlen nur für verifizierte, veröffentlichte Posts.",
+      "q2": "Wer kann sich als Influencer bewerben?",
+      "a2": "Jeder mit mindestens 200 Followern auf Instagram, TikTok, YouTube oder einem anderen öffentlichen Kanal und Wohnsitz in Deutschland oder Österreich kann sich registrieren.",
+      "q3": "Wie und wann werde ich als Influencer rückerstattet?",
+      "a3": "Nach Freigabe deines Posts durch die Brand wird der volle Kaufpreis innerhalb von 7 Werktagen auf dein hinterlegtes Konto überwiesen.",
+      "q4": "Was passiert, wenn mein Post nicht genehmigt wird?",
+      "a4": "Du erhältst zuerst die Möglichkeit, deinen Post zu überarbeiten. Falls keine Einigung erzielt wird, entscheidet unser Support-Team fair und transparent.",
+      "q5": "Ist die Teilnahme für Influencer kostenlos?",
+      "a5": "Ja, die Registrierung und Bewerbung auf Kampagnen ist für Influencer vollständig kostenlos. Du streckst nur den Kaufpreis vor, der nach Freigabe vollständig zurückerstattet wird.",
+      "q6": "Wie können Brands mit Prüffuchs starten?",
+      "a6": "Buche ein kostenloses Erstgespräch mit unserem Team. Wir richten deinen Account ein, besprechen deine Ziele und starten gemeinsam deine erste Kampagne."
+    },
+    "footer": {
+      "tagline": "Authentisches Influencer Marketing für die nächste Generation.",
+      "imprint": "Impressum",
+      "privacy": "Datenschutz",
+      "contact": "Kontakt",
+      "copyright": "© 2026 Prüffuchs. Alle Rechte vorbehalten."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Willkommen zurück",
+      "subtitle": "Melde dich bei deinem Konto an",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "name@beispiel.de",
+      "password": "Passwort",
+      "passwordPlaceholder": "••••••••",
+      "submit": "Anmelden",
+      "submitting": "Anmelden...",
+      "noAccount": "Noch kein Konto?",
+      "register": "Jetzt registrieren",
+      "errorInvalid": "E-Mail oder Passwort ist falsch. Bitte erneut versuchen.",
+      "demoTitle": "Rolle auswählen",
+      "demoSubtitle": "Wähle eine Rolle, um das Dashboard zu erkunden",
+      "demoNote": "Dies ist eine Demo mit Testdaten. Keine echte Authentifizierung erforderlich."
+    },
+    "signup": {
+      "title": "Konto erstellen",
+      "subtitle": "Tritt der Prüffuchs-Community bei",
+      "roleTitle": "Rolle auswählen",
+      "roleSubtitle": "Wie möchtest du Prüffuchs nutzen?",
+      "fullName": "Vollständiger Name",
+      "fullNamePlaceholder": "Max Mustermann",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "name@beispiel.de",
+      "password": "Passwort",
+      "passwordPlaceholder": "Mindestens 8 Zeichen",
+      "passwordConfirm": "Passwort wiederholen",
+      "submit": "Registrieren",
+      "submitting": "Registrieren...",
+      "hasAccount": "Bereits registriert?",
+      "login": "Jetzt anmelden",
+      "errorPasswordShort": "Das Passwort muss mindestens 8 Zeichen lang sein.",
+      "errorPasswordMismatch": "Die Passwörter stimmen nicht überein.",
+      "errorNoRole": "Bitte wähle eine Rolle aus.",
+      "errorAlreadyRegistered": "Diese E-Mail-Adresse ist bereits registriert.",
+      "errorGeneric": "Registrierung fehlgeschlagen. Bitte erneut versuchen."
+    }
+  },
+  "dashboard": {
+    "brand": {
+      "title": "Hallo, {name}",
+      "subtitle": "Verwalte deine Kampagnen und Kooperationen",
+      "stats": {
+        "totalCampaigns": "Kampagnen gesamt",
+        "activeCampaigns": "Aktive Kampagnen",
+        "totalApplications": "Bewerbungen",
+        "pendingApplications": "Ausstehend"
+      },
+      "campaigns": "Meine Kampagnen",
+      "createCampaign": "Kampagne erstellen",
+      "noCampaigns": "Noch keine Kampagnen",
+      "noCampaignsText": "Erstelle deine erste Kampagne, um passende Influencer zu finden."
+    },
+    "influencer": {
+      "title": "Hallo, {name}",
+      "subtitle": "Entdecke Kampagnen und verwalte deine Bewerbungen",
+      "stats": {
+        "openCampaigns": "Offene Kampagnen",
+        "myApplications": "Meine Bewerbungen",
+        "approved": "Angenommen",
+        "pending": "Ausstehend"
+      },
+      "availableCampaigns": "Verfügbare Kampagnen",
+      "myApplications": "Meine Bewerbungen",
+      "noCampaigns": "Keine Kampagnen verfügbar",
+      "noCampaignsText": "Aktuell gibt es keine offenen Kampagnen. Schau bald wieder vorbei.",
+      "noApplications": "Du hast dich noch auf keine Kampagne beworben."
+    },
+    "admin": {
+      "title": "Admin-Übersicht",
+      "subtitle": "Plattformverwaltung und Statistiken",
+      "stats": {
+        "totalUsers": "Nutzer gesamt",
+        "campaigns": "Kampagnen",
+        "applications": "Bewerbungen",
+        "totalBudget": "Gesamtbudget"
+      },
+      "allUsers": "Alle Nutzer",
+      "allCampaigns": "Alle Kampagnen",
+      "allApplications": "Alle Bewerbungen",
+      "noUsers": "Keine Nutzer gefunden",
+      "noCampaigns": "Keine Kampagnen gefunden",
+      "noApplications": "Keine Bewerbungen gefunden"
+    }
+  },
+  "campaign": {
+    "status": {
+      "draft": "Entwurf",
+      "active": "Aktiv",
+      "completed": "Abgeschlossen"
+    },
+    "budget": "Budget",
+    "deadline": "Bewerbungsschluss",
+    "requirements": "Anforderungen",
+    "category": "Kategorie",
+    "applications": "Bewerbungen"
+  },
+  "application": {
+    "status": {
+      "pending": "Ausstehend",
+      "approved": "Angenommen",
+      "rejected": "Abgelehnt"
+    },
+    "apply": "Bewerben",
+    "applied": "Beworben",
+    "approve": "Annehmen",
+    "reject": "Ablehnen"
+  }
+}

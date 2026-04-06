@@ -1,0 +1,241 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "back": "Back",
+    "next": "Next",
+    "confirm": "Confirm",
+    "close": "Close",
+    "search": "Search",
+    "filter": "Filter",
+    "noResults": "No results found",
+    "required": "Required"
+  },
+  "nav": {
+    "overview": "Overview",
+    "campaigns": "Campaigns",
+    "applications": "Applications",
+    "settings": "Settings",
+    "logout": "Log out"
+  },
+  "roles": {
+    "brand": "Brand",
+    "influencer": "Influencer",
+    "admin": "Administrator"
+  },
+  "meta": {
+    "landing": {
+      "title": "Prüffuchs – Authentic Influencer Marketing",
+      "description": "Prüffuchs connects brands with micro-influencers for genuine product reviews and authentic content. Transparent, measurable, effective.",
+      "ogTitle": "Prüffuchs – Influencer Marketing for Brands & Creators",
+      "ogDescription": "Real purchases. Real content. Real results. Start for free today."
+    }
+  },
+  "landing": {
+    "nav": {
+      "forBrands": "For Brands",
+      "forInfluencers": "For Influencers",
+      "faq": "FAQ",
+      "register": "Sign up now",
+      "login": "Log in",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu"
+    },
+    "hero": {
+      "badge": "Influencer marketing reimagined",
+      "headline": "Real Purchases. Real Content. Real Results.",
+      "subline": "Prüffuchs connects brands with micro-influencers for authentic marketing — transparent, measurable, and effective.",
+      "ctaBrand": "Start as a Brand",
+      "ctaInfluencer": "Apply as Influencer",
+      "flowBrand": "Brand",
+      "flowBrandAction": "Create campaign",
+      "flowPlatform": "Prüffuchs",
+      "flowPlatformAction": "Matching & coordination",
+      "flowInfluencer": "Influencer",
+      "flowInfluencerAction": "Buy & post",
+      "flowRefund": "Full refund"
+    },
+    "howItWorks": {
+      "title": "How Prüffuchs works",
+      "subtitle": "Three simple steps to authentic influencer marketing",
+      "step1Number": "01",
+      "step1Title": "Brand creates campaign",
+      "step1Desc": "Define your product, budget and target audience. We create the campaign and find matching micro-influencers.",
+      "step2Number": "02",
+      "step2Title": "Influencer buys & posts",
+      "step2Desc": "The influencer buys your product as a real customer, creates authentic content, and publishes it on their channels.",
+      "step3Number": "03",
+      "step3Title": "Refund & billing",
+      "step3Desc": "After the post is approved, the influencer receives the purchase price back. You only pay for verified results."
+    },
+    "brands": {
+      "badge": "For Brands & Companies",
+      "title": "Marketing that actually works",
+      "subtitle": "Scale your marketing with genuine product purchases and authentic user generated content.",
+      "benefit1Title": "Real Purchases",
+      "benefit1Desc": "Influencers buy your product as real customers — for maximum authenticity and honest reviews.",
+      "benefit2Title": "UGC Content",
+      "benefit2Desc": "Receive high-quality user generated content for your own channels and advertisements.",
+      "benefit3Title": "Ranking Boost",
+      "benefit3Desc": "More real purchases improve your Amazon ranking and visibility in search engines.",
+      "benefit4Title": "Pay for Results",
+      "benefit4Desc": "You only pay for verified, published posts — no risk, no hidden costs.",
+      "pricingTeaser": "From €28.50/credit at volume — transparent & fair",
+      "cta": "Book a free consultation"
+    },
+    "influencers": {
+      "badge": "For Influencers & Creators",
+      "title": "Test products, get your money back",
+      "subtitle": "Apply to campaigns, buy products and receive the full purchase price back after your post.",
+      "benefit1Title": "Free Products",
+      "benefit1Desc": "Buy products and receive the full purchase price back after publishing your post.",
+      "benefit2Title": "Easy Application",
+      "benefit2Desc": "Register, browse active campaigns and apply with just a few clicks.",
+      "benefit3Title": "Fast Payout",
+      "benefit3Desc": "After your post is approved, the refund is transferred directly to your account.",
+      "requirementsTitle": "Requirements",
+      "req1": "At least 200 followers on a social media channel",
+      "req2": "Residence in Germany or Austria",
+      "req3": "Active, public profile",
+      "cta": "Sign up for free now"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "subtitle": "All answers to your most important questions",
+      "q1": "How does Prüffuchs work?",
+      "a1": "Prüffuchs connects brands with micro-influencers. Influencers buy products as real customers, create honest content and receive the purchase price back. Brands only pay for verified, published posts.",
+      "q2": "Who can apply as an influencer?",
+      "a2": "Anyone with at least 200 followers on Instagram, TikTok, YouTube or any other public channel and residence in Germany or Austria can register.",
+      "q3": "How and when do I get refunded as an influencer?",
+      "a3": "After your post is approved by the brand, the full purchase price will be transferred to your registered account within 7 business days.",
+      "q4": "What happens if my post is not approved?",
+      "a4": "You first get the opportunity to revise your post. If no agreement is reached, our support team will decide fairly and transparently.",
+      "q5": "Is participation free for influencers?",
+      "a5": "Yes, registration and applying to campaigns is completely free for influencers. You only advance the purchase price, which is fully refunded after approval.",
+      "q6": "How can brands get started with Prüffuchs?",
+      "a6": "Book a free consultation with our team. We set up your account, discuss your goals and budgets, and launch your first campaign together."
+    },
+    "footer": {
+      "tagline": "Authentic influencer marketing for the next generation.",
+      "imprint": "Imprint",
+      "privacy": "Privacy Policy",
+      "contact": "Contact",
+      "copyright": "© 2026 Prüffuchs. All rights reserved."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome back",
+      "subtitle": "Sign in to your account",
+      "email": "Email address",
+      "emailPlaceholder": "name@example.com",
+      "password": "Password",
+      "passwordPlaceholder": "••••••••",
+      "submit": "Sign in",
+      "submitting": "Signing in...",
+      "noAccount": "Don't have an account?",
+      "register": "Sign up now",
+      "errorInvalid": "Invalid email or password. Please try again.",
+      "demoTitle": "Choose a role",
+      "demoSubtitle": "Select a role to explore the dashboard",
+      "demoNote": "This is a demo with test data. No real authentication required."
+    },
+    "signup": {
+      "title": "Create account",
+      "subtitle": "Join the Prüffuchs community",
+      "roleTitle": "Choose your role",
+      "roleSubtitle": "How do you want to use Prüffuchs?",
+      "fullName": "Full name",
+      "fullNamePlaceholder": "Jane Smith",
+      "email": "Email address",
+      "emailPlaceholder": "name@example.com",
+      "password": "Password",
+      "passwordPlaceholder": "At least 8 characters",
+      "passwordConfirm": "Confirm password",
+      "submit": "Sign up",
+      "submitting": "Signing up...",
+      "hasAccount": "Already registered?",
+      "login": "Sign in now",
+      "errorPasswordShort": "Password must be at least 8 characters long.",
+      "errorPasswordMismatch": "Passwords do not match.",
+      "errorNoRole": "Please select a role.",
+      "errorAlreadyRegistered": "This email address is already registered.",
+      "errorGeneric": "Sign up failed. Please try again."
+    }
+  },
+  "dashboard": {
+    "brand": {
+      "title": "Hello, {name}",
+      "subtitle": "Manage your campaigns and collaborations",
+      "stats": {
+        "totalCampaigns": "Total campaigns",
+        "activeCampaigns": "Active campaigns",
+        "totalApplications": "Applications",
+        "pendingApplications": "Pending"
+      },
+      "campaigns": "My campaigns",
+      "createCampaign": "Create campaign",
+      "noCampaigns": "No campaigns yet",
+      "noCampaignsText": "Create your first campaign to find matching influencers."
+    },
+    "influencer": {
+      "title": "Hello, {name}",
+      "subtitle": "Discover campaigns and manage your applications",
+      "stats": {
+        "openCampaigns": "Open campaigns",
+        "myApplications": "My applications",
+        "approved": "Approved",
+        "pending": "Pending"
+      },
+      "availableCampaigns": "Available campaigns",
+      "myApplications": "My applications",
+      "noCampaigns": "No campaigns available",
+      "noCampaignsText": "There are no open campaigns at the moment. Check back soon.",
+      "noApplications": "You haven't applied to any campaigns yet."
+    },
+    "admin": {
+      "title": "Admin overview",
+      "subtitle": "Platform management and statistics",
+      "stats": {
+        "totalUsers": "Total users",
+        "campaigns": "Campaigns",
+        "applications": "Applications",
+        "totalBudget": "Total budget"
+      },
+      "allUsers": "All users",
+      "allCampaigns": "All campaigns",
+      "allApplications": "All applications",
+      "noUsers": "No users found",
+      "noCampaigns": "No campaigns found",
+      "noApplications": "No applications found"
+    }
+  },
+  "campaign": {
+    "status": {
+      "draft": "Draft",
+      "active": "Active",
+      "completed": "Completed"
+    },
+    "budget": "Budget",
+    "deadline": "Application deadline",
+    "requirements": "Requirements",
+    "category": "Category",
+    "applications": "Applications"
+  },
+  "application": {
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "apply": "Apply",
+    "applied": "Applied",
+    "approve": "Approve",
+    "reject": "Reject"
+  }
+}

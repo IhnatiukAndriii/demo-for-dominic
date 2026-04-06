@@ -12,12 +12,12 @@ export default function Footer() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/fox-logo-white.png"
+              src="/prueffuchs-logo.png"
               alt="Prüffuchs"
               width={140}
-              height={0}
-              style={{ height: 'auto', width: '140px' }}
-              className="object-contain"
+              height={32}
+              style={{ height: '32px', width: 'auto' }}
+              className="object-contain brightness-0 invert"
             />
           </Link>
 

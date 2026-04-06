@@ -54,11 +54,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <Image
-              src="/fox-logo.png"
+              src="/prueffuchs-logo.png"
               alt="Prüffuchs"
-              width={140}
-              height={0}
-              style={{ height: 'auto', width: '140px' }}
+              width={160}
+              height={40}
+              style={{ height: '40px', width: 'auto' }}
               className="object-contain"
               priority
             />

@@ -3,107 +3,9 @@
 import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 
 const MARKETPLACES = ['Amazon', 'Kaufland', 'Otto', 'eBay', 'Shopify']
-
-function DashboardMockup() {
-  return (
-    <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden w-full max-w-md mx-auto">
-      {/* Window chrome */}
-      <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-100 bg-gray-50">
-        <div className="flex gap-1.5">
-          <div className="w-3 h-3 rounded-full bg-red-300" />
-          <div className="w-3 h-3 rounded-full bg-yellow-300" />
-          <div className="w-3 h-3 rounded-full bg-green-300" />
-        </div>
-        <span className="text-xs text-gray-400 ml-2 font-medium">Prüffuchs Dashboard</span>
-      </div>
-
-      <div className="flex" style={{ height: '320px' }}>
-        {/* Mini sidebar */}
-        <div className="w-12 bg-gray-900 flex flex-col items-center py-4 gap-4 flex-shrink-0">
-          <div className="w-7 h-7 bg-[#E8882E] rounded-lg flex items-center justify-center text-white text-sm">
-            🦊
-          </div>
-          <div className="w-6 h-px bg-gray-700 rounded" />
-          {[0, 1, 2, 3].map((i) => (
-            <div
-              key={i}
-              className="w-6 h-6 rounded-md"
-              style={{ backgroundColor: i === 0 ? 'rgba(232,136,46,0.35)' : '#374151' }}
-            />
-          ))}
-        </div>
-
-        {/* Main content */}
-        <div className="flex-1 p-4 overflow-hidden">
-          {/* KPI cards */}
-          <div className="grid grid-cols-3 gap-2 mb-4">
-            {[
-              { label: 'Kampagnen', value: '12' },
-              { label: 'Influencer', value: '847' },
-              { label: 'Posts', value: '1.204' },
-            ].map((kpi) => (
-              <div key={kpi.label} className="bg-gray-50 rounded-lg p-2 border border-gray-100">
-                <p className="text-gray-400 leading-none mb-1" style={{ fontSize: '9px' }}>
-                  {kpi.label}
-                </p>
-                <p className="text-sm font-bold text-gray-800">{kpi.value}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Bar chart */}
-          <div className="mb-4">
-            <p className="text-gray-400 mb-2" style={{ fontSize: '9px' }}>
-              Performance (7 Tage)
-            </p>
-            <div className="flex items-end gap-1" style={{ height: '48px' }}>
-              {[40, 65, 45, 80, 60, 90, 75].map((h, i) => (
-                <div
-                  key={i}
-                  className="flex-1 rounded-t-sm border border-gray-200"
-                  style={{
-                    height: `${h}%`,
-                    backgroundColor: i === 5 ? '#E8882E' : '#EBF0F7',
-                  }}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Top influencers */}
-          <div>
-            <p className="text-gray-400 mb-2" style={{ fontSize: '9px' }}>
-              Top Influencer
-            </p>
-            {[
-              { name: 'Sarah M.', posts: '12 Posts', color: '#fce7f3' },
-              { name: 'Tim K.', posts: '9 Posts', color: '#dbeafe' },
-              { name: 'Lena W.', posts: '7 Posts', color: '#dcfce7' },
-            ].map((inf) => (
-              <div
-                key={inf.name}
-                className="flex items-center gap-2 py-1.5 border-b border-gray-50 last:border-0"
-              >
-                <div
-                  className="w-6 h-6 rounded-full flex items-center justify-center font-bold text-gray-600 flex-shrink-0"
-                  style={{ backgroundColor: inf.color, fontSize: '9px' }}
-                >
-                  {inf.name[0]}
-                </div>
-                <span className="text-gray-700 font-medium flex-1 text-xs">{inf.name}</span>
-                <span className="font-medium text-xs" style={{ color: '#E8882E', fontSize: '10px' }}>
-                  {inf.posts}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
 
 export default function HeroSection() {
   const t = useTranslations('landing.hero')
@@ -182,9 +84,16 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right: Dashboard mockup */}
+          {/* Right: Hero visual */}
           <div className="min-w-0 lg:pl-8">
-            <DashboardMockup />
+            <Image
+              src="/prueffuchs-hero-visual.png"
+              alt="Prüffuchs Platform"
+              width={580}
+              height={480}
+              priority
+              className="w-full max-w-full lg:max-w-[580px] h-auto mx-auto"
+            />
           </div>
         </div>
       </div>

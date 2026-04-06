@@ -18,6 +18,10 @@ export const metadata: Metadata = {
     'Prüffuchs verbindet Marken mit Influencern für authentisches Marketing. Erstelle Kampagnen, finde die richtigen Creator und verwalte deine Kooperationen.',
   keywords: ['Influencer Marketing', 'Kampagnen', 'Creator', 'Marken', 'Kooperationen'],
   authors: [{ name: 'Prüffuchs' }],
+  icons: {
+    icon: '/prueffuchs-mascot-face.png',
+    apple: '/prueffuchs-mascot-face.png',
+  },
   openGraph: {
     type: 'website',
     siteName: 'Prüffuchs',

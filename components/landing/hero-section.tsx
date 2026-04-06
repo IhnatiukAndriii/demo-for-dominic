@@ -6,13 +6,13 @@ function FlowIllustration() {
   const t = useTranslations('landing.hero')
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full overflow-x-auto">
       {/* Connecting line */}
       <div className="absolute top-1/2 left-[20%] right-[20%] h-0.5 bg-gradient-to-r from-brand-200 via-secondary-200 to-brand-200 -translate-y-1/2 hidden sm:block" />
 
       <div className="flex items-stretch justify-between gap-3 sm:gap-4">
         {/* Step 1: Brand */}
-        <div className="relative flex-1 min-w-0 bg-white rounded-2xl border-2 border-brand-100 p-4 sm:p-5 shadow-md hover:shadow-lg transition-shadow">
+        <div className="relative flex-1 min-w-[80px] bg-white rounded-2xl border-2 border-brand-100 p-4 sm:p-5 shadow-md hover:shadow-lg transition-shadow">
           <div className="absolute -top-3 left-4 bg-brand-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
             01
           </div>
@@ -35,7 +35,7 @@ function FlowIllustration() {
         </div>
 
         {/* Step 2: Platform */}
-        <div className="relative flex-1 min-w-0 bg-white rounded-2xl border-2 border-secondary-100 p-4 sm:p-5 shadow-md hover:shadow-lg transition-shadow">
+        <div className="relative flex-1 min-w-[80px] bg-white rounded-2xl border-2 border-secondary-100 p-4 sm:p-5 shadow-md hover:shadow-lg transition-shadow">
           <div className="absolute -top-3 left-4 bg-secondary-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
             02
           </div>
@@ -58,7 +58,7 @@ function FlowIllustration() {
         </div>
 
         {/* Step 3: Influencer */}
-        <div className="relative flex-1 min-w-0 bg-white rounded-2xl border-2 border-brand-100 p-4 sm:p-5 shadow-md hover:shadow-lg transition-shadow">
+        <div className="relative flex-1 min-w-[80px] bg-white rounded-2xl border-2 border-brand-100 p-4 sm:p-5 shadow-md hover:shadow-lg transition-shadow">
           <div className="absolute -top-3 left-4 bg-brand-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
             03
           </div>

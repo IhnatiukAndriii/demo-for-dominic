@@ -15,9 +15,9 @@ export default function Footer() {
               src="/fox-logo-white.png"
               alt="Prüffuchs"
               width={140}
-              height={36}
-              className="h-9 object-contain"
-              style={{ height: 'auto' }}
+              height={0}
+              style={{ height: 'auto', width: '140px' }}
+              className="object-contain"
             />
           </Link>
 

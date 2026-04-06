@@ -121,7 +121,7 @@ export default async function DashboardLayout({
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center gap-2">
-              <Image src="/fox-logo.png" alt="Prüffuchs" width={160} height={40} className="h-10 w-auto object-contain" />
+              <Image src="/fox-logo.png" alt="Prüffuchs" width={160} height={0} style={{ height: 'auto', width: '160px' }} className="object-contain" />
               {DEMO_MODE && (
                 <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-700">
                   DEMO

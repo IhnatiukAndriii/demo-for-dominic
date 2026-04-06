@@ -50,8 +50,7 @@ export default function HeroSection() {
                 }}
               >
                 {MARKETPLACES[currentIndex]}
-              </span>
-              {' '}{t('headlineSuffix')}
+              </span>{' '}{t('headlineSuffix')}
             </h1>
 
             {/* Subline */}

@@ -56,10 +56,9 @@ export default function Navbar() {
             <Image
               src="/prueffuchs-logo.png"
               alt="Prüffuchs"
-              width={160}
-              height={40}
-              style={{ height: '44px', width: 'auto' }}
-              className="object-contain"
+              width={180}
+              height={44}
+              style={{ width: 'auto', height: '44px' }}
               priority
             />
           </Link>

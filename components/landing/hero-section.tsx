@@ -12,7 +12,7 @@ function FlowIllustration() {
 
       <div className="flex items-stretch justify-between gap-3 sm:gap-4">
         {/* Step 1: Brand */}
-        <div className="relative flex-1 bg-white rounded-2xl border-2 border-brand-100 p-4 sm:p-5 shadow-md hover:shadow-lg transition-shadow">
+        <div className="relative flex-1 min-w-0 bg-white rounded-2xl border-2 border-brand-100 p-4 sm:p-5 shadow-md hover:shadow-lg transition-shadow">
           <div className="absolute -top-3 left-4 bg-brand-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
             01
           </div>
@@ -35,7 +35,7 @@ function FlowIllustration() {
         </div>
 
         {/* Step 2: Platform */}
-        <div className="relative flex-1 bg-white rounded-2xl border-2 border-secondary-100 p-4 sm:p-5 shadow-md hover:shadow-lg transition-shadow">
+        <div className="relative flex-1 min-w-0 bg-white rounded-2xl border-2 border-secondary-100 p-4 sm:p-5 shadow-md hover:shadow-lg transition-shadow">
           <div className="absolute -top-3 left-4 bg-secondary-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
             02
           </div>
@@ -58,7 +58,7 @@ function FlowIllustration() {
         </div>
 
         {/* Step 3: Influencer */}
-        <div className="relative flex-1 bg-white rounded-2xl border-2 border-brand-100 p-4 sm:p-5 shadow-md hover:shadow-lg transition-shadow">
+        <div className="relative flex-1 min-w-0 bg-white rounded-2xl border-2 border-brand-100 p-4 sm:p-5 shadow-md hover:shadow-lg transition-shadow">
           <div className="absolute -top-3 left-4 bg-brand-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
             03
           </div>
@@ -97,18 +97,18 @@ export default function HeroSection() {
           {/* Left: Text content */}
           <div className="max-w-xl">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-brand-50 text-brand-700 text-sm font-medium px-4 py-1.5 rounded-full border border-brand-100 mb-6">
-              <span>🦊</span>
-              <span>{t('badge')}</span>
+            <div className="inline-flex items-center gap-2 bg-brand-50 text-brand-700 text-xs sm:text-sm font-medium px-3 sm:px-4 py-1.5 rounded-full border border-brand-100 mb-6 max-w-full">
+              <span className="flex-shrink-0">🦊</span>
+              <span className="truncate">{t('badge')}</span>
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-gray-900 leading-[1.1] tracking-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-bold text-gray-900 leading-[1.15] tracking-tight mb-6 break-words">
               {t('headline')}
             </h1>
 
             {/* Subline */}
-            <p className="text-lg text-gray-500 leading-relaxed mb-8">
+            <p className="text-base sm:text-lg text-gray-500 leading-relaxed mb-8 break-words">
               {t('subline')}
             </p>
 

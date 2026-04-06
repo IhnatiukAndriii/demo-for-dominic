@@ -30,10 +30,10 @@
   },
   "meta": {
     "landing": {
-      "title": "Prüffuchs – Authentic Influencer Marketing",
-      "description": "Prüffuchs connects brands with micro-influencers for genuine product reviews and authentic content. Transparent, measurable, effective.",
-      "ogTitle": "Prüffuchs – Influencer Marketing for Brands & Creators",
-      "ogDescription": "Real purchases. Real content. Real results. Start for free today."
+      "title": "Prüffuchs – Micro-Influencer Marketing for Amazon Sellers",
+      "description": "Prüffuchs connects Amazon brands with micro-influencers. Real purchases, authentic UGC content, better rankings. Pay per result — only for verified posts.",
+      "ogTitle": "Prüffuchs – Micro-Influencer Marketing for Amazon Sellers",
+      "ogDescription": "Real purchases. Real UGC content. Better rankings. Start for free today."
     }
   },
   "landing": {
@@ -47,9 +47,9 @@
       "closeMenu": "Close menu"
     },
     "hero": {
-      "badge": "Influencer marketing reimagined",
-      "headline": "Real Purchases. Real Content. Real Results.",
-      "subline": "Prüffuchs connects brands with micro-influencers for authentic marketing — transparent, measurable, and effective.",
+      "badge": "Influencer marketing for Amazon sellers",
+      "headline": "Micro-Influencer Marketing for Amazon Sellers",
+      "subline": "Prüffuchs connects Amazon brands with micro-influencers — real purchases, authentic UGC content, and better rankings. You only pay for verified results.",
       "ctaBrand": "Start as a Brand",
       "ctaInfluencer": "Apply as Influencer",
       "flowBrand": "Brand",
@@ -58,7 +58,10 @@
       "flowPlatformAction": "Matching & coordination",
       "flowInfluencer": "Influencer",
       "flowInfluencerAction": "Buy & post",
-      "flowRefund": "Full refund"
+      "flowRefund": "Full refund",
+      "trust1": "No upfront payment",
+      "trust2": "Pay per Result",
+      "trust3": "DACH focus"
     },
     "howItWorks": {
       "title": "How Prüffuchs works",

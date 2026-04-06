@@ -138,18 +138,12 @@ export default function HeroSection() {
 
             {/* Trust signals */}
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-8 pt-6 border-t border-gray-100">
-              <div className="flex items-center gap-2 text-sm text-gray-500">
-                <span className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center text-xs">✓</span>
-                Keine Vorauszahlung
-              </div>
-              <div className="flex items-center gap-2 text-sm text-gray-500">
-                <span className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center text-xs">✓</span>
-                Pay per Result
-              </div>
-              <div className="flex items-center gap-2 text-sm text-gray-500">
-                <span className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center text-xs">✓</span>
-                DACH-Fokus
-              </div>
+              {([t('trust1'), t('trust2'), t('trust3')] as string[]).map((label) => (
+                <div key={label} className="flex items-center gap-2 text-sm text-gray-500">
+                  <span className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center text-xs">✓</span>
+                  {label}
+                </div>
+              ))}
             </div>
           </div>
         </div>

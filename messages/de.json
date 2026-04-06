@@ -30,10 +30,10 @@
   },
   "meta": {
     "landing": {
-      "title": "Prüffuchs – Authentisches Influencer Marketing",
-      "description": "Prüffuchs verbindet Brands mit Micro-Influencern für echte Produktbewertungen und authentischen Content. Transparent, messbar, erfolgreich.",
-      "ogTitle": "Prüffuchs – Influencer Marketing für Brands & Creator",
-      "ogDescription": "Echte Käufe. Echter Content. Echte Ergebnisse. Jetzt kostenlos starten."
+      "title": "Prüffuchs – Mikro-Influencer Marketing für Amazon-Verkäufer",
+      "description": "Prüffuchs verbindet Amazon-Brands mit Mikro-Influencern. Echte Käufe, echter UGC-Content, besseres Ranking. Pay per Result – nur für verifizierte Posts.",
+      "ogTitle": "Prüffuchs – Mikro-Influencer Marketing für Amazon-Verkäufer",
+      "ogDescription": "Echte Käufe. Echter UGC-Content. Besseres Ranking. Jetzt kostenlos starten."
     }
   },
   "landing": {
@@ -47,9 +47,9 @@
       "closeMenu": "Menü schließen"
     },
     "hero": {
-      "badge": "Influencer Marketing neu gedacht",
-      "headline": "Echte Käufe. Echter Content. Echte Ergebnisse.",
-      "subline": "Prüffuchs verbindet Brands mit Micro-Influencern für authentisches Marketing — transparent, messbar und ohne Streuverlust.",
+      "badge": "Influencer Marketing für Amazon-Verkäufer",
+      "headline": "Mikro-Influencer Marketing für Amazon-Verkäufer",
+      "subline": "Prüffuchs verbindet Amazon-Brands mit Mikro-Influencern — echte Käufe, authentischer UGC-Content und besseres Ranking. Du zahlst nur für verifizierte Ergebnisse.",
       "ctaBrand": "Als Brand starten",
       "ctaInfluencer": "Als Influencer bewerben",
       "flowBrand": "Brand",
@@ -58,7 +58,10 @@
       "flowPlatformAction": "Matching & Koordination",
       "flowInfluencer": "Influencer",
       "flowInfluencerAction": "Kaufen & Posten",
-      "flowRefund": "Kaufpreis zurück"
+      "flowRefund": "Kaufpreis zurück",
+      "trust1": "Keine Vorauszahlung",
+      "trust2": "Pay per Result",
+      "trust3": "DACH-Fokus"
     },
     "howItWorks": {
       "title": "So funktioniert Prüffuchs",

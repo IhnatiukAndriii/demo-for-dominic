@@ -53,13 +53,10 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-[72px]">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <Image
+            <img
               src="/prueffuchs-logo.png"
               alt="Prüffuchs"
-              width={200}
-              height={50}
-              style={{ width: 'auto', height: '50px' }}
-              priority
+              style={{ height: '48px', width: 'auto' }}
             />
           </Link>
 

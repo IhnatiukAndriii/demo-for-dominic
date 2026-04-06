@@ -38,8 +38,7 @@ export default function HeroSection() {
 
             {/* Rotating headline */}
             <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-bold text-gray-900 leading-[1.15] tracking-tight mb-6 break-words w-full">
-              {t('headlineStart')}{' '}
-              <span
+              {t('headlineStart') + ' '}<span
                 style={{
                   color: '#E8882E',
                   display: 'inline-block',
@@ -48,9 +47,7 @@ export default function HeroSection() {
                   transition: 'opacity 0.3s ease, transform 0.3s ease',
                   minWidth: '5ch',
                 }}
-              >
-                {MARKETPLACES[currentIndex]}
-              </span>{' '}{t('headlineSuffix')}
+              >{MARKETPLACES[currentIndex]}</span>{' ' + t('headlineSuffix')}
             </h1>
 
             {/* Subline */}

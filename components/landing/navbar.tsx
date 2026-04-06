@@ -58,7 +58,7 @@ export default function Navbar() {
               alt="Prüffuchs"
               width={160}
               height={40}
-              style={{ height: '40px', width: 'auto' }}
+              style={{ height: '44px', width: 'auto' }}
               className="object-contain"
               priority
             />

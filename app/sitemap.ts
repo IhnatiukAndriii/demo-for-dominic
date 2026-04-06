@@ -11,48 +11,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 1,
-      alternates: {
-        languages: {
-          de: baseUrl,
-          en: `${baseUrl}/en`,
-        },
-      },
     },
     {
       url: `${baseUrl}/en`,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 1,
-      alternates: {
-        languages: {
-          de: baseUrl,
-          en: `${baseUrl}/en`,
-        },
-      },
     },
     {
       url: `${baseUrl}/signup`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.8,
-      alternates: {
-        languages: {
-          de: `${baseUrl}/signup`,
-          en: `${baseUrl}/en/signup`,
-        },
-      },
+    },
+    {
+      url: `${baseUrl}/en/signup`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/login`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.5,
-      alternates: {
-        languages: {
-          de: `${baseUrl}/login`,
-          en: `${baseUrl}/en/login`,
-        },
-      },
+    },
+    {
+      url: `${baseUrl}/en/login`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.5,
     },
   ]
 }

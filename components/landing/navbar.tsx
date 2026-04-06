@@ -56,7 +56,8 @@ export default function Navbar() {
               alt="Prüffuchs"
               width={140}
               height={36}
-              className="h-9 w-auto object-contain"
+              className="h-9 object-contain"
+              style={{ width: 'auto' }}
               priority
             />
           </Link>

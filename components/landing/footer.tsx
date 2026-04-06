@@ -16,7 +16,8 @@ export default function Footer() {
               alt="Prüffuchs"
               width={140}
               height={36}
-              className="h-9 w-auto object-contain"
+              className="h-9 object-contain"
+              style={{ width: 'auto' }}
             />
           </Link>
 

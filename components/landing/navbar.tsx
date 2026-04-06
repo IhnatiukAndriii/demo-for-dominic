@@ -56,9 +56,9 @@ export default function Navbar() {
             <Image
               src="/prueffuchs-logo.png"
               alt="Prüffuchs"
-              width={220}
-              height={52}
-              style={{ width: 'auto', height: '52px' }}
+              width={200}
+              height={50}
+              style={{ width: 'auto', height: '50px' }}
               priority
             />
           </Link>

@@ -6,7 +6,7 @@ function FlowIllustration() {
   const t = useTranslations('landing.hero')
 
   return (
-    <div className="relative w-full overflow-x-auto">
+    <div className="relative w-full overflow-x-auto pt-4">
       {/* Connecting line */}
       <div className="absolute top-1/2 left-[20%] right-[20%] h-0.5 bg-gradient-to-r from-brand-200 via-secondary-200 to-brand-200 -translate-y-1/2 hidden sm:block" />
 
@@ -103,7 +103,7 @@ export default function HeroSection() {
             </div>
 
             {/* Headline */}
-            <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-bold text-gray-900 leading-[1.15] tracking-tight mb-6 break-words">
+            <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-bold text-gray-900 leading-[1.15] tracking-tight mb-6 break-words w-full">
               {t('headline')}
             </h1>
 

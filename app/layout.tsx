@@ -1,7 +1,36 @@
-import type { ReactNode } from 'react'
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import { getLocale } from 'next-intl/server'
+import './globals.css'
 
-// Root layout required by Next.js.
-// HTML structure, fonts, and providers are defined in app/[locale]/layout.tsx.
-export default function RootLayout({ children }: { children: ReactNode }) {
-  return children as unknown as React.ReactElement
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Prüffuchs',
+    default: 'Prüffuchs – Influencer Marketing Plattform',
+  },
+  description:
+    'Prüffuchs verbindet Marken mit Influencern für authentisches Marketing. Erstelle Kampagnen, finde die richtigen Creator und verwalte deine Kooperationen.',
+  keywords: ['Influencer Marketing', 'Kampagnen', 'Creator', 'Marken', 'Kooperationen'],
+  authors: [{ name: 'Prüffuchs' }],
+  openGraph: {
+    type: 'website',
+    siteName: 'Prüffuchs',
+  },
+}
+
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const locale = await getLocale()
+  return (
+    <html lang={locale} className={inter.variable} suppressHydrationWarning>
+      <body className="min-h-screen bg-background font-sans">
+        {children}
+      </body>
+    </html>
+  )
 }

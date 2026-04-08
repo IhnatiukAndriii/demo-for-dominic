@@ -1,12 +1,17 @@
 import { getTranslations } from 'next-intl/server'
 import { type Metadata } from 'next'
 import Navbar from '@/components/landing/navbar'
-import HeroSection from '@/components/landing/hero-section'
-import HowItWorks from '@/components/landing/how-it-works'
-import ForBrands from '@/components/landing/for-brands'
-import ForInfluencers from '@/components/landing/for-influencers'
-import FaqSection from '@/components/landing/faq-section'
-import Footer from '@/components/landing/footer'
+import Hero from '@/components/landing/sections/Hero'
+import MarketplaceMarquee from '@/components/landing/sections/MarketplaceMarquee'
+import StatsBar from '@/components/landing/sections/StatsBar'
+import PlatformFeatures from '@/components/landing/sections/PlatformFeatures'
+import HowItWorks from '@/components/landing/sections/HowItWorks'
+import CreatorCommunity from '@/components/landing/sections/CreatorCommunity'
+import Testimonials from '@/components/landing/sections/Testimonials'
+import FeaturedPublications from '@/components/landing/sections/FeaturedPublications'
+import FinalCTA from '@/components/landing/sections/FinalCTA'
+import FAQ from '@/components/landing/sections/FAQ'
+import Footer from '@/components/landing/sections/Footer'
 
 type Props = {
   params: Promise<{ locale: string }>
@@ -52,11 +57,16 @@ export default async function LandingPage({ params }: Props) {
     <>
       <Navbar />
       <main>
-        <HeroSection />
+        <Hero />
+        <MarketplaceMarquee />
+        <StatsBar />
+        <PlatformFeatures />
         <HowItWorks />
-        <ForBrands />
-        <ForInfluencers />
-        <FaqSection />
+        <CreatorCommunity />
+        <Testimonials />
+        <FeaturedPublications />
+        <FinalCTA />
+        <FAQ />
       </main>
       <Footer />
     </>

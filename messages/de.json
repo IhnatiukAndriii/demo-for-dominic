@@ -28,6 +28,17 @@
     "influencer": "Influencer",
     "admin": "Administrator"
   },
+  "hero": {},
+  "marketplaces": { "label": "Verfügbar auf diesen Marktplätzen" },
+  "stats": {
+    "label": "PRÜFFUCHS IN ZAHLEN",
+    "headline": "Echte Ergebnisse, echte Zahlen"
+  },
+  "platformFeatures": {},
+  "howItWorks": {},
+  "creatorCommunity": {},
+  "testimonials": {},
+  "finalCta": {},
   "meta": {
     "landing": {
       "title": "Prüffuchs – Mikro-Influencer Marketing für Amazon-Verkäufer",
@@ -48,9 +59,16 @@
     },
     "hero": {
       "badge": "Influencer Marketing für Amazon-Verkäufer",
+      "headlineLine1Before": "Wachse auf",
+      "headlineAccent": "Kaufland",
+      "headlineLine2": "mit Creators, die",
+      "headlineLine3": "wirklich kaufen.",
+      "tagline": "Die Marktplatz-Wachstumslösung",
+      "subline": "Micro-Influencer kaufen dein Produkt, testen es ehrlich und posten authentischen Content. Du profitierst von echten Verkäufen, besserem Ranking und mehr Sichtbarkeit.",
+      "ctaPrimary": "Kampagne starten",
+      "ctaSecondary": "Demo buchen",
       "headlineStart": "Wachse auf",
       "headlineSuffix": "mit Creators, die wirklich kaufen.",
-      "subline": "Micro-Influencer kaufen dein Produkt, testen es ehrlich und posten authentischen Content. Du profitierst von echten Verkäufen, besserem Ranking und mehr Sichtbarkeit.",
       "ctaBrand": "Kampagne starten",
       "ctaDemo": "Demo buchen",
       "trustedByLabel": "Vertraut von führenden Marken",
@@ -76,7 +94,16 @@
       "step2Desc": "Der Influencer kauft dein Produkt als echter Kunde, erstellt authentischen Content und veröffentlicht ihn auf seinen Kanälen.",
       "step3Number": "03",
       "step3Title": "Rückerstattung & Abrechnung",
-      "step3Desc": "Nach Freigabe des Posts erhält der Influencer den Kaufpreis zurück. Du zahlst nur für verifizierte Ergebnisse."
+      "step3Desc": "Nach Freigabe des Posts erhält der Influencer den Kaufpreis zurück. Du zahlst nur für verifizierte Ergebnisse.",
+      "label": "SO FUNKTIONIERT PRÜFFUCHS",
+      "headline": "Vom Produkt-Seeding zum",
+      "headlineAccent": "Wachstum",
+      "step1": { "title": "Brand erstellt Kampagne", "description": "Du definierst Produkt, Budget und Zielgruppe. Wir erstellen die Kampagne und finden passende Mikro-Influencer." },
+      "step2": { "title": "AI-Matching", "description": "Unser System matched deine Kampagne mit den passendsten Creators basierend auf Nische, Engagement und Reichweite." },
+      "step3": { "title": "Influencer kauft Produkt", "description": "Der Influencer kauft dein Produkt als echter Kunde — keine Gifting, maximale Authentizität." },
+      "step4": { "title": "Content erstellen", "description": "Der Creator nutzt das Produkt, dokumentiert seine Erfahrung und produziert authentischen Content." },
+      "step5": { "title": "Post veröffentlichen", "description": "Der Beitrag wird auf den Social-Media-Kanälen des Creators veröffentlicht und du erhältst alle Rechte am Content." },
+      "step6": { "title": "Rückerstattung & Abrechnung", "description": "Nach Freigabe erhält der Influencer den vollen Kaufpreis zurück. Du zahlst nur für verifizierte Ergebnisse." }
     },
     "brands": {
       "badge": "Für Brands & Unternehmen",
@@ -131,6 +158,35 @@
       "privacy": "Datenschutz",
       "contact": "Kontakt",
       "copyright": "© 2026 Prüffuchs. Alle Rechte vorbehalten."
+    },
+    "platformFeatures": {
+      "label": "PLATTFORM FEATURES",
+      "headline": "Creator-Zusammenarbeit auf",
+      "headlineAccent": "Autopilot",
+      "cards": {
+        "realPurchases": { "title": "Echte Käufe von echten Kunden", "description": "Influencer kaufen dein Produkt wie normale Kunden — kein Gifting, keine Fake-Reviews. Maximale Authentizität für deine Brand." },
+        "ugc": { "title": "Authentischer UGC", "description": "Hochwertige Fotos und Videos für deine Werbeanzeigen, Produktseiten und Social Media — alles aus echten Kundenerfahrungen." },
+        "ranking": { "title": "Ranking Boost", "description": "Echte Verkäufe und Reviews verbessern dein Amazon-Ranking organisch. Bessere Sichtbarkeit, mehr Sales." },
+        "payForResults": { "title": "Pay for Results", "description": "Kein Risiko, keine versteckten Kosten. Du zahlst nur für verifizierte, veröffentlichte Posts. Rückerstattung erfolgt nach Freigabe." },
+        "dach": { "title": "Creator aus DACH", "description": "Unser Netzwerk besteht aus geprüften Mikro-Influencern aus Deutschland, Österreich und der Schweiz — perfekte Zielgruppe für deutschsprachige Märkte." }
+      }
+    },
+    "creatorCommunity": {
+      "label": "UNSERE CREATOR COMMUNITY",
+      "headline": "Wir lieben",
+      "headlineAccent": "alle Arten",
+      "headlineEnd": "von Creators",
+      "subhead": "Egal welche Nische — wir haben die passenden Mikro-Influencer für deine Marke.",
+      "categories": {
+        "beauty": { "label": "BEAUTY & PFLEGE", "title": "Beauty & Pflege", "description": "Make-up, Skincare, Haircare und Self-Care Creator" },
+        "home": { "label": "HAUSHALT & KÜCHE", "title": "Haushalt & Küche", "description": "Home-Organization, Kitchen-Gadgets und Einrichtung" },
+        "fitness": { "label": "SPORT & FITNESS", "title": "Sport & Fitness", "description": "Fitness, Wellness und aktive Lifestyles" },
+        "pets": { "label": "TIER & HAUSTIER", "title": "Tier & Haustier", "description": "Hunde, Katzen und alle tierischen Begleiter" },
+        "fashion": { "label": "MODE & LIFESTYLE", "title": "Mode & Lifestyle", "description": "Fashion, Accessoires und urbane Trends" },
+        "food": { "label": "FOOD & ERNÄHRUNG", "title": "Food & Ernährung", "description": "Rezepte, Cooking und gesunde Ernährung" },
+        "family": { "label": "FAMILIE & KINDER", "title": "Familie & Kinder", "description": "Eltern, Kids und Familienleben" },
+        "tech": { "label": "TECHNIK & GADGETS", "title": "Technik & Gadgets", "description": "Tech-Reviews, Gaming und Smart Home" }
+      }
     }
   },
   "auth": {

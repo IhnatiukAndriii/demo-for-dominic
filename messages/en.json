@@ -28,6 +28,17 @@
     "influencer": "Influencer",
     "admin": "Administrator"
   },
+  "hero": {},
+  "marketplaces": { "label": "Available on these marketplaces" },
+  "stats": {
+    "label": "PRÜFFUCHS BY THE NUMBERS",
+    "headline": "Real results, real numbers"
+  },
+  "platformFeatures": {},
+  "howItWorks": {},
+  "creatorCommunity": {},
+  "testimonials": {},
+  "finalCta": {},
   "meta": {
     "landing": {
       "title": "Prüffuchs – Micro-Influencer Marketing for Amazon Sellers",
@@ -48,9 +59,16 @@
     },
     "hero": {
       "badge": "Influencer marketing for Amazon sellers",
+      "headlineLine1Before": "Grow on",
+      "headlineAccent": "Kaufland",
+      "headlineLine2": "with Creators who",
+      "headlineLine3": "actually buy.",
+      "tagline": "The marketplace growth solution",
+      "subline": "Micro-influencers buy your product, test it honestly and post authentic content. You benefit from real sales, better ranking and more visibility.",
+      "ctaPrimary": "Start campaign",
+      "ctaSecondary": "Book demo",
       "headlineStart": "Grow on",
       "headlineSuffix": "with Creators who actually buy.",
-      "subline": "Micro-influencers buy your product, test it honestly and post authentic content. You benefit from real sales, better ranking and more visibility.",
       "ctaBrand": "Start campaign",
       "ctaDemo": "Book demo",
       "trustedByLabel": "Trusted by leading brands",
@@ -76,7 +94,16 @@
       "step2Desc": "The influencer buys your product as a real customer, creates authentic content, and publishes it on their channels.",
       "step3Number": "03",
       "step3Title": "Refund & billing",
-      "step3Desc": "After the post is approved, the influencer receives the purchase price back. You only pay for verified results."
+      "step3Desc": "After the post is approved, the influencer receives the purchase price back. You only pay for verified results.",
+      "label": "HOW PRÜFFUCHS WORKS",
+      "headline": "From product seeding to",
+      "headlineAccent": "growth",
+      "step1": { "title": "Brand creates campaign", "description": "Define your product, budget and target audience. We create the campaign and find matching micro-influencers." },
+      "step2": { "title": "AI matching", "description": "Our system matches your campaign with the most suitable creators based on niche, engagement and reach." },
+      "step3": { "title": "Influencer buys product", "description": "The influencer buys your product as a real customer — no gifting, maximum authenticity." },
+      "step4": { "title": "Create content", "description": "The creator uses the product, documents their experience and produces authentic content." },
+      "step5": { "title": "Publish post", "description": "The post is published on the creator's social media channels and you receive all content rights." },
+      "step6": { "title": "Refund & billing", "description": "After approval, the influencer receives the full purchase price back. You only pay for verified results." }
     },
     "brands": {
       "badge": "For Brands & Companies",
@@ -131,6 +158,35 @@
       "privacy": "Privacy Policy",
       "contact": "Contact",
       "copyright": "© 2026 Prüffuchs. All rights reserved."
+    },
+    "platformFeatures": {
+      "label": "PLATFORM FEATURES",
+      "headline": "Creator collaboration on",
+      "headlineAccent": "autopilot",
+      "cards": {
+        "realPurchases": { "title": "Real purchases by real customers", "description": "Influencers buy your product like normal customers — no gifting, no fake reviews. Maximum authenticity for your brand." },
+        "ugc": { "title": "Authentic UGC", "description": "High-quality photos and videos for your ads, product pages and social media — all from real customer experiences." },
+        "ranking": { "title": "Ranking Boost", "description": "Real sales and reviews organically improve your Amazon ranking. Better visibility, more sales." },
+        "payForResults": { "title": "Pay for Results", "description": "No risk, no hidden costs. You only pay for verified, published posts. Refund happens after approval." },
+        "dach": { "title": "Creators from DACH", "description": "Our network consists of vetted micro-influencers from Germany, Austria and Switzerland — perfect audience for German-speaking markets." }
+      }
+    },
+    "creatorCommunity": {
+      "label": "OUR CREATOR COMMUNITY",
+      "headline": "We love",
+      "headlineAccent": "all types",
+      "headlineEnd": "of creators",
+      "subhead": "Whatever your niche — we have the right micro-influencers for your brand.",
+      "categories": {
+        "beauty": { "label": "BEAUTY & CARE", "title": "Beauty & Care", "description": "Make-up, skincare, haircare and self-care creators" },
+        "home": { "label": "HOME & KITCHEN", "title": "Home & Kitchen", "description": "Home organization, kitchen gadgets and interior design" },
+        "fitness": { "label": "SPORTS & FITNESS", "title": "Sports & Fitness", "description": "Fitness, wellness and active lifestyles" },
+        "pets": { "label": "PETS & ANIMALS", "title": "Pets & Animals", "description": "Dogs, cats and all furry companions" },
+        "fashion": { "label": "FASHION & LIFESTYLE", "title": "Fashion & Lifestyle", "description": "Fashion, accessories and urban trends" },
+        "food": { "label": "FOOD & NUTRITION", "title": "Food & Nutrition", "description": "Recipes, cooking and healthy nutrition" },
+        "family": { "label": "FAMILY & KIDS", "title": "Family & Kids", "description": "Parents, kids and family life" },
+        "tech": { "label": "TECH & GADGETS", "title": "Tech & Gadgets", "description": "Tech reviews, gaming and smart home" }
+      }
     }
   },
   "auth": {

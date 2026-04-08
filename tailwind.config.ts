@@ -11,7 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Prüffuchs brand — primary orange #F97316
+        // Prüffuchs brand — primary orange
         brand: {
           50:  '#fff7ed',
           100: '#ffedd5',
@@ -24,6 +24,24 @@ const config: Config = {
           800: '#9a3d10',
           900: '#7c3410',
           950: '#431807',
+          orange: {
+            DEFAULT: '#E07010',
+            50: '#FEF4EC',
+            100: '#FDE4D0',
+            200: '#FBC9A1',
+            500: '#E07010',
+            600: '#C25E0D',
+            700: '#9F4D0B',
+            900: '#5C2C06',
+          },
+          gold: '#E09010',
+          navy: {
+            DEFAULT: '#001830',
+            700: '#002040',
+            800: '#001428',
+            900: '#001020',
+          },
+          cream: '#F0D090',
         },
         // Secondary blue #3B82F6
         secondary: {
@@ -72,6 +90,15 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        marquee: 'marquee 40s linear infinite',
       },
       borderRadius: {
         lg: 'var(--radius)',

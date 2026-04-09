@@ -21,7 +21,7 @@ export default function PlatformFeatures() {
         {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 lg:gap-8">
           {/* Card 1: Real Purchases — tall, spans 2 cols and 2 rows */}
-          <div className="lg:col-span-2 lg:row-span-2 rounded-3xl p-8 lg:p-10 border border-brand-orange-100 bg-white hover:border-brand-orange-200 hover:shadow-lg transition-all duration-300">
+          <div className="lg:col-span-2 lg:row-span-2 rounded-3xl p-8 lg:p-10 border border-brand-orange-100 bg-white hover:border-brand-orange-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500">
             <ShoppingCart className="w-10 h-10 text-brand-orange mb-5" />
             <h3 className="text-2xl font-bold text-brand-navy mb-3">
               {t('cards.realPurchases.title')}
@@ -45,7 +45,7 @@ export default function PlatformFeatures() {
           </div>
 
           {/* Card 2: UGC Content */}
-          <div className="lg:col-span-2 rounded-3xl p-8 lg:p-10 border border-brand-orange-100 bg-white hover:border-brand-orange-200 hover:shadow-lg transition-all duration-300">
+          <div className="lg:col-span-2 rounded-3xl p-8 lg:p-10 border border-brand-orange-100 bg-white hover:border-brand-orange-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500">
             <Camera className="w-10 h-10 text-brand-orange mb-5" />
             <h3 className="text-2xl font-bold text-brand-navy mb-3">
               {t('cards.ugc.title')}
@@ -56,7 +56,7 @@ export default function PlatformFeatures() {
           </div>
 
           {/* Card 3: Ranking Boost */}
-          <div className="lg:col-span-2 rounded-3xl p-8 lg:p-10 border border-brand-orange-100 bg-white hover:border-brand-orange-200 hover:shadow-lg transition-all duration-300">
+          <div className="lg:col-span-2 rounded-3xl p-8 lg:p-10 border border-brand-orange-100 bg-white hover:border-brand-orange-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500">
             <TrendingUp className="w-10 h-10 text-brand-orange mb-5" />
             <h3 className="text-2xl font-bold text-brand-navy mb-3">
               {t('cards.ranking.title')}
@@ -85,7 +85,7 @@ export default function PlatformFeatures() {
           </div>
 
           {/* Card 4: Pay for Results */}
-          <div className="lg:col-span-3 rounded-3xl p-8 lg:p-10 border border-brand-orange-100 bg-white hover:border-brand-orange-200 hover:shadow-lg transition-all duration-300">
+          <div className="lg:col-span-3 rounded-3xl p-8 lg:p-10 border border-brand-orange-100 bg-white hover:border-brand-orange-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500">
             <ShieldCheck className="w-10 h-10 text-brand-orange mb-5" />
             <h3 className="text-2xl font-bold text-brand-navy mb-3">
               {t('cards.payForResults.title')}
@@ -96,7 +96,7 @@ export default function PlatformFeatures() {
           </div>
 
           {/* Card 5: DACH Network */}
-          <div className="lg:col-span-3 rounded-3xl p-8 lg:p-10 border border-brand-orange-100 bg-white hover:border-brand-orange-200 hover:shadow-lg transition-all duration-300 relative">
+          <div className="lg:col-span-3 rounded-3xl p-8 lg:p-10 border border-brand-orange-100 bg-white hover:border-brand-orange-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 relative">
             <div className="absolute top-6 right-6 text-2xl">🇩🇪 🇦🇹 🇨🇭</div>
             <Users className="w-10 h-10 text-brand-orange mb-5" />
             <h3 className="text-2xl font-bold text-brand-navy mb-3">

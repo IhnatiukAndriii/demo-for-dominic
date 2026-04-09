@@ -20,24 +20,19 @@ export default function InfluencerHowItWorks() {
           </h2>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-center gap-8 lg:gap-0">
+        <div className="relative flex flex-col md:flex-row items-start md:items-center justify-center gap-8 md:gap-16">
+          <div aria-hidden className="hidden md:block absolute top-10 left-[16%] right-[16%] border-t-2 border-dashed border-brand-orange/40 -z-10" />
           {steps.map((step, i) => (
-            <div key={step} className="flex flex-col lg:flex-row items-center gap-6 lg:gap-0">
-              <div className="flex flex-col items-center text-center max-w-xs">
-                <div className="w-16 h-16 rounded-full bg-brand-orange text-white text-2xl font-bold flex items-center justify-center mb-4 flex-shrink-0">
-                  {i + 1}
-                </div>
-                <h3 className="text-lg font-bold text-brand-navy mb-2">
-                  {t(`${step}.title`)}
-                </h3>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
-                  {t(`${step}.description`)}
-                </p>
+            <div key={step} className="flex flex-col items-center text-center max-w-xs">
+              <div className="relative z-10 w-16 h-16 rounded-full bg-brand-orange text-white text-2xl font-bold flex items-center justify-center mb-4 flex-shrink-0 ring-8 ring-brand-orange-50/30">
+                {i + 1}
               </div>
-
-              {i < steps.length - 1 && (
-                <div className="hidden lg:block w-24 border-t-2 border-dashed border-brand-orange/40 mx-6 flex-shrink-0" />
-              )}
+              <h3 className="text-lg font-bold text-brand-navy mb-2">
+                {t(`${step}.title`)}
+              </h3>
+              <p className="text-sm text-brand-navy/70 leading-relaxed">
+                {t(`${step}.description`)}
+              </p>
             </div>
           ))}
         </div>

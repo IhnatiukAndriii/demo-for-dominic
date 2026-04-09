@@ -35,7 +35,7 @@ export default function Testimonials() {
           {testimonialIds.map((id, index) => (
             <div
               key={id}
-              className="rounded-2xl p-8 border border-brand-orange-100 bg-brand-orange-50/30 hover:shadow-lg transition-all duration-300"
+              className="rounded-2xl p-8 border border-brand-orange-100 bg-brand-orange-50/30 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500"
             >
               {/* Stars */}
               <div className="flex gap-1 mb-4">

@@ -2,14 +2,14 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
 const categories = [
-  { id: 'beauty', img: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=640&h=900&fit=crop' },
-  { id: 'home', img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=640&h=900&fit=crop' },
-  { id: 'fitness', img: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=640&h=900&fit=crop' },
-  { id: 'pets', img: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=640&h=900&fit=crop' },
-  { id: 'fashion', img: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=640&h=900&fit=crop' },
-  { id: 'food', img: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=640&h=900&fit=crop' },
-  { id: 'family', img: 'https://images.unsplash.com/photo-1581952976147-5a2d15560349?w=640&h=900&fit=crop' },
-  { id: 'tech', img: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=900&fit=crop' },
+  { id: 'beauty', img: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=640&h=900&fit=crop' },
+  { id: 'home', img: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=640&h=900&fit=crop' },
+  { id: 'fitness', img: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=640&h=900&fit=crop' },
+  { id: 'pets', img: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=640&h=900&fit=crop' },
+  { id: 'fashion', img: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=640&h=900&fit=crop' },
+  { id: 'food', img: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=640&h=900&fit=crop' },
+  { id: 'family', img: 'https://images.unsplash.com/photo-1609220136736-443140cffec6?w=640&h=900&fit=crop' },
+  { id: 'tech', img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=640&h=900&fit=crop' },
 ]
 
 export default function CreatorCommunity() {
@@ -38,7 +38,7 @@ export default function CreatorCommunity() {
           {categories.map((cat) => (
             <div
               key={cat.id}
-              className="flex-shrink-0 snap-start w-[280px] lg:w-[320px] h-[440px] lg:h-[500px] rounded-3xl overflow-hidden relative group cursor-pointer"
+              className="flex-shrink-0 snap-start w-[280px] lg:w-[320px] h-[440px] lg:h-[500px] rounded-3xl overflow-hidden relative group cursor-pointer hover:-translate-y-2 hover:shadow-2xl transition-all duration-500"
             >
               {/* Background image */}
               <Image

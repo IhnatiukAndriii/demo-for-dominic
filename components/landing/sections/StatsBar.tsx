@@ -12,7 +12,7 @@ export default function StatsBar() {
         <p className="text-center text-sm uppercase tracking-widest text-brand-orange mb-4">
           {t('label')}
         </p>
-        <h2 className="text-center text-3xl lg:text-5xl font-bold mb-16">
+        <h2 className="text-center text-3xl lg:text-5xl font-bold mb-16 animate-fade-in-up">
           {t('headline')}
         </h2>
 

@@ -45,6 +45,12 @@
       "description": "Prüffuchs verbindet Amazon-Brands mit Mikro-Influencern. Echte Käufe, echter UGC-Content, besseres Ranking. Pay per Result – nur für verifizierte Posts.",
       "ogTitle": "Prüffuchs – Mikro-Influencer Marketing für Amazon-Verkäufer",
       "ogDescription": "Echte Käufe. Echter UGC-Content. Besseres Ranking. Jetzt kostenlos starten."
+    },
+    "influencer": {
+      "title": "Für Creator — Prüffuchs",
+      "description": "Teste Produkte kostenlos und verdiene Geld. Werde Teil unserer Creator-Community.",
+      "ogTitle": "Für Creator — Prüffuchs",
+      "ogDescription": "Kostenlose Produkte testen, authentischen Content erstellen, Geld verdienen."
     }
   },
   "landing": {
@@ -152,12 +158,82 @@
       "q6": "Wie können Brands mit Prüffuchs starten?",
       "a6": "Buche ein kostenloses Erstgespräch mit unserem Team. Wir richten deinen Account ein, besprechen deine Ziele und starten gemeinsam deine erste Kampagne."
     },
+    "testimonials": {
+      "label": "STIMMEN AUS DER COMMUNITY",
+      "headline": "Vertraut von",
+      "headlineAccent": "tausenden Creators",
+      "items": {
+        "1": { "quote": "Endlich eine Plattform, die Creators fair behandelt. Ich bekomme gratis Produkte, die ich wirklich liebe, und das Bewerbungssystem ist super einfach.", "name": "Sarah M.", "role": "Beauty Creator, München" },
+        "2": { "quote": "Prüffuchs hat mein Engagement auf Instagram verdoppelt. Die Produkte passen perfekt zu meiner Nische, und die Brands sind unglaublich professionell.", "name": "Tim K.", "role": "Food Influencer, Wien" },
+        "3": { "quote": "Als Brand-Manager war ich skeptisch, aber die Authentizität der Reviews hat mich überzeugt. Unser Amazon-Ranking ist in 2 Monaten um 40% gestiegen.", "name": "Markus B.", "role": "E-Commerce Manager, Hamburg" },
+        "4": { "quote": "Die Rückerstattung kam schneller als erwartet. Ich teste gerne neue Produkte und verdiene dabei — perfekte Kombination für mich als Studentin.", "name": "Lena W.", "role": "Lifestyle Creator, Berlin" },
+        "5": { "quote": "Wir haben bereits 5 Kampagnen durchgeführt und sind jedes Mal beeindruckt von der Qualität des Contents. Das ist echtes Influencer-Marketing.", "name": "Julia R.", "role": "Marketing Lead, Frankfurt" },
+        "6": { "quote": "Der Kundensupport reagiert blitzschnell, die Plattform ist intuitiv, und ich habe schon mehrere Stammprodukte durch Prüffuchs entdeckt.", "name": "Dennis H.", "role": "Tech Reviewer, Köln" }
+      }
+    },
+    "finalCta": {
+      "label": "BEREIT ZU STARTEN?",
+      "headline": "Skaliere deine Marke mit Mikro-Influencern",
+      "headlineAccent": "heute",
+      "subhead": "Starte deine erste Kampagne in wenigen Minuten. Keine Vorauszahlungen, keine versteckten Kosten.",
+      "ctaPrimary": "Jetzt kostenlos starten",
+      "ctaSecondary": "Demo buchen",
+      "trust": "Keine Kreditkarte erforderlich · Setup in 5 Minuten · DSGVO-konform"
+    },
     "footer": {
       "tagline": "Authentisches Influencer Marketing für die nächste Generation.",
       "imprint": "Impressum",
       "privacy": "Datenschutz",
       "contact": "Kontakt",
-      "copyright": "© 2026 Prüffuchs. Alle Rechte vorbehalten."
+      "copyright": "© 2026 Prüffuchs. Alle Rechte vorbehalten.",
+      "madeWith": "Made with ❤️ in Deutschland",
+      "columns": {
+        "forBrands": {
+          "title": "Für Brands",
+          "platform": "Plattform",
+          "pricing": "Preise",
+          "demo": "Demo buchen",
+          "caseStudies": "Case Studies",
+          "faq": "FAQ"
+        },
+        "forCreators": {
+          "title": "Für Creator",
+          "signup": "Anmeldung",
+          "howItWorks": "So funktioniert's",
+          "benefits": "Vorteile",
+          "community": "Community",
+          "support": "Support"
+        },
+        "company": {
+          "title": "Unternehmen",
+          "about": "Über uns",
+          "team": "Team",
+          "careers": "Karriere",
+          "press": "Presse",
+          "contact": "Kontakt"
+        },
+        "resources": {
+          "title": "Ressourcen",
+          "blog": "Blog",
+          "guides": "Guides",
+          "webinars": "Webinare",
+          "partners": "Partner",
+          "apiDocs": "API Docs"
+        },
+        "legal": {
+          "title": "Rechtliches",
+          "imprint": "Impressum",
+          "privacy": "Datenschutz",
+          "terms": "AGB",
+          "cookies": "Cookie-Einstellungen"
+        },
+        "contactCol": {
+          "title": "Kontakt",
+          "email": "hello@prueffuchs.de",
+          "phone": "+49 (0) 30 1234567",
+          "address": "Berlin, Deutschland"
+        }
+      }
     },
     "platformFeatures": {
       "label": "PLATTFORM FEATURES",
@@ -170,6 +246,73 @@
         "payForResults": { "title": "Pay for Results", "description": "Kein Risiko, keine versteckten Kosten. Du zahlst nur für verifizierte, veröffentlichte Posts. Rückerstattung erfolgt nach Freigabe." },
         "dach": { "title": "Creator aus DACH", "description": "Unser Netzwerk besteht aus geprüften Mikro-Influencern aus Deutschland, Österreich und der Schweiz — perfekte Zielgruppe für deutschsprachige Märkte." }
       }
+    },
+    "influencerHero": {
+      "badge": "Werde Teil der Community",
+      "headline": "Teste Produkte, verdiene",
+      "headlineAccent": "Geld",
+      "tagline": "Kostenlose Produkte. Echte Marken. Deine Kreativit\u00e4t.",
+      "subhead": "Bewirb dich auf Kampagnen von deutschen Top-Marken. Teste Produkte kostenlos, erstelle authentischen Content und erhalte dein Geld zur\u00fcck nach der Ver\u00f6ffentlichung.",
+      "ctaPrimary": "Jetzt kostenlos registrieren",
+      "ctaSecondary": "Mehr erfahren"
+    },
+    "influencerBenefits": {
+      "label": "DEINE VORTEILE",
+      "headline": "Warum Creator",
+      "headlineAccent": "Pr\u00fcffuchs lieben",
+      "cards": {
+        "freeProducts": {
+          "title": "Gratis Produkte",
+          "description": "Teste hochwertige Marken-Produkte ohne Vorauszahlung. Du erh\u00e4ltst dein Geld zur\u00fcck nach der Ver\u00f6ffentlichung deines Posts."
+        },
+        "fullRefund": {
+          "title": "Volle R\u00fcckerstattung",
+          "description": "Nach Freigabe deines Beitrags wird der komplette Kaufpreis direkt auf dein Konto \u00fcberwiesen. Schnell und transparent."
+        },
+        "creativeFreeedom": {
+          "title": "Kreative Freiheit",
+          "description": "Du entscheidest wie du das Produkt pr\u00e4sentierst. Authentischer Content schl\u00e4gt perfekte Werbung jeden Tag."
+        },
+        "community": {
+          "title": "Community Support",
+          "description": "Tausche dich mit anderen Creators aus, lerne aus Best Practices und werde Teil einer wachsenden Community."
+        }
+      }
+    },
+    "influencerHowItWorksSimple": {
+      "label": "SO EINFACH GEHT'S",
+      "headline": "In 3 Schritten zum",
+      "headlineAccent": "ersten Verdienst",
+      "step1": {
+        "title": "Registrieren",
+        "description": "Erstelle dein kostenloses Creator-Profil in 2 Minuten"
+      },
+      "step2": {
+        "title": "Bewerben",
+        "description": "Durchsuche offene Kampagnen und bewirb dich mit wenigen Klicks"
+      },
+      "step3": {
+        "title": "Erstellen & Verdienen",
+        "description": "Teste das Produkt, poste authentischen Content, erhalte dein Geld zur\u00fcck"
+      }
+    },
+    "influencerRequirements": {
+      "label": "VORAUSSETZUNGEN",
+      "headline": "Das brauchst du, um",
+      "headlineAccent": "mitzumachen",
+      "items": {
+        "1": "Mindestens 200 Follower auf Instagram, TikTok oder YouTube",
+        "2": "Wohnsitz in Deutschland, \u00d6sterreich oder der Schweiz",
+        "3": "Aktives und \u00f6ffentliches Social-Media-Profil",
+        "4": "Echtes Interesse an Produkten und Marken",
+        "5": "Bereitschaft, authentischen Content zu erstellen"
+      }
+    },
+    "influencerCta": {
+      "headline": "Starte deine Creator-Reise",
+      "headlineAccent": "heute",
+      "cta": "Jetzt kostenlos registrieren \u2192",
+      "trust": "100% kostenlos \u00b7 Keine versteckten Kosten \u00b7 In 2 Minuten einsatzbereit"
     },
     "creatorCommunity": {
       "label": "UNSERE CREATOR COMMUNITY",

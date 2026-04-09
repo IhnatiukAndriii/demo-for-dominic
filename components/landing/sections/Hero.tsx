@@ -185,7 +185,7 @@ export default function Hero() {
             {/* Headline */}
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-brand-navy leading-[1.1] tracking-tight mb-4">
               {t('headlineLine1Before')}{' '}
-              <span className="text-brand-orange italic">{t('headlineAccent')}</span>
+              <span className="text-brand-orange font-serif italic font-semibold">{t('headlineAccent')}</span>
               <br />
               {t('headlineLine2')}
               <br />

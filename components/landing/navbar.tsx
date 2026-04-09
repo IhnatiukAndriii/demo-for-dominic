@@ -3,8 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { useLocale } from 'next-intl'
-import { useRouter, usePathname } from '@/lib/navigation'
-import Link from 'next/link'
+import { useRouter, usePathname, Link } from '@/lib/navigation'
 import { Menu, X, Globe } from 'lucide-react'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Button } from '@/components/ui/button'
@@ -34,11 +33,12 @@ export default function Navbar() {
     })
   }
 
-  const navLinks = [
+  const anchorLinks = [
     { href: '#brands', label: t('forBrands') },
-    { href: '#influencers', label: t('forInfluencers') },
     { href: '#faq', label: t('faq') },
   ]
+
+  const influencerLink = { href: '/influencer' as const, label: t('forInfluencers') }
 
   return (
     <header
@@ -61,15 +61,24 @@ export default function Navbar() {
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
+            <a
+              href={anchorLinks[0].href}
+              className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+            >
+              {anchorLinks[0].label}
+            </a>
+            <Link
+              href={influencerLink.href}
+              className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+            >
+              {influencerLink.label}
+            </Link>
+            <a
+              href={anchorLinks[1].href}
+              className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+            >
+              {anchorLinks[1].label}
+            </a>
           </nav>
 
           {/* Desktop actions */}
@@ -120,16 +129,27 @@ export default function Navbar() {
               </SheetTrigger>
               <SheetContent side="right" className="w-72 pt-16">
                 <nav className="flex flex-col gap-1">
-                  {navLinks.map((link) => (
-                    <a
-                      key={link.href}
-                      href={link.href}
-                      onClick={() => setMobileOpen(false)}
-                      className="px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
-                    >
-                      {link.label}
-                    </a>
-                  ))}
+                  <a
+                    href={anchorLinks[0].href}
+                    onClick={() => setMobileOpen(false)}
+                    className="px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+                  >
+                    {anchorLinks[0].label}
+                  </a>
+                  <Link
+                    href={influencerLink.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+                  >
+                    {influencerLink.label}
+                  </Link>
+                  <a
+                    href={anchorLinks[1].href}
+                    onClick={() => setMobileOpen(false)}
+                    className="px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+                  >
+                    {anchorLinks[1].label}
+                  </a>
                   <div className="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-2">
                     <Link href="/login" onClick={() => setMobileOpen(false)}>
                       <Button variant="outline" className="w-full">

@@ -134,9 +134,9 @@ export default function HowItWorks() {
           <p className="tracking-widest text-sm text-brand-orange font-semibold mb-4">
             {t('label')}
           </p>
-          <h2 className="text-4xl lg:text-6xl font-bold text-brand-navy">
+          <h2 className="text-4xl lg:text-6xl font-bold text-brand-navy animate-fade-in-up">
             {t('headline')}{' '}
-            <span className="text-brand-orange italic">{t('headlineAccent')}</span>
+            <span className="text-brand-orange font-serif italic font-semibold">{t('headlineAccent')}</span>
           </h2>
         </div>
 

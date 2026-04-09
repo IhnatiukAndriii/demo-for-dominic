@@ -22,9 +22,9 @@ export default function CreatorCommunity() {
         <p className="tracking-widest text-sm text-brand-orange font-semibold mb-4">
           {t('label')}
         </p>
-        <h2 className="text-4xl lg:text-6xl font-bold text-brand-navy mb-4 text-balance">
+        <h2 className="text-4xl lg:text-6xl font-bold text-brand-navy mb-4 text-balance animate-fade-in-up">
           {t('headline')}{' '}
-          <span className="text-brand-orange italic">{t('headlineAccent')}</span>{' '}
+          <span className="text-brand-orange font-serif italic font-semibold">{t('headlineAccent')}</span>{' '}
           {t('headlineEnd')}
         </h2>
         <p className="text-lg text-brand-navy/70 max-w-2xl mx-auto">

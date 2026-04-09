@@ -45,6 +45,12 @@
       "description": "Prüffuchs connects Amazon brands with micro-influencers. Real purchases, authentic UGC content, better rankings. Pay per result — only for verified posts.",
       "ogTitle": "Prüffuchs – Micro-Influencer Marketing for Amazon Sellers",
       "ogDescription": "Real purchases. Real UGC content. Better rankings. Start for free today."
+    },
+    "influencer": {
+      "title": "For Creators — Prüffuchs",
+      "description": "Test products for free and earn money. Join our creator community.",
+      "ogTitle": "For Creators — Prüffuchs",
+      "ogDescription": "Test free products, create authentic content, earn money."
     }
   },
   "landing": {
@@ -152,12 +158,82 @@
       "q6": "How can brands get started with Prüffuchs?",
       "a6": "Book a free consultation with our team. We set up your account, discuss your goals and budgets, and launch your first campaign together."
     },
+    "testimonials": {
+      "label": "VOICES FROM THE COMMUNITY",
+      "headline": "Trusted by",
+      "headlineAccent": "thousands of creators",
+      "items": {
+        "1": { "quote": "Finally a platform that treats creators fairly. I get free products that I truly love, and the application system is super easy.", "name": "Sarah M.", "role": "Beauty Creator, Munich" },
+        "2": { "quote": "Prüffuchs doubled my Instagram engagement. The products fit my niche perfectly, and the brands are incredibly professional.", "name": "Tim K.", "role": "Food Influencer, Vienna" },
+        "3": { "quote": "As a brand manager I was skeptical, but the authenticity of the reviews convinced me. Our Amazon ranking rose 40% in 2 months.", "name": "Markus B.", "role": "E-Commerce Manager, Hamburg" },
+        "4": { "quote": "The refund came faster than expected. I love testing new products and earning from it — perfect combination for me as a student.", "name": "Lena W.", "role": "Lifestyle Creator, Berlin" },
+        "5": { "quote": "We've run 5 campaigns already and are impressed every time by the content quality. This is real influencer marketing.", "name": "Julia R.", "role": "Marketing Lead, Frankfurt" },
+        "6": { "quote": "Customer support responds lightning fast, the platform is intuitive, and I've discovered several go-to products through Prüffuchs.", "name": "Dennis H.", "role": "Tech Reviewer, Cologne" }
+      }
+    },
+    "finalCta": {
+      "label": "READY TO START?",
+      "headline": "Scale your brand with micro-influencers",
+      "headlineAccent": "today",
+      "subhead": "Launch your first campaign in minutes. No upfront payments, no hidden fees.",
+      "ctaPrimary": "Start free now",
+      "ctaSecondary": "Book a demo",
+      "trust": "No credit card required · 5-minute setup · GDPR compliant"
+    },
     "footer": {
       "tagline": "Authentic influencer marketing for the next generation.",
       "imprint": "Imprint",
       "privacy": "Privacy Policy",
       "contact": "Contact",
-      "copyright": "© 2026 Prüffuchs. All rights reserved."
+      "copyright": "© 2026 Prüffuchs. All rights reserved.",
+      "madeWith": "Made with ❤️ in Germany",
+      "columns": {
+        "forBrands": {
+          "title": "For Brands",
+          "platform": "Platform",
+          "pricing": "Pricing",
+          "demo": "Book a Demo",
+          "caseStudies": "Case Studies",
+          "faq": "FAQ"
+        },
+        "forCreators": {
+          "title": "For Creators",
+          "signup": "Sign Up",
+          "howItWorks": "How It Works",
+          "benefits": "Benefits",
+          "community": "Community",
+          "support": "Support"
+        },
+        "company": {
+          "title": "Company",
+          "about": "About Us",
+          "team": "Team",
+          "careers": "Careers",
+          "press": "Press",
+          "contact": "Contact"
+        },
+        "resources": {
+          "title": "Resources",
+          "blog": "Blog",
+          "guides": "Guides",
+          "webinars": "Webinars",
+          "partners": "Partners",
+          "apiDocs": "API Docs"
+        },
+        "legal": {
+          "title": "Legal",
+          "imprint": "Imprint",
+          "privacy": "Privacy Policy",
+          "terms": "Terms of Service",
+          "cookies": "Cookie Settings"
+        },
+        "contactCol": {
+          "title": "Contact",
+          "email": "hello@prueffuchs.de",
+          "phone": "+49 (0) 30 1234567",
+          "address": "Berlin, Germany"
+        }
+      }
     },
     "platformFeatures": {
       "label": "PLATFORM FEATURES",
@@ -170,6 +246,73 @@
         "payForResults": { "title": "Pay for Results", "description": "No risk, no hidden costs. You only pay for verified, published posts. Refund happens after approval." },
         "dach": { "title": "Creators from DACH", "description": "Our network consists of vetted micro-influencers from Germany, Austria and Switzerland — perfect audience for German-speaking markets." }
       }
+    },
+    "influencerHero": {
+      "badge": "Join the community",
+      "headline": "Test products, earn",
+      "headlineAccent": "money",
+      "tagline": "Free products. Real brands. Your creativity.",
+      "subhead": "Apply to campaigns from top German brands. Test products for free, create authentic content and get your money back after publishing.",
+      "ctaPrimary": "Sign up for free",
+      "ctaSecondary": "Learn more"
+    },
+    "influencerBenefits": {
+      "label": "YOUR BENEFITS",
+      "headline": "Why creators",
+      "headlineAccent": "love Pr\u00fcffuchs",
+      "cards": {
+        "freeProducts": {
+          "title": "Free Products",
+          "description": "Test premium brand products with no upfront payment. You get your money back after publishing your post."
+        },
+        "fullRefund": {
+          "title": "Full Refund",
+          "description": "After your post is approved, the full purchase price is transferred directly to your account. Fast and transparent."
+        },
+        "creativeFreeedom": {
+          "title": "Creative Freedom",
+          "description": "You decide how to present the product. Authentic content beats perfect advertising every day."
+        },
+        "community": {
+          "title": "Community Support",
+          "description": "Connect with other creators, learn from best practices and become part of a growing community."
+        }
+      }
+    },
+    "influencerHowItWorksSimple": {
+      "label": "IT'S THAT SIMPLE",
+      "headline": "3 steps to your",
+      "headlineAccent": "first earnings",
+      "step1": {
+        "title": "Sign Up",
+        "description": "Create your free creator profile in 2 minutes"
+      },
+      "step2": {
+        "title": "Apply",
+        "description": "Browse open campaigns and apply with just a few clicks"
+      },
+      "step3": {
+        "title": "Create & Earn",
+        "description": "Test the product, post authentic content, get your money back"
+      }
+    },
+    "influencerRequirements": {
+      "label": "REQUIREMENTS",
+      "headline": "What you need to",
+      "headlineAccent": "participate",
+      "items": {
+        "1": "At least 200 followers on Instagram, TikTok or YouTube",
+        "2": "Residence in Germany, Austria or Switzerland",
+        "3": "Active and public social media profile",
+        "4": "Genuine interest in products and brands",
+        "5": "Willingness to create authentic content"
+      }
+    },
+    "influencerCta": {
+      "headline": "Start your creator journey",
+      "headlineAccent": "today",
+      "cta": "Sign up for free \u2192",
+      "trust": "100% free \u00b7 No hidden costs \u00b7 Ready in 2 minutes"
     },
     "creatorCommunity": {
       "label": "OUR CREATOR COMMUNITY",

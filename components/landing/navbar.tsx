@@ -6,7 +6,6 @@ import { useLocale } from 'next-intl'
 import { useRouter, usePathname, Link } from '@/lib/navigation'
 import { Menu, X, Globe } from 'lucide-react'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import { Button } from '@/components/ui/button'
 import { useTransition } from 'react'
 
 export default function Navbar() {
@@ -44,18 +43,18 @@ export default function Navbar() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-200 ${
         scrolled
-          ? 'bg-[#EBF0F7]/95 backdrop-blur-sm shadow-sm border-b border-blue-100'
-          : 'bg-[#EBF0F7]'
+          ? 'bg-white/70 backdrop-blur-md shadow-sm border-b border-brand-orange-100/50'
+          : 'bg-white/70 backdrop-blur-md'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-[72px]">
+        <div className="flex items-center justify-between h-[80px]">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <img
               src="/prueffuchs-logo.png"
               alt="Prüffuchs"
-              style={{ height: '48px', width: 'auto' }}
+              style={{ height: '56px', width: 'auto' }}
             />
           </Link>
 
@@ -63,19 +62,19 @@ export default function Navbar() {
           <nav className="hidden md:flex items-center gap-1">
             <a
               href={anchorLinks[0].href}
-              className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+              className="px-4 py-2 text-base font-medium text-brand-navy/70 hover:text-brand-orange transition-colors"
             >
               {anchorLinks[0].label}
             </a>
             <Link
               href={influencerLink.href}
-              className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+              className="px-4 py-2 text-base font-medium text-brand-navy/70 hover:text-brand-orange transition-colors"
             >
               {influencerLink.label}
             </Link>
             <a
               href={anchorLinks[1].href}
-              className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+              className="px-4 py-2 text-base font-medium text-brand-navy/70 hover:text-brand-orange transition-colors"
             >
               {anchorLinks[1].label}
             </a>
@@ -86,21 +85,17 @@ export default function Navbar() {
             <button
               onClick={switchLocale}
               disabled={isPending}
-              className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors disabled:opacity-50"
+              className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-brand-navy/70 hover:text-brand-orange rounded-lg transition-colors disabled:opacity-50"
               aria-label={`Switch to ${locale === 'de' ? 'English' : 'Deutsch'}`}
             >
               <Globe className="w-4 h-4" />
               <span>{locale === 'de' ? 'EN' : 'DE'}</span>
             </button>
-            <Link href="/login">
-              <Button variant="ghost" size="sm" className="text-gray-600">
-                {t('login')}
-              </Button>
+            <Link href="/login" className="px-5 py-2.5 text-base font-medium text-brand-navy hover:text-brand-orange transition-colors">
+              {t('login')}
             </Link>
-            <Link href="/signup">
-              <Button size="sm" className="bg-brand-500 hover:bg-brand-600 text-white">
-                {t('register')}
-              </Button>
+            <Link href="/signup" className="px-6 py-2.5 text-base font-semibold text-white bg-brand-orange hover:bg-brand-orange-600 rounded-xl shadow-md hover:shadow-lg transition-all duration-200">
+              {t('register')}
             </Link>
           </div>
 
@@ -109,7 +104,7 @@ export default function Navbar() {
             <button
               onClick={switchLocale}
               disabled={isPending}
-              className="flex items-center gap-1 px-2 py-2 text-sm font-medium text-gray-500 hover:text-gray-900 rounded-lg transition-colors"
+              className="flex items-center gap-1 px-2 py-2 text-sm font-medium text-brand-navy/70 hover:text-brand-orange rounded-lg transition-colors"
               aria-label={`Switch to ${locale === 'de' ? 'English' : 'Deutsch'}`}
             >
               <Globe className="w-4 h-4" />
@@ -132,34 +127,30 @@ export default function Navbar() {
                   <a
                     href={anchorLinks[0].href}
                     onClick={() => setMobileOpen(false)}
-                    className="px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+                    className="px-4 py-3 text-base font-medium text-brand-navy/70 hover:text-brand-orange rounded-lg transition-colors"
                   >
                     {anchorLinks[0].label}
                   </a>
                   <Link
                     href={influencerLink.href}
                     onClick={() => setMobileOpen(false)}
-                    className="px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+                    className="px-4 py-3 text-base font-medium text-brand-navy/70 hover:text-brand-orange rounded-lg transition-colors"
                   >
                     {influencerLink.label}
                   </Link>
                   <a
                     href={anchorLinks[1].href}
                     onClick={() => setMobileOpen(false)}
-                    className="px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+                    className="px-4 py-3 text-base font-medium text-brand-navy/70 hover:text-brand-orange rounded-lg transition-colors"
                   >
                     {anchorLinks[1].label}
                   </a>
                   <div className="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-2">
-                    <Link href="/login" onClick={() => setMobileOpen(false)}>
-                      <Button variant="outline" className="w-full">
-                        {t('login')}
-                      </Button>
+                    <Link href="/login" onClick={() => setMobileOpen(false)} className="w-full text-center px-5 py-2.5 text-base font-medium text-brand-navy hover:text-brand-orange border border-brand-orange-200 rounded-xl transition-colors">
+                      {t('login')}
                     </Link>
-                    <Link href="/signup" onClick={() => setMobileOpen(false)}>
-                      <Button className="w-full bg-brand-500 hover:bg-brand-600 text-white">
-                        {t('register')}
-                      </Button>
+                    <Link href="/signup" onClick={() => setMobileOpen(false)} className="w-full text-center px-6 py-2.5 text-base font-semibold text-white bg-brand-orange hover:bg-brand-orange-600 rounded-xl shadow-md transition-all duration-200">
+                      {t('register')}
                     </Link>
                   </div>
                 </nav>

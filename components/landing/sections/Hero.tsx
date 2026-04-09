@@ -1,30 +1,60 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
+
+const MARKETPLACES = ['Amazon', 'Kaufland', 'Otto', 'eBay', 'Shopify']
+
+function RotatingMarketplace() {
+  const [index, setIndex] = useState(0)
+  const [isVisible, setIsVisible] = useState(true)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(false)
+      setTimeout(() => {
+        setIndex((prev) => (prev + 1) % MARKETPLACES.length)
+        setIsVisible(true)
+      }, 600)
+    }, 2800)
+    return () => clearInterval(interval)
+  }, [])
+
+  return (
+    <span
+      className={`inline-flex justify-center font-serif italic text-brand-orange transition-all duration-[600ms] ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
+      }`}
+      style={{ minWidth: '5.5ch' }}
+    >
+      {MARKETPLACES[index]}
+    </span>
+  )
+}
 
 export default function Hero() {
   const t = useTranslations('landing.hero')
 
   return (
-    <section id="hero" className="relative overflow-hidden bg-gradient-to-br from-brand-orange-50 via-brand-cream/30 to-brand-orange-100">
+    <section id="hero" className="relative overflow-hidden bg-[#EBF0F7]">
       {/* Subtle radial glows */}
-      <div className="absolute top-[-100px] right-[-60px] w-[500px] h-[500px] rounded-full bg-brand-orange/10 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-[-80px] left-[-40px] w-[400px] h-[400px] rounded-full bg-brand-cream/20 blur-3xl pointer-events-none" />
+      <div className="absolute top-[-100px] right-[-60px] w-[500px] h-[500px] rounded-full bg-white/40 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-[-80px] left-[-40px] w-[400px] h-[400px] rounded-full bg-blue-200/30 blur-3xl pointer-events-none" />
 
       {/* Floating decorative badges */}
       <div aria-hidden className="hidden lg:block">
-        <div className="absolute top-[15%] left-[8%] w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-2xl animate-float z-10 border border-brand-orange-100">
+        <div className="absolute top-[15%] left-[8%] w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-2xl animate-float z-10 border border-blue-200">
           {'\u{1F6D2}'}
         </div>
-        <div className="absolute top-[12%] right-[8%] w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-xl animate-float-delayed z-10 border border-brand-orange-100">
+        <div className="absolute top-[12%] right-[8%] w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-xl animate-float-delayed z-10 border border-blue-200">
           {'\u{2B50}'}
         </div>
-        <div className="absolute bottom-[30%] left-[5%] w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-xl animate-float-slow z-10 border border-brand-orange-100">
+        <div className="absolute bottom-[30%] left-[5%] w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-xl animate-float-slow z-10 border border-blue-200">
           {'\u{1F4E6}'}
         </div>
-        <div className="absolute bottom-[20%] left-[38%] w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-2xl animate-float-delayed z-10 border border-brand-orange-100">
+        <div className="absolute bottom-[20%] left-[38%] w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-2xl animate-float-delayed z-10 border border-blue-200">
           {'\u{1F4AC}'}
         </div>
       </div>
@@ -88,12 +118,9 @@ export default function Hero() {
 
             {/* Headline */}
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-brand-navy leading-[1.1] tracking-tight mb-4">
-              {t('headlineLine1Before')}{' '}
-              <span className="text-brand-orange font-serif italic font-semibold">{t('headlineAccent')}</span>
-              <br />
-              {t('headlineLine2')}
-              <br />
-              {t('headlineLine3')}
+              {t('headlinePrefix')}{' '}
+              <RotatingMarketplace />
+              {' '}{t('headlineSuffix')}
             </h1>
 
             {/* Tagline */}

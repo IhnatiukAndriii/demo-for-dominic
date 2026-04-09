@@ -150,6 +150,22 @@ export default function Hero() {
       <div className="absolute top-[-100px] right-[-60px] w-[500px] h-[500px] rounded-full bg-brand-orange/10 blur-3xl pointer-events-none" />
       <div className="absolute bottom-[-80px] left-[-40px] w-[400px] h-[400px] rounded-full bg-brand-cream/20 blur-3xl pointer-events-none" />
 
+      {/* Floating decorative badges */}
+      <div aria-hidden className="hidden lg:block">
+        <div className="absolute top-[15%] left-[8%] w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-2xl animate-float z-10 border border-brand-orange-100">
+          {'\u{1F6D2}'}
+        </div>
+        <div className="absolute top-[25%] right-[42%] w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-xl animate-float-delayed z-10 border border-brand-orange-100">
+          {'\u{2B50}'}
+        </div>
+        <div className="absolute bottom-[30%] left-[5%] w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-xl animate-float-slow z-10 border border-brand-orange-100">
+          {'\u{1F4E6}'}
+        </div>
+        <div className="absolute bottom-[20%] left-[38%] w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-2xl animate-float-delayed z-10 border border-brand-orange-100">
+          {'\u{1F4AC}'}
+        </div>
+      </div>
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-[45fr_55fr] gap-10 lg:gap-12 items-center">
           {/* Visual composition — shows first on mobile */}

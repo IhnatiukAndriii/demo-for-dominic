@@ -32,6 +32,13 @@ export default function StatsBar() {
             )
           })}
         </div>
+
+        <div className="text-center mt-12">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-semibold tracking-wider uppercase">
+            <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
+            Launch-Phase · Werte werden täglich aktualisiert
+          </span>
+        </div>
       </div>
     </section>
   )

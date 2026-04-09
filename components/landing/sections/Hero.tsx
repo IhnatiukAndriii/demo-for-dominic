@@ -4,143 +4,6 @@ import { useTranslations } from 'next-intl'
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 
-function DashboardMockup() {
-  return (
-    <div className="relative w-full max-w-[580px] h-auto bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200/60">
-      <div className="flex items-center justify-between px-4 py-2.5 bg-gray-50 border-b border-gray-200">
-        <div className="flex items-center gap-1.5">
-          <span className="w-3 h-3 rounded-full bg-[#FF5F57]" />
-          <span className="w-3 h-3 rounded-full bg-[#FEBC2E]" />
-          <span className="w-3 h-3 rounded-full bg-[#28C840]" />
-        </div>
-        <span className="text-xs font-semibold text-gray-500 tracking-wide">Prüffuchs Dashboard</span>
-        <div className="w-7 h-7 rounded-full bg-[#E8882E] flex items-center justify-center text-[10px] font-bold text-white">D</div>
-      </div>
-
-      <div className="flex min-h-[340px] lg:min-h-[380px]">
-        <div className="w-[120px] lg:w-[140px] bg-[#1e2d4a] flex-shrink-0 flex flex-col py-4 px-3">
-          <div className="flex items-center gap-2 mb-6">
-            <div className="w-6 h-6 rounded-lg bg-[#E8882E] flex items-center justify-center">
-              <span className="text-white text-[8px] font-bold">PF</span>
-            </div>
-            <span className="text-white text-[10px] font-bold hidden lg:block">Prüffuchs</span>
-          </div>
-
-          {[
-            { icon: '\u{1F4CA}', label: 'Dashboard', active: true },
-            { icon: '\u{1F4E2}', label: 'Kampagnen', active: false },
-            { icon: '\u{1F465}', label: 'Influencer', active: false },
-            { icon: '\u{1F4B3}', label: 'Billing', active: false },
-            { icon: '\u{2753}', label: 'Hilfe', active: false },
-          ].map((item) => (
-            <div
-              key={item.label}
-              className={`flex items-center gap-2 px-2 py-1.5 rounded-lg mb-1 text-[10px] ${
-                item.active
-                  ? 'bg-[#E8882E]/20 text-[#E8882E] font-semibold'
-                  : 'text-gray-400 hover:text-gray-300'
-              }`}
-            >
-              <span className="text-xs">{item.icon}</span>
-              <span className="hidden lg:inline">{item.label}</span>
-            </div>
-          ))}
-
-          <div className="mt-auto">
-            <div className="w-8 h-8 mx-auto opacity-30">
-              <span className="text-2xl">{'\u{1F98A}'}</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex-1 p-3 lg:p-4 bg-[#f8f9fc] overflow-hidden">
-          <div className="grid grid-cols-3 gap-2 mb-3">
-            {[
-              { label: 'Kampagnen', value: '12', change: '+3', color: 'text-green-600' },
-              { label: 'Influencer', value: '847', change: '+24%', color: 'text-green-600' },
-              { label: 'Posts', value: '1.204', change: '+18%', color: 'text-green-600' },
-            ].map((kpi) => (
-              <div key={kpi.label} className="bg-white rounded-lg p-2 lg:p-2.5 border border-gray-100 shadow-sm">
-                <div className="text-[8px] lg:text-[9px] text-gray-400 font-medium mb-1">{kpi.label}</div>
-                <div className="text-sm lg:text-base font-bold text-gray-900">{kpi.value}</div>
-                <div className={`text-[8px] lg:text-[9px] font-medium ${kpi.color}`}>{kpi.change}</div>
-              </div>
-            ))}
-          </div>
-
-          <div className="grid grid-cols-2 gap-2 mb-3">
-            <div className="bg-white rounded-lg p-2 lg:p-3 border border-gray-100 shadow-sm flex flex-col items-center">
-              <div className="text-[8px] lg:text-[9px] text-gray-400 font-medium mb-1.5 self-start">Erfolgsrate</div>
-              <div className="relative w-16 h-16 lg:w-20 lg:h-20">
-                <svg viewBox="0 0 36 36" className="w-full h-full -rotate-90">
-                  <circle cx="18" cy="18" r="14" fill="none" stroke="#f3f4f6" strokeWidth="3.5" />
-                  <circle
-                    cx="18" cy="18" r="14" fill="none"
-                    stroke="#E8882E" strokeWidth="3.5"
-                    strokeDasharray="86.2 87.96"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-xs lg:text-sm font-bold text-gray-900">98%</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg p-2 lg:p-3 border border-gray-100 shadow-sm">
-              <div className="text-[8px] lg:text-[9px] text-gray-400 font-medium mb-1.5">Umsatz</div>
-              <svg viewBox="0 0 160 60" className="w-full h-auto">
-                <defs>
-                  <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#E8882E" stopOpacity="0.3" />
-                    <stop offset="100%" stopColor="#E8882E" stopOpacity="0.02" />
-                  </linearGradient>
-                </defs>
-                <path
-                  d="M0 50 Q20 45 40 38 T80 22 T120 28 T160 10 V60 H0Z"
-                  fill="url(#areaGrad)"
-                />
-                <path
-                  d="M0 50 Q20 45 40 38 T80 22 T120 28 T160 10"
-                  fill="none" stroke="#E8882E" strokeWidth="2" strokeLinecap="round"
-                />
-                <g className="text-[6px]" fill="#9ca3af">
-                  <text x="5" y="58" fontSize="6">Jan</text>
-                  <text x="35" y="58" fontSize="6">Feb</text>
-                  <text x="65" y="58" fontSize="6">Mär</text>
-                  <text x="95" y="58" fontSize="6">Apr</text>
-                  <text x="125" y="58" fontSize="6">Mai</text>
-                  <text x="150" y="58" fontSize="6">Jun</text>
-                </g>
-              </svg>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg p-2 lg:p-3 border border-gray-100 shadow-sm">
-            <div className="text-[8px] lg:text-[9px] text-gray-400 font-medium mb-2">Top Influencer</div>
-            {[
-              { name: 'Sarah M.', posts: 12, color: 'bg-pink-400', bar: 'w-full' },
-              { name: 'Tim K.', posts: 9, color: 'bg-blue-400', bar: 'w-3/4' },
-              { name: 'Lena W.', posts: 7, color: 'bg-purple-400', bar: 'w-7/12' },
-            ].map((inf) => (
-              <div key={inf.name} className="flex items-center gap-2 mb-1.5 last:mb-0">
-                <div className={`w-5 h-5 lg:w-6 lg:h-6 rounded-full ${inf.color} flex items-center justify-center text-white text-[7px] lg:text-[8px] font-bold flex-shrink-0`}>
-                  {inf.name[0]}
-                </div>
-                <span className="text-[9px] lg:text-[10px] text-gray-700 font-medium w-14 lg:w-16 flex-shrink-0">{inf.name}</span>
-                <div className="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden">
-                  <div className={`h-full bg-[#E8882E] rounded-full ${inf.bar}`} />
-                </div>
-                <span className="text-[8px] lg:text-[9px] text-gray-500 flex-shrink-0">{inf.posts} Posts</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
 export default function Hero() {
   const t = useTranslations('landing.hero')
 
@@ -183,9 +46,34 @@ export default function Hero() {
                 />
               </div>
 
-              {/* Dashboard mockup — right side */}
+              {/* Dashboard screenshot — right side */}
               <div className="relative z-10 w-full sm:w-[400px] lg:w-[440px] flex-shrink min-w-0">
-                <DashboardMockup />
+                <div className="relative w-full rounded-2xl shadow-2xl overflow-hidden border border-gray-200/60 bg-white">
+                  {/* Browser chrome bar */}
+                  <div className="flex items-center justify-between px-4 py-2.5 bg-gray-50 border-b border-gray-200">
+                    <div className="flex items-center gap-1.5">
+                      <span className="w-3 h-3 rounded-full bg-[#FF5F57]"></span>
+                      <span className="w-3 h-3 rounded-full bg-[#FEBC2E]"></span>
+                      <span className="w-3 h-3 rounded-full bg-[#28C840]"></span>
+                    </div>
+                    <span className="text-xs font-semibold text-gray-500 tracking-wide">
+                      Prüffuchs Dashboard
+                    </span>
+                    <div className="w-7 h-7 rounded-full bg-brand-orange flex items-center justify-center text-[10px] font-bold text-white">
+                      D
+                    </div>
+                  </div>
+
+                  {/* Real dashboard screenshot */}
+                  <Image
+                    src="/hero-dashboard.png"
+                    alt="Prüffuchs Dashboard — real product screenshot"
+                    width={1280}
+                    height={900}
+                    priority
+                    className="w-full h-auto"
+                  />
+                </div>
               </div>
             </div>
           </div>

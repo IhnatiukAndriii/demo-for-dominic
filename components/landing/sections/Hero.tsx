@@ -129,6 +129,18 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      <svg
+        className="absolute bottom-0 left-0 w-full h-12 lg:h-16 text-white"
+        viewBox="0 0 1440 80"
+        preserveAspectRatio="none"
+        aria-hidden
+      >
+        <path
+          fill="currentColor"
+          d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z"
+        />
+      </svg>
     </section>
   )
 }

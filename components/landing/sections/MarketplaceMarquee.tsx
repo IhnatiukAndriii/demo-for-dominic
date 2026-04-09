@@ -18,7 +18,7 @@ export default function MarketplaceMarquee() {
         {/* Right fade */}
         <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
-        <div className="flex pl-8 animate-marquee hover:[animation-play-state:paused]">
+        <div className="flex animate-marquee hover:[animation-play-state:paused]">
           {logos.map((mp, i) => (
             <div
               key={`${mp.name}-${i}`}

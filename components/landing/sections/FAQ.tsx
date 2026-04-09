@@ -16,21 +16,21 @@ export default function FAQ() {
   ]
 
   return (
-    <section id="faq" className="bg-white py-20 lg:py-28 scroll-mt-16">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+    <section id="faq" className="bg-gradient-to-b from-white via-brand-orange-50/30 to-white py-24 lg:py-32 scroll-mt-16">
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-brand-navy text-center mb-4">
             {t('title')}
           </h2>
-          <p className="text-lg text-gray-500">
+          <p className="text-lg text-brand-navy/70 text-center">
             {t('subtitle')}
           </p>
         </div>
 
-        <Accordion className="divide-y divide-gray-100 border border-gray-100 rounded-2xl overflow-hidden">
+        <Accordion className="divide-y divide-brand-orange-100 border border-brand-orange-100 rounded-2xl overflow-hidden">
           {faqs.map((faq, idx) => (
-            <AccordionItem key={idx} className="bg-white">
-              <AccordionTrigger className="px-6 py-4 text-base font-semibold text-gray-900 hover:no-underline hover:bg-gray-50 transition-colors rounded-none">
+            <AccordionItem key={idx} className="bg-white border-b border-brand-orange-100 last:border-b-0">
+              <AccordionTrigger className="px-6 py-5 text-lg font-semibold text-brand-navy hover:text-brand-orange hover:no-underline transition-colors rounded-none">
                 {faq.q}
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">

@@ -7,7 +7,7 @@ export default function StatsBar() {
   const t = useTranslations('stats')
 
   return (
-    <section id="stats-bar" className="bg-brand-navy text-white py-20 lg:py-28">
+    <section id="stats-bar" className="relative bg-brand-navy text-white py-20 lg:py-28">
       <div className="max-w-6xl mx-auto px-6">
         <p className="text-center text-sm uppercase tracking-widest text-brand-orange mb-4">
           {t('label')}
@@ -34,12 +34,24 @@ export default function StatsBar() {
         </div>
 
         <div className="text-center mt-12">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-semibold tracking-wider uppercase">
+          <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-brand-orange/15 border border-brand-orange/40 text-brand-orange text-sm font-semibold tracking-wider uppercase backdrop-blur-sm">
             <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
             Launch-Phase · Werte werden täglich aktualisiert
           </span>
         </div>
       </div>
+
+      <svg
+        className="absolute bottom-0 left-0 w-full h-12 lg:h-16 text-brand-orange-50"
+        viewBox="0 0 1440 80"
+        preserveAspectRatio="none"
+        aria-hidden
+      >
+        <path
+          fill="currentColor"
+          d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z"
+        />
+      </svg>
     </section>
   )
 }

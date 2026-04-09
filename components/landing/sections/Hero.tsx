@@ -18,7 +18,7 @@ export default function Hero() {
         <div className="absolute top-[15%] left-[8%] w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-2xl animate-float z-10 border border-brand-orange-100">
           {'\u{1F6D2}'}
         </div>
-        <div className="absolute top-[25%] right-[42%] w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-xl animate-float-delayed z-10 border border-brand-orange-100">
+        <div className="absolute top-[12%] right-[8%] w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-xl animate-float-delayed z-10 border border-brand-orange-100">
           {'\u{2B50}'}
         </div>
         <div className="absolute bottom-[30%] left-[5%] w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-xl animate-float-slow z-10 border border-brand-orange-100">
@@ -35,19 +35,19 @@ export default function Hero() {
           <div className="relative order-first lg:order-last min-w-0 flex justify-center lg:justify-end overflow-visible">
             <div className="relative flex items-end max-w-full gap-0">
               {/* Mascot — left side, next to dashboard */}
-              <div className="relative z-20 -mr-4 flex-shrink-0 self-end hidden lg:block">
+              <div className="relative z-20 -mr-12 flex-shrink-0 self-end hidden lg:block">
                 <Image
                   src="/prueffuchs-mascot-full.png"
                   alt="Prüffuchs Mascot"
                   width={500}
                   height={600}
                   priority
-                  className="w-[260px] h-auto"
+                  className="w-[320px] h-auto"
                 />
               </div>
 
               {/* Dashboard screenshot — right side */}
-              <div className="relative z-10 w-full sm:w-[400px] lg:w-[440px] flex-shrink min-w-0">
+              <div className="relative z-10 w-full sm:w-[400px] lg:w-[560px] flex-shrink min-w-0">
                 <div className="relative w-full rounded-2xl shadow-2xl overflow-hidden border border-gray-200/60 bg-white">
                   {/* Browser chrome bar */}
                   <div className="flex items-center justify-between px-4 py-2.5 bg-gray-50 border-b border-gray-200">

@@ -30,6 +30,7 @@ export default function MarketplaceMarquee() {
                 width={120}
                 height={40}
                 unoptimized
+                className="h-8 w-auto object-contain"
               />
             </div>
           ))}

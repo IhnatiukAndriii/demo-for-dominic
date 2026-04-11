@@ -127,7 +127,7 @@ export default function HowItWorks() {
   const [activeStep, setActiveStep] = useState(1)
 
   return (
-    <section id="how-it-works" className="bg-white py-24 lg:py-32">
+    <section id="how-it-works" className="bg-[#EBF0F7] py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
@@ -140,8 +140,10 @@ export default function HowItWorks() {
           </h2>
         </div>
 
-        {/* Two columns */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        {/* White card wrapper — layered look on colored bg */}
+        <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mx-auto max-w-6xl max-md:rounded-2xl max-md:p-6">
+          {/* Two columns */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left: Steps */}
           <div className="space-y-1">
             {stepIds.map((id) => (
@@ -195,6 +197,7 @@ export default function HowItWorks() {
                 <DashboardScreen step={activeStep} />
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>

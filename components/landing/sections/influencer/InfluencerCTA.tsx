@@ -2,32 +2,26 @@
 
 import { useTranslations } from 'next-intl'
 import { Link } from '@/lib/navigation'
+import { buttonVariants } from '@/components/ui/button'
 
 export default function InfluencerCTA() {
-  const t = useTranslations('landing.influencerCta')
+  const t = useTranslations('influencer.finalCta')
 
   return (
-    <section className="relative py-24 lg:py-32 bg-gradient-to-br from-brand-navy via-brand-navy-800 to-brand-navy-900 overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-brand-orange/10 blur-3xl pointer-events-none" />
-
-      <div className="relative max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-4xl lg:text-6xl font-bold text-white mb-6">
-          {t('headline')}{' '}
-          <span className="text-brand-orange font-serif italic font-semibold">{t('headlineAccent')}</span>
+    <section className="bg-white py-20 lg:py-28 px-6 lg:px-10 text-center">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-3xl lg:text-4xl font-normal text-slate-900 mb-8">
+          {t('title')}
         </h2>
 
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center">
           <Link
-            href="/signup"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-brand-orange text-white font-semibold text-lg hover:bg-brand-orange-600 transition-colors"
+            href="/signup?role=creator"
+            className={`${buttonVariants({ size: 'lg' })} h-12 px-6 text-base bg-orange-500 hover:bg-orange-600 text-white`}
           >
-            {t('cta')}
+            {t('button')}
           </Link>
         </div>
-
-        <p className="text-sm text-white/50">
-          {t('trust')}
-        </p>
       </div>
     </section>
   )

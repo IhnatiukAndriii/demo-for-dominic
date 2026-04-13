@@ -29,7 +29,9 @@
     "admin": "Administrator"
   },
   "hero": {},
-  "marketplaces": { "label": "Available on these marketplaces" },
+  "marketplaces": {
+    "label": "Available on these marketplaces"
+  },
   "stats": {
     "label": "PRÜFFUCHS BY THE NUMBERS",
     "headline": "Real results, real numbers"
@@ -64,31 +66,16 @@
       "closeMenu": "Close menu"
     },
     "hero": {
-      "badge": "Influencer marketing for Amazon sellers",
-      "headlineLine1Before": "Grow on",
-      "headlineAccent": "Kaufland",
-      "headlinePrefix": "Grow on",
-      "headlineLine2": "with Creators who",
-      "headlineLine3": "actually buy.",
-      "tagline": "The marketplace growth solution",
+      "headlinePrefix": "Grow on ",
+      "rotatingKeywords": [
+        "Amazon",
+        "OTTO",
+        "Kaufland",
+        "Zalando"
+      ],
       "subline": "Micro-influencers buy your product, test it honestly and post authentic content. You benefit from real sales, better ranking and more visibility.",
       "ctaPrimary": "Start campaign",
-      "ctaSecondary": "Book demo",
-      "headlineStart": "Grow on",
-      "headlineSuffix": "with Creators who actually buy.",
-      "ctaBrand": "Start campaign",
-      "ctaDemo": "Book demo",
-      "trustedByLabel": "Trusted by leading brands",
-      "flowBrand": "Brand",
-      "flowBrandAction": "Create campaign",
-      "flowPlatform": "Prüffuchs",
-      "flowPlatformAction": "Matching & coordination",
-      "flowInfluencer": "Influencer",
-      "flowInfluencerAction": "Buy & post",
-      "flowRefund": "Full refund",
-      "trust1": "No upfront payment",
-      "trust2": "Pay per Result",
-      "trust3": "DACH focus"
+      "ctaSecondary": "Book demo"
     },
     "howItWorks": {
       "title": "How Prüffuchs works",
@@ -105,12 +92,30 @@
       "label": "HOW PRÜFFUCHS WORKS",
       "headline": "From product seeding to",
       "headlineAccent": "growth",
-      "step1": { "title": "Brand creates campaign", "description": "Define your product, budget and target audience. We create the campaign and find matching micro-influencers." },
-      "step2": { "title": "AI matching", "description": "Our system matches your campaign with the most suitable creators based on niche, engagement and reach." },
-      "step3": { "title": "Influencer buys product", "description": "The influencer buys your product as a real customer — no gifting, maximum authenticity." },
-      "step4": { "title": "Create content", "description": "The creator uses the product, documents their experience and produces authentic content." },
-      "step5": { "title": "Publish post", "description": "The post is published on the creator's social media channels and you receive all content rights." },
-      "step6": { "title": "Refund & billing", "description": "After approval, the influencer receives the full purchase price back. You only pay for verified results." }
+      "step1": {
+        "title": "Brand creates campaign",
+        "description": "Define your product, budget and target audience. We create the campaign and find matching micro-influencers."
+      },
+      "step2": {
+        "title": "AI matching",
+        "description": "Our system matches your campaign with the most suitable creators based on niche, engagement and reach."
+      },
+      "step3": {
+        "title": "Influencer buys product",
+        "description": "The influencer buys your product as a real customer — no gifting, maximum authenticity."
+      },
+      "step4": {
+        "title": "Create content",
+        "description": "The creator uses the product, documents their experience and produces authentic content."
+      },
+      "step5": {
+        "title": "Publish post",
+        "description": "The post is published on the creator's social media channels and you receive all content rights."
+      },
+      "step6": {
+        "title": "Refund & billing",
+        "description": "After approval, the influencer receives the full purchase price back. You only pay for verified results."
+      }
     },
     "brands": {
       "badge": "For Brands & Companies",
@@ -164,12 +169,36 @@
       "headline": "Trusted by",
       "headlineAccent": "thousands of creators",
       "items": {
-        "1": { "quote": "Finally a platform that treats creators fairly. I get free products that I truly love, and the application system is super easy.", "name": "Sarah M.", "role": "Beauty Creator, Munich" },
-        "2": { "quote": "Prüffuchs doubled my Instagram engagement. The products fit my niche perfectly, and the brands are incredibly professional.", "name": "Tim K.", "role": "Food Influencer, Vienna" },
-        "3": { "quote": "As a brand manager I was skeptical, but the authenticity of the reviews convinced me. Our Amazon ranking rose 40% in 2 months.", "name": "Markus B.", "role": "E-Commerce Manager, Hamburg" },
-        "4": { "quote": "The refund came faster than expected. I love testing new products and earning from it — perfect combination for me as a student.", "name": "Lena W.", "role": "Lifestyle Creator, Berlin" },
-        "5": { "quote": "We've run 5 campaigns already and are impressed every time by the content quality. This is real influencer marketing.", "name": "Julia R.", "role": "Marketing Lead, Frankfurt" },
-        "6": { "quote": "Customer support responds lightning fast, the platform is intuitive, and I've discovered several go-to products through Prüffuchs.", "name": "Dennis H.", "role": "Tech Reviewer, Cologne" }
+        "1": {
+          "quote": "Finally a platform that treats creators fairly. I get free products that I truly love, and the application system is super easy.",
+          "name": "Sarah M.",
+          "role": "Beauty Creator, Munich"
+        },
+        "2": {
+          "quote": "Prüffuchs doubled my Instagram engagement. The products fit my niche perfectly, and the brands are incredibly professional.",
+          "name": "Tim K.",
+          "role": "Food Influencer, Vienna"
+        },
+        "3": {
+          "quote": "As a brand manager I was skeptical, but the authenticity of the reviews convinced me. Our Amazon ranking rose 40% in 2 months.",
+          "name": "Markus B.",
+          "role": "E-Commerce Manager, Hamburg"
+        },
+        "4": {
+          "quote": "The refund came faster than expected. I love testing new products and earning from it — perfect combination for me as a student.",
+          "name": "Lena W.",
+          "role": "Lifestyle Creator, Berlin"
+        },
+        "5": {
+          "quote": "We've run 5 campaigns already and are impressed every time by the content quality. This is real influencer marketing.",
+          "name": "Julia R.",
+          "role": "Marketing Lead, Frankfurt"
+        },
+        "6": {
+          "quote": "Customer support responds lightning fast, the platform is intuitive, and I've discovered several go-to products through Prüffuchs.",
+          "name": "Dennis H.",
+          "role": "Tech Reviewer, Cologne"
+        }
       }
     },
     "finalCta": {
@@ -241,79 +270,27 @@
       "headline": "Creator collaboration on",
       "headlineAccent": "autopilot",
       "cards": {
-        "realPurchases": { "title": "Real purchases by real customers", "description": "Influencers buy your product like normal customers — no gifting, no fake reviews. Maximum authenticity for your brand." },
-        "ugc": { "title": "Authentic UGC", "description": "High-quality photos and videos for your ads, product pages and social media — all from real customer experiences." },
-        "ranking": { "title": "Ranking Boost", "description": "Real sales and reviews organically improve your Amazon ranking. Better visibility, more sales." },
-        "payForResults": { "title": "Pay for Results", "description": "No risk, no hidden costs. You only pay for verified, published posts. Refund happens after approval." },
-        "dach": { "title": "Creators from DACH", "description": "Our network consists of vetted micro-influencers from Germany, Austria and Switzerland — perfect audience for German-speaking markets." }
-      }
-    },
-    "influencerHero": {
-      "badge": "Join the community",
-      "headline": "Test products, earn",
-      "headlineAccent": "money",
-      "tagline": "Free products. Real brands. Your creativity.",
-      "subhead": "Apply to campaigns from top German brands. Test products for free, create authentic content and get your money back after publishing.",
-      "ctaPrimary": "Sign up for free",
-      "ctaSecondary": "Learn more"
-    },
-    "influencerBenefits": {
-      "label": "YOUR BENEFITS",
-      "headline": "Why creators",
-      "headlineAccent": "love Pr\u00fcffuchs",
-      "cards": {
-        "freeProducts": {
-          "title": "Free Products",
-          "description": "Test premium brand products with no upfront payment. You get your money back after publishing your post."
+        "realPurchases": {
+          "title": "Real purchases by real customers",
+          "description": "Influencers buy your product like normal customers — no gifting, no fake reviews. Maximum authenticity for your brand."
         },
-        "fullRefund": {
-          "title": "Full Refund",
-          "description": "After your post is approved, the full purchase price is transferred directly to your account. Fast and transparent."
+        "ugc": {
+          "title": "Authentic UGC",
+          "description": "High-quality photos and videos for your ads, product pages and social media — all from real customer experiences."
         },
-        "creativeFreeedom": {
-          "title": "Creative Freedom",
-          "description": "You decide how to present the product. Authentic content beats perfect advertising every day."
+        "ranking": {
+          "title": "Ranking Boost",
+          "description": "Real sales and reviews organically improve your Amazon ranking. Better visibility, more sales."
         },
-        "community": {
-          "title": "Community Support",
-          "description": "Connect with other creators, learn from best practices and become part of a growing community."
+        "payForResults": {
+          "title": "Pay for Results",
+          "description": "No risk, no hidden costs. You only pay for verified, published posts. Refund happens after approval."
+        },
+        "dach": {
+          "title": "Creators from DACH",
+          "description": "Our network consists of vetted micro-influencers from Germany, Austria and Switzerland — perfect audience for German-speaking markets."
         }
       }
-    },
-    "influencerHowItWorksSimple": {
-      "label": "IT'S THAT SIMPLE",
-      "headline": "3 steps to your",
-      "headlineAccent": "first earnings",
-      "step1": {
-        "title": "Sign Up",
-        "description": "Create your free creator profile in 2 minutes"
-      },
-      "step2": {
-        "title": "Apply",
-        "description": "Browse open campaigns and apply with just a few clicks"
-      },
-      "step3": {
-        "title": "Create & Earn",
-        "description": "Test the product, post authentic content, get your money back"
-      }
-    },
-    "influencerRequirements": {
-      "label": "REQUIREMENTS",
-      "headline": "What you need to",
-      "headlineAccent": "participate",
-      "items": {
-        "1": "At least 200 followers on Instagram, TikTok or YouTube",
-        "2": "Residence in Germany, Austria or Switzerland",
-        "3": "Active and public social media profile",
-        "4": "Genuine interest in products and brands",
-        "5": "Willingness to create authentic content"
-      }
-    },
-    "influencerCta": {
-      "headline": "Start your creator journey",
-      "headlineAccent": "today",
-      "cta": "Sign up for free \u2192",
-      "trust": "100% free \u00b7 No hidden costs \u00b7 Ready in 2 minutes"
     },
     "creatorCommunity": {
       "label": "OUR CREATOR COMMUNITY",
@@ -322,15 +299,152 @@
       "headlineEnd": "of creators",
       "subhead": "Whatever your niche — we have the right micro-influencers for your brand.",
       "categories": {
-        "beauty": { "label": "BEAUTY & CARE", "title": "Beauty & Care", "description": "Make-up, skincare, haircare and self-care creators" },
-        "home": { "label": "HOME & KITCHEN", "title": "Home & Kitchen", "description": "Home organization, kitchen gadgets and interior design" },
-        "fitness": { "label": "SPORTS & FITNESS", "title": "Sports & Fitness", "description": "Fitness, wellness and active lifestyles" },
-        "pets": { "label": "PETS & ANIMALS", "title": "Pets & Animals", "description": "Dogs, cats and all furry companions" },
-        "fashion": { "label": "FASHION & LIFESTYLE", "title": "Fashion & Lifestyle", "description": "Fashion, accessories and urban trends" },
-        "food": { "label": "FOOD & NUTRITION", "title": "Food & Nutrition", "description": "Recipes, cooking and healthy nutrition" },
-        "family": { "label": "FAMILY & KIDS", "title": "Family & Kids", "description": "Parents, kids and family life" },
-        "tech": { "label": "TECH & GADGETS", "title": "Tech & Gadgets", "description": "Tech reviews, gaming and smart home" }
+        "beauty": {
+          "label": "BEAUTY & CARE",
+          "title": "Beauty & Care",
+          "description": "Make-up, skincare, haircare and self-care creators"
+        },
+        "home": {
+          "label": "HOME & KITCHEN",
+          "title": "Home & Kitchen",
+          "description": "Home organization, kitchen gadgets and interior design"
+        },
+        "fitness": {
+          "label": "SPORTS & FITNESS",
+          "title": "Sports & Fitness",
+          "description": "Fitness, wellness and active lifestyles"
+        },
+        "pets": {
+          "label": "PETS & ANIMALS",
+          "title": "Pets & Animals",
+          "description": "Dogs, cats and all furry companions"
+        },
+        "fashion": {
+          "label": "FASHION & LIFESTYLE",
+          "title": "Fashion & Lifestyle",
+          "description": "Fashion, accessories and urban trends"
+        },
+        "food": {
+          "label": "FOOD & NUTRITION",
+          "title": "Food & Nutrition",
+          "description": "Recipes, cooking and healthy nutrition"
+        },
+        "family": {
+          "label": "FAMILY & KIDS",
+          "title": "Family & Kids",
+          "description": "Parents, kids and family life"
+        },
+        "tech": {
+          "label": "TECH & GADGETS",
+          "title": "Tech & Gadgets",
+          "description": "Tech reviews, gaming and smart home"
+        }
       }
+    }
+  },
+  "influencer": {
+    "hero": {
+      "headline": "Test products, earn money",
+      "subline": "Apply to campaigns from top German brands. Test products for free, create authentic content and get your money back after publishing.",
+      "ctaPrimary": "Sign up for free",
+      "ctaSecondary": "Learn more"
+    },
+    "benefits": {
+      "title": "Why creators love Prüffuchs",
+      "items": {
+        "authentic": {
+          "title": "Free Products",
+          "body": "Test premium brand products with no upfront payment. You get your money back after publishing your post."
+        },
+        "fair": {
+          "title": "Full Refund",
+          "body": "After your post is approved, the full purchase price is transferred directly to your account. Fast and transparent."
+        },
+        "flexible": {
+          "title": "Creative Freedom",
+          "body": "You decide how to present the product. Authentic content beats perfect advertising every day."
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "3 steps to your first earnings",
+      "step1": {
+        "title": "Sign Up",
+        "body": "Create your free creator profile in 2 minutes"
+      },
+      "step2": {
+        "title": "Apply",
+        "body": "Browse open campaigns and apply with just a few clicks"
+      },
+      "step3": {
+        "title": "Create & Earn",
+        "body": "Test the product, post authentic content, get your money back"
+      },
+      "step4": {
+        "title": "Get paid",
+        "body": "Once your post is approved, you receive your full purchase price back automatically."
+      }
+    },
+    "requirements": {
+      "title": "What you need to participate",
+      "items": {
+        "followers": "At least 200 followers on Instagram, TikTok or YouTube",
+        "engagement": "Active and public social media profile",
+        "location": "Residence in Germany, Austria or Switzerland"
+      },
+      "trust": {
+        "gdpr": "GDPR compliant",
+        "stripe": "Secure payouts via Stripe",
+        "verification": "Verified brands"
+      }
+    },
+    "finalCta": {
+      "title": "Start your creator journey today",
+      "button": "Sign up for free →"
+    }
+  },
+  "landingNav": {
+    "toggleBrand": "For Brands",
+    "toggleCreator": "For Creators",
+    "login": "Log in",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "brand": {
+      "platform": "Platform",
+      "platformItems": {
+        "influencerCampaigns": "Influencer campaigns",
+        "verification": "Verification",
+        "campaignMgmt": "Campaign management",
+        "adminDashboard": "Admin dashboard"
+      },
+      "solutions": "Solutions",
+      "solutionItems": {
+        "amazon": "Amazon",
+        "ottoKaufland": "OTTO & Kaufland",
+        "zalando": "Zalando",
+        "shopify": "Shopify"
+      },
+      "resources": "Resources",
+      "resourceItems": {
+        "faq": "FAQ",
+        "contact": "Contact",
+        "imprint": "Imprint"
+      },
+      "pricing": "Pricing",
+      "ctaPrimary": "Book a call"
+    },
+    "creator": {
+      "howItWorks": "How it works",
+      "categories": "Categories",
+      "categoryItems": {
+        "beauty": "Beauty & Care",
+        "fashion": "Fashion & Lifestyle",
+        "home": "Home & Kitchen",
+        "fitness": "Sports & Fitness",
+        "food": "Food & Nutrition"
+      },
+      "requirements": "Requirements",
+      "ctaPrimary": "Sign up now"
     }
   },
   "auth": {
@@ -386,7 +500,11 @@
       "campaigns": "My campaigns",
       "createCampaign": "Create campaign",
       "noCampaigns": "No campaigns yet",
-      "noCampaignsText": "Create your first campaign to find matching influencers."
+      "noCampaignsText": "Create your first campaign to find matching influencers.",
+      "recentActivity": {
+        "title": "Recent Creator Activity",
+        "subtitle": "Last 24 hours"
+      }
     },
     "influencer": {
       "title": "Hello, {name}",

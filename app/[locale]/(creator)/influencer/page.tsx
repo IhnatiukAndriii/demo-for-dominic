@@ -5,11 +5,9 @@ import InfluencerHero from '@/components/landing/sections/influencer/InfluencerH
 import MarketplaceMarquee from '@/components/landing/sections/MarketplaceMarquee'
 import InfluencerBenefits from '@/components/landing/sections/influencer/InfluencerBenefits'
 import InfluencerHowItWorks from '@/components/landing/sections/influencer/InfluencerHowItWorks'
-import CreatorCommunity from '@/components/landing/sections/CreatorCommunity'
+import StatsBar from '@/components/landing/sections/StatsBar'
 import InfluencerRequirements from '@/components/landing/sections/influencer/InfluencerRequirements'
-import Testimonials from '@/components/landing/sections/Testimonials'
 import InfluencerCTA from '@/components/landing/sections/influencer/InfluencerCTA'
-import FAQ from '@/components/landing/sections/FAQ'
 import Footer from '@/components/landing/sections/Footer'
 
 type Props = {
@@ -60,11 +58,9 @@ export default async function InfluencerPage({ params }: Props) {
         <MarketplaceMarquee />
         <InfluencerBenefits />
         <InfluencerHowItWorks />
-        <CreatorCommunity />
+        <StatsBar />
         <InfluencerRequirements />
-        <Testimonials />
         <InfluencerCTA />
-        <FAQ />
       </main>
       <Footer />
     </>

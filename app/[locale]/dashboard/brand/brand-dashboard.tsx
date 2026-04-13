@@ -2,6 +2,8 @@
 
 /* eslint-disable @next/next/no-img-element */
 
+import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import {
   PieChart,
   Pie,
@@ -80,6 +82,41 @@ const influencers = [
   { name: 'Emma Williams', followers: '320K', image: 'https://picsum.photos/seed/woman3/400/500' },
   { name: 'Ana Rivera', followers: '156K', image: 'https://picsum.photos/seed/woman4/400/500' },
 ] as const
+
+const recentActivity = [
+  {
+    name: 'Sarah M.',
+    product: 'BROT-Box getestet',
+    metric: '+2.4k Reach',
+    metricTone: 'orange' as const,
+    status: 'verified' as const,
+    image: '/prueffuchs-creator-01.jpg',
+  },
+  {
+    name: 'Michael K.',
+    product: 'MagSafe Ladegerät',
+    metric: '98% Verifiziert',
+    metricTone: 'blue' as const,
+    status: 'verified' as const,
+    image: '/prueffuchs-creator-02.jpg',
+  },
+  {
+    name: 'Lisa B.',
+    product: 'Heissluftfritteuse-Buch',
+    metric: 'Live seit 2h',
+    metricTone: 'orange' as const,
+    status: 'pending' as const,
+    image: '/prueffuchs-creator-03.jpg',
+  },
+  {
+    name: 'Anna T.',
+    product: 'Kosmetik-Set',
+    metric: '+340 Klicks',
+    metricTone: 'blue' as const,
+    status: 'verified' as const,
+    image: '/prueffuchs-creator-01.jpg',
+  },
+]
 
 const sidebarNav = [
   { label: 'Dashboard', active: true },
@@ -162,6 +199,7 @@ function SparklineBars({ data, color }: { data: number[]; color: string }) {
 // ============ MAIN COMPONENT ============
 
 export default function BrandDashboard() {
+  const t = useTranslations('dashboard.brand')
   const total = donutData.reduce((s, d) => s + d.value, 0)
   const completionRate = Math.round((donutData[0].value / total) * 100)
 
@@ -171,7 +209,7 @@ export default function BrandDashboard() {
       <aside className="hidden lg:flex w-[260px] flex-col bg-white border-r border-gray-200 shrink-0">
         <div className="px-6 py-5 border-b border-gray-100">
           <div className="flex items-center gap-2.5">
-            <img src="/prueffuchs-logo.png" alt="Prüffuchs" className="h-14 w-auto object-contain" />
+            <Image src="/prueffuchs-logo.png" alt="Prüffuchs" width={5623} height={3023} className="h-14 w-auto object-contain" />
           </div>
         </div>
 
@@ -212,7 +250,7 @@ export default function BrandDashboard() {
         <div className="p-5 sm:p-6 lg:p-8 max-w-[1400px]">
           {/* Header */}
           <div className="mb-8 flex items-center gap-4">
-            <img src="/prueffuchs-mascot-face.png" alt="Prüffuchs Mascot" className="w-20 h-20 object-contain" />
+            <Image src="/prueffuchs-mascot-face.png" alt="Prüffuchs Mascot" width={1000} height={1000} className="w-20 h-20 object-contain" />
             <div>
               <h1 className="text-2xl font-bold text-gray-900">Marken-Dashboard</h1>
               <p className="text-sm text-gray-500 mt-1">
@@ -241,6 +279,49 @@ export default function BrandDashboard() {
               </div>
             ))}
           </div>
+
+          <section className="mt-6 mb-8">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-base font-medium text-slate-900">{t('recentActivity.title')}</h3>
+              <span className="text-xs text-slate-500">{t('recentActivity.subtitle')}</span>
+            </div>
+            <div className="grid grid-cols-2 xl:grid-cols-4 gap-3">
+              {recentActivity.map((entry, idx) => {
+                const metricClass =
+                  entry.metricTone === 'orange'
+                    ? 'bg-orange-50 text-orange-700'
+                    : 'bg-blue-50 text-blue-700'
+                const isVerified = entry.status === 'verified'
+                return (
+                  <div
+                    key={`${entry.name}-${idx}`}
+                    className="bg-white border border-slate-200 rounded-xl p-3 hover:shadow-sm transition flex flex-col items-center text-center"
+                  >
+                    <div className="w-12 h-12 rounded-full overflow-hidden ring-2 ring-white shadow-sm mb-2">
+                      <Image
+                        src={entry.image}
+                        alt={entry.name}
+                        width={96}
+                        height={96}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <p className="text-sm font-medium text-slate-900">{entry.name}</p>
+                    <p className="text-xs text-slate-500 mt-0.5">{entry.product}</p>
+                    <span className={`mt-2 inline-block text-xs font-medium px-2 py-0.5 rounded-full ${metricClass}`}>
+                      {entry.metric}
+                    </span>
+                    <span className="mt-2 inline-flex items-center gap-1.5 text-[11px] text-slate-600">
+                      <span
+                        className={`w-1.5 h-1.5 rounded-full ${isVerified ? 'bg-emerald-500' : 'bg-amber-500'}`}
+                      />
+                      {isVerified ? 'Verifiziert' : 'In Prüfung'}
+                    </span>
+                  </div>
+                )
+              })}
+            </div>
+          </section>
 
           {/* Charts Row */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-8">

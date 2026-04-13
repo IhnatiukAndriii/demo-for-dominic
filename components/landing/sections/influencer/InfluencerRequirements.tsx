@@ -1,38 +1,51 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { CheckCircle2 } from 'lucide-react'
+import { CheckCircle, ShieldCheck, CreditCard, Lock, type LucideIcon } from 'lucide-react'
 
-const itemKeys = ['1', '2', '3', '4', '5'] as const
+const requirementKeys = ['followers', 'engagement', 'location'] as const
+
+const trustItems: Array<{ key: 'gdpr' | 'stripe' | 'verification'; Icon: LucideIcon }> = [
+  { key: 'gdpr', Icon: ShieldCheck },
+  { key: 'stripe', Icon: CreditCard },
+  { key: 'verification', Icon: Lock },
+]
 
 export default function InfluencerRequirements() {
-  const t = useTranslations('landing.influencerRequirements')
+  const t = useTranslations('influencer.requirements')
 
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <p className="tracking-widest text-sm text-brand-orange font-semibold mb-4">
-            {t('label')}
-          </p>
-          <h2 className="text-3xl lg:text-5xl font-bold text-brand-navy">
-            {t('headline')}{' '}
-            <span className="text-brand-orange font-serif italic font-semibold">{t('headlineAccent')}</span>
-          </h2>
-        </div>
+    <section id="requirements" className="section-wash-cream py-20 lg:py-28 px-6 lg:px-10 scroll-mt-16 scroll-mt-24">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl lg:text-4xl font-normal text-slate-900 mb-4 text-center">
+          {t('title')}
+        </h2>
 
-        <div className="max-w-3xl mx-auto">
-          {itemKeys.map((key) => (
-            <div
-              key={key}
-              className="flex items-center gap-4 py-4 border-b border-brand-orange-100"
-            >
-              <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0" />
-              <p className="text-base text-brand-navy/80 leading-relaxed">
-                {t(`items.${key}`)}
-              </p>
-            </div>
-          ))}
+        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+          <ul className="space-y-4">
+            {requirementKeys.map((key) => (
+              <li key={key} className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-orange-500 flex-shrink-0 mt-0.5" />
+                <span className="text-base text-slate-700 leading-relaxed">
+                  {t(`items.${key}`)}
+                </span>
+              </li>
+            ))}
+          </ul>
+
+          <div className="flex flex-wrap gap-3 items-start lg:justify-end">
+            {trustItems.map(({ key, Icon }) => (
+              <div
+                key={key}
+                className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-4 py-2 shadow-sm"
+              >
+                <Icon className="w-4 h-4 text-blue-500" />
+                <span className="text-sm font-medium text-slate-700">
+                  {t(`trust.${key}`)}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

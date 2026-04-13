@@ -16,13 +16,13 @@ export default function CreatorCommunity() {
   const t = useTranslations('landing.creatorCommunity')
 
   return (
-    <section id="creator-community" className="py-24 lg:py-32 bg-brand-orange-50/30">
+    <section id="creator-community" className="bg-white py-20 lg:py-28 px-6 lg:px-10">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center px-6 mb-16">
         <p className="tracking-widest text-sm text-brand-orange font-semibold mb-4">
           {t('label')}
         </p>
-        <h2 className="text-4xl lg:text-6xl font-bold text-brand-navy mb-4 text-balance animate-fade-in-up">
+        <h2 className="text-3xl lg:text-4xl font-normal text-slate-900 mb-4 text-balance animate-fade-in-up">
           {t('headline')}{' '}
           <span className="text-brand-orange font-serif italic font-semibold">{t('headlineAccent')}</span>{' '}
           {t('headlineEnd')}

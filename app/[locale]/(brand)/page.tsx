@@ -8,7 +8,7 @@ import PlatformFeatures from '@/components/landing/sections/PlatformFeatures'
 import HowItWorks from '@/components/landing/sections/HowItWorks'
 import CreatorCommunity from '@/components/landing/sections/CreatorCommunity'
 import Testimonials from '@/components/landing/sections/Testimonials'
-import FeaturedPublications from '@/components/landing/sections/FeaturedPublications'
+// import { FeaturedPublications } from '@/components/landing/sections/FeaturedPublications';
 import FinalCTA from '@/components/landing/sections/FinalCTA'
 import FAQ from '@/components/landing/sections/FAQ'
 import Footer from '@/components/landing/sections/Footer'
@@ -64,7 +64,9 @@ export default async function LandingPage({ params }: Props) {
         <HowItWorks />
         <CreatorCommunity />
         <Testimonials />
-        <FeaturedPublications />
+        {/* FeaturedPublications stub — built and ready, hidden per client request until real press coverage exists.
+            To activate: uncomment the import above and uncomment the line below. */}
+        {/* <FeaturedPublications /> */}
         <FinalCTA />
         <FAQ />
       </main>

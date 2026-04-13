@@ -127,14 +127,14 @@ export default function HowItWorks() {
   const [activeStep, setActiveStep] = useState(1)
 
   return (
-    <section id="how-it-works" className="bg-[#EBF0F7] py-24 lg:py-32">
+    <section id="how-it-works" className="section-wash-cream py-20 lg:py-28 px-6 lg:px-10">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
           <p className="tracking-widest text-sm text-brand-orange font-semibold mb-4">
             {t('label')}
           </p>
-          <h2 className="text-4xl lg:text-6xl font-bold text-brand-navy animate-fade-in-up">
+          <h2 className="text-3xl lg:text-4xl font-normal text-slate-900 mb-4 animate-fade-in-up">
             {t('headline')}{' '}
             <span className="text-brand-orange font-serif italic font-semibold">{t('headlineAccent')}</span>
           </h2>

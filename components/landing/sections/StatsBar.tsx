@@ -7,12 +7,12 @@ export default function StatsBar() {
   const t = useTranslations('stats')
 
   return (
-    <section id="stats-bar" className="relative bg-brand-navy text-white py-20 lg:py-28">
+    <section id="stats-bar" className="relative bg-brand-navy text-white py-20 lg:py-28 px-6 lg:px-10">
       <div className="max-w-6xl mx-auto px-6">
         <p className="text-center text-sm uppercase tracking-widest text-brand-orange mb-4">
           {t('label')}
         </p>
-        <h2 className="text-center text-3xl lg:text-5xl font-bold mb-16 animate-fade-in-up">
+        <h2 className="text-center text-3xl lg:text-4xl font-normal text-slate-900 mb-4 animate-fade-in-up">
           {t('headline')}
         </h2>
 

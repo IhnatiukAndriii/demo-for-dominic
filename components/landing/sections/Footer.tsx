@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
-import Link from 'next/link'
+import { Link } from '@/lib/navigation'
+import { CALENDLY_URL } from '@/lib/site-config'
 
 const socialIcons = {
   instagram: (
@@ -39,24 +40,35 @@ export default function Footer() {
             />
           </Link>
           <div className="flex items-center gap-4">
+            {/* TODO M4b: add real TikTok/Facebook/LinkedIn/YouTube URLs */}
             {[
-              { name: 'Instagram', icon: socialIcons.instagram, href: 'https://instagram.com/prueffuchsde' },
-              { name: 'TikTok', icon: socialIcons.tiktok, href: '#' },
-              { name: 'Facebook', icon: socialIcons.facebook, href: '#' },
-              { name: 'LinkedIn', icon: socialIcons.linkedin, href: '#' },
-              { name: 'YouTube', icon: socialIcons.youtube, href: '#' },
-            ].map((social) => (
-              <a
-                key={social.name}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={social.name}
-                className="text-white/60 hover:text-brand-orange transition-colors"
-              >
-                {social.icon}
-              </a>
-            ))}
+              { name: 'Instagram', icon: socialIcons.instagram, href: 'https://instagram.com/prueffuchsde' as string | null },
+              { name: 'TikTok', icon: socialIcons.tiktok, href: null },
+              { name: 'Facebook', icon: socialIcons.facebook, href: null },
+              { name: 'LinkedIn', icon: socialIcons.linkedin, href: null },
+              { name: 'YouTube', icon: socialIcons.youtube, href: null },
+            ].map((social) =>
+              social.href ? (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.name}
+                  className="text-white/60 hover:text-brand-orange transition-colors"
+                >
+                  {social.icon}
+                </a>
+              ) : (
+                <span
+                  key={social.name}
+                  aria-label={social.name}
+                  className="text-white/30"
+                >
+                  {social.icon}
+                </span>
+              ),
+            )}
           </div>
         </div>
 
@@ -69,11 +81,13 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-sm mb-4">{t('columns.forBrands.title')}</h4>
             <ul className="space-y-2 text-sm text-white/60">
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.forBrands.platform')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.forBrands.pricing')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.forBrands.demo')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.forBrands.caseStudies')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.forBrands.faq')}</a></li>
+              <li><a href="#platform-features" className="hover:text-white transition-colors">{t('columns.forBrands.platform')}</a></li>
+              {/* TODO M4b: link to pricing page */}
+              <li><span>{t('columns.forBrands.pricing')}</span></li>
+              <li><a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">{t('columns.forBrands.demo')}</a></li>
+              {/* TODO M4b: link to case studies page */}
+              <li><span>{t('columns.forBrands.caseStudies')}</span></li>
+              <li><a href="#faq" className="hover:text-white transition-colors">{t('columns.forBrands.faq')}</a></li>
             </ul>
           </div>
 
@@ -81,46 +95,50 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-sm mb-4">{t('columns.forCreators.title')}</h4>
             <ul className="space-y-2 text-sm text-white/60">
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.forCreators.signup')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.forCreators.howItWorks')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.forCreators.benefits')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.forCreators.community')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.forCreators.support')}</a></li>
+              <li><Link href="/influencer" className="hover:text-white transition-colors">{t('columns.forCreators.signup')}</Link></li>
+              <li><Link href="/influencer#how-it-works" className="hover:text-white transition-colors">{t('columns.forCreators.howItWorks')}</Link></li>
+              <li><Link href="/influencer#benefits" className="hover:text-white transition-colors">{t('columns.forCreators.benefits')}</Link></li>
+              <li><a href="#creator-community" className="hover:text-white transition-colors">{t('columns.forCreators.community')}</a></li>
+              {/* TODO M4b: link to creator support page */}
+              <li><span>{t('columns.forCreators.support')}</span></li>
             </ul>
           </div>
 
           {/* Unternehmen */}
           <div>
             <h4 className="font-semibold text-sm mb-4">{t('columns.company.title')}</h4>
+            {/* TODO M4b: link to company pages */}
             <ul className="space-y-2 text-sm text-white/60">
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.company.about')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.company.team')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.company.careers')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.company.press')}</a></li>
-              <li><Link href="/contact" className="hover:text-white transition-colors">{t('columns.company.contact')}</Link></li>
+              <li><span>{t('columns.company.about')}</span></li>
+              <li><span>{t('columns.company.team')}</span></li>
+              <li><span>{t('columns.company.careers')}</span></li>
+              <li><span>{t('columns.company.press')}</span></li>
+              <li><span>{t('columns.company.contact')}</span></li>
             </ul>
           </div>
 
           {/* Ressourcen */}
           <div>
             <h4 className="font-semibold text-sm mb-4">{t('columns.resources.title')}</h4>
+            {/* TODO M4b: link to resources pages */}
             <ul className="space-y-2 text-sm text-white/60">
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.resources.blog')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.resources.guides')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.resources.webinars')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.resources.partners')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.resources.apiDocs')}</a></li>
+              <li><span>{t('columns.resources.blog')}</span></li>
+              <li><span>{t('columns.resources.guides')}</span></li>
+              <li><span>{t('columns.resources.webinars')}</span></li>
+              <li><span>{t('columns.resources.partners')}</span></li>
+              <li><span>{t('columns.resources.apiDocs')}</span></li>
             </ul>
           </div>
 
           {/* Rechtliches */}
           <div>
             <h4 className="font-semibold text-sm mb-4">{t('columns.legal.title')}</h4>
+            {/* TODO M4b: link to legal pages */}
             <ul className="space-y-2 text-sm text-white/60">
-              <li><Link href="/imprint" className="hover:text-white transition-colors">{t('columns.legal.imprint')}</Link></li>
-              <li><Link href="/privacy" className="hover:text-white transition-colors">{t('columns.legal.privacy')}</Link></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.legal.terms')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('columns.legal.cookies')}</a></li>
+              <li><span>{t('columns.legal.imprint')}</span></li>
+              <li><span>{t('columns.legal.privacy')}</span></li>
+              <li><span>{t('columns.legal.terms')}</span></li>
+              <li><span>{t('columns.legal.cookies')}</span></li>
             </ul>
           </div>
 
@@ -128,7 +146,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-sm mb-4">{t('columns.contactCol.title')}</h4>
             <ul className="space-y-2 text-sm text-white/60">
-              <li><a href="mailto:hello@prueffuchs.de" className="hover:text-white transition-colors">{t('columns.contactCol.email')}</a></li>
+              <li><a href="mailto:team@prueffuchs.de" className="hover:text-white transition-colors">{t('columns.contactCol.email')}</a></li>
               <li><span>{t('columns.contactCol.phone')}</span></li>
               <li><span>{t('columns.contactCol.address')}</span></li>
             </ul>

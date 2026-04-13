@@ -7,7 +7,7 @@ export default function MarketplaceMarquee() {
   const logos = [...siteConfig.marketplaces, ...siteConfig.marketplaces]
 
   return (
-    <section id="marketplace-marquee" className="bg-white py-12 lg:py-16">
+    <section id="marketplaces" className="bg-white py-10 lg:py-12 scroll-mt-16 scroll-mt-24">
       <p className="text-center text-xs lg:text-sm uppercase tracking-wider text-brand-navy/60 font-medium mb-8 lg:mb-10">
         {t('label')}
       </p>
@@ -22,7 +22,7 @@ export default function MarketplaceMarquee() {
           {logos.map((mp, i) => (
             <div
               key={`${mp.name}-${i}`}
-              className="mx-8 lg:mx-12 flex-shrink-0 flex items-center text-brand-navy/60 hover:text-brand-navy transition-colors"
+              className="mx-4 lg:mx-6 flex-shrink-0 flex items-center opacity-60 hover:opacity-100 transition-opacity"
             >
               <Image
                 src={mp.logo}
@@ -30,7 +30,7 @@ export default function MarketplaceMarquee() {
                 width={120}
                 height={40}
                 unoptimized
-                className="h-8 w-auto object-contain"
+                className="max-h-6 lg:max-h-8 w-auto object-contain"
               />
             </div>
           ))}

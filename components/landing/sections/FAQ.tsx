@@ -16,10 +16,10 @@ export default function FAQ() {
   ]
 
   return (
-    <section id="faq" className="bg-gradient-to-b from-white via-brand-orange-50/30 to-white py-24 lg:py-32 scroll-mt-16">
+    <section id="faq" className="section-wash-cream py-20 lg:py-28 px-6 lg:px-10 scroll-mt-16">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-brand-navy text-center mb-4">
+          <h2 className="text-3xl lg:text-4xl font-normal text-slate-900 text-center mb-4">
             {t('title')}
           </h2>
           <p className="text-lg text-brand-navy/70 text-center">

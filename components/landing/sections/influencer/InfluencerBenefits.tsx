@@ -1,47 +1,42 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { Gift, DollarSign, Sparkles, Users } from 'lucide-react'
+import { Package, Wallet, CalendarCheck, type LucideIcon } from 'lucide-react'
 
-const icons = [Gift, DollarSign, Sparkles, Users]
-const cardKeys = ['freeProducts', 'fullRefund', 'creativeFreeedom', 'community'] as const
+const items: Array<{ key: 'authentic' | 'fair' | 'flexible'; Icon: LucideIcon }> = [
+  { key: 'authentic', Icon: Package },
+  { key: 'fair', Icon: Wallet },
+  { key: 'flexible', Icon: CalendarCheck },
+]
 
 export default function InfluencerBenefits() {
-  const t = useTranslations('landing.influencerBenefits')
+  const t = useTranslations('influencer.benefits')
 
   return (
-    <section id="benefits" className="py-24 lg:py-32 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <p className="tracking-widest text-sm text-brand-orange font-semibold mb-4">
-            {t('label')}
-          </p>
-          <h2 className="text-3xl lg:text-5xl font-bold text-brand-navy">
-            {t('headline')}{' '}
-            <span className="text-brand-orange font-serif italic font-semibold">{t('headlineAccent')}</span>
-          </h2>
-        </div>
+    <section id="benefits" className="section-wash-orange py-20 lg:py-28 px-6 lg:px-10 scroll-mt-16">
+      <span id="categories" className="block scroll-mt-24" aria-hidden />
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl lg:text-4xl font-normal text-slate-900 mb-4 text-center">
+          {t('title')}
+        </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {cardKeys.map((key, i) => {
-            const Icon = icons[i]
-            return (
-              <div
-                key={key}
-                className="rounded-2xl p-8 border border-brand-orange-100 bg-brand-orange-50/30 hover:shadow-lg transition-shadow duration-200"
-              >
-                <div className="w-12 h-12 rounded-xl bg-brand-orange/10 flex items-center justify-center mb-5">
-                  <Icon className="w-6 h-6 text-brand-orange" />
-                </div>
-                <h3 className="text-lg font-bold text-brand-navy mb-2">
-                  {t(`cards.${key}.title`)}
-                </h3>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
-                  {t(`cards.${key}.description`)}
-                </p>
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {items.map(({ key, Icon }) => (
+            <div
+              key={key}
+              className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100 p-6 lg:p-8"
+            >
+              <div className="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center mb-5">
+                <Icon className="w-6 h-6 text-orange-500" />
               </div>
-            )
-          })}
+              <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                {t(`items.${key}.title`)}
+              </h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                {t(`items.${key}.body`)}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

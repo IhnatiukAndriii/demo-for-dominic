@@ -38,3 +38,8 @@ next-env.d.ts
 
 # Supabase
 .supabase/
+
+# Playwright artifacts
+/test-results/
+/playwright-report/
+/.playwright-mcp/

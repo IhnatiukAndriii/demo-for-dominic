@@ -29,7 +29,9 @@
     "admin": "Administrator"
   },
   "hero": {},
-  "marketplaces": { "label": "Verfügbar auf diesen Marktplätzen" },
+  "marketplaces": {
+    "label": "Verfügbar auf diesen Marktplätzen"
+  },
   "stats": {
     "label": "PRÜFFUCHS IN ZAHLEN",
     "headline": "Echte Ergebnisse, echte Zahlen"
@@ -64,31 +66,16 @@
       "closeMenu": "Menü schließen"
     },
     "hero": {
-      "badge": "Influencer Marketing für Amazon-Verkäufer",
-      "headlineLine1Before": "Wachse auf",
-      "headlineAccent": "Kaufland",
-      "headlinePrefix": "Wachse auf",
-      "headlineLine2": "mit Creators, die",
-      "headlineLine3": "wirklich kaufen.",
-      "tagline": "Die Marktplatz-Wachstumslösung",
-      "subline": "Micro-Influencer kaufen dein Produkt, testen es ehrlich und posten authentischen Content. Du profitierst von echten Verkäufen, besserem Ranking und mehr Sichtbarkeit.",
+      "headlinePrefix": "Wachse auf ",
+      "rotatingKeywords": [
+        "Amazon",
+        "OTTO",
+        "Kaufland",
+        "Zalando"
+      ],
+      "subline": "Micro-Influencer kaufen Ihr Produkt, testen es ehrlich und posten authentischen Content. Sie profitieren von echten Verkäufen, besserem Ranking und mehr Sichtbarkeit.",
       "ctaPrimary": "Kampagne starten",
-      "ctaSecondary": "Demo buchen",
-      "headlineStart": "Wachse auf",
-      "headlineSuffix": "mit Creators, die wirklich kaufen.",
-      "ctaBrand": "Kampagne starten",
-      "ctaDemo": "Demo buchen",
-      "trustedByLabel": "Vertraut von führenden Marken",
-      "flowBrand": "Brand",
-      "flowBrandAction": "Kampagne erstellen",
-      "flowPlatform": "Prüffuchs",
-      "flowPlatformAction": "Matching & Koordination",
-      "flowInfluencer": "Influencer",
-      "flowInfluencerAction": "Kaufen & Posten",
-      "flowRefund": "Kaufpreis zurück",
-      "trust1": "Keine Vorauszahlung",
-      "trust2": "Pay per Result",
-      "trust3": "DACH-Fokus"
+      "ctaSecondary": "Demo buchen"
     },
     "howItWorks": {
       "title": "So funktioniert Prüffuchs",
@@ -105,12 +92,30 @@
       "label": "SO FUNKTIONIERT PRÜFFUCHS",
       "headline": "Vom Produkt-Seeding zum",
       "headlineAccent": "Wachstum",
-      "step1": { "title": "Brand erstellt Kampagne", "description": "Du definierst Produkt, Budget und Zielgruppe. Wir erstellen die Kampagne und finden passende Mikro-Influencer." },
-      "step2": { "title": "AI-Matching", "description": "Unser System matched deine Kampagne mit den passendsten Creators basierend auf Nische, Engagement und Reichweite." },
-      "step3": { "title": "Influencer kauft Produkt", "description": "Der Influencer kauft dein Produkt als echter Kunde — keine Gifting, maximale Authentizität." },
-      "step4": { "title": "Content erstellen", "description": "Der Creator nutzt das Produkt, dokumentiert seine Erfahrung und produziert authentischen Content." },
-      "step5": { "title": "Post veröffentlichen", "description": "Der Beitrag wird auf den Social-Media-Kanälen des Creators veröffentlicht und du erhältst alle Rechte am Content." },
-      "step6": { "title": "Rückerstattung & Abrechnung", "description": "Nach Freigabe erhält der Influencer den vollen Kaufpreis zurück. Du zahlst nur für verifizierte Ergebnisse." }
+      "step1": {
+        "title": "Brand erstellt Kampagne",
+        "description": "Du definierst Produkt, Budget und Zielgruppe. Wir erstellen die Kampagne und finden passende Mikro-Influencer."
+      },
+      "step2": {
+        "title": "AI-Matching",
+        "description": "Unser System matched deine Kampagne mit den passendsten Creators basierend auf Nische, Engagement und Reichweite."
+      },
+      "step3": {
+        "title": "Influencer kauft Produkt",
+        "description": "Der Influencer kauft dein Produkt als echter Kunde — keine Gifting, maximale Authentizität."
+      },
+      "step4": {
+        "title": "Content erstellen",
+        "description": "Der Creator nutzt das Produkt, dokumentiert seine Erfahrung und produziert authentischen Content."
+      },
+      "step5": {
+        "title": "Post veröffentlichen",
+        "description": "Der Beitrag wird auf den Social-Media-Kanälen des Creators veröffentlicht und du erhältst alle Rechte am Content."
+      },
+      "step6": {
+        "title": "Rückerstattung & Abrechnung",
+        "description": "Nach Freigabe erhält der Influencer den vollen Kaufpreis zurück. Du zahlst nur für verifizierte Ergebnisse."
+      }
     },
     "brands": {
       "badge": "Für Brands & Unternehmen",
@@ -164,12 +169,36 @@
       "headline": "Vertraut von",
       "headlineAccent": "tausenden Creators",
       "items": {
-        "1": { "quote": "Endlich eine Plattform, die Creators fair behandelt. Ich bekomme gratis Produkte, die ich wirklich liebe, und das Bewerbungssystem ist super einfach.", "name": "Sarah M.", "role": "Beauty Creator, München" },
-        "2": { "quote": "Prüffuchs hat mein Engagement auf Instagram verdoppelt. Die Produkte passen perfekt zu meiner Nische, und die Brands sind unglaublich professionell.", "name": "Tim K.", "role": "Food Influencer, Wien" },
-        "3": { "quote": "Als Brand-Manager war ich skeptisch, aber die Authentizität der Reviews hat mich überzeugt. Unser Amazon-Ranking ist in 2 Monaten um 40% gestiegen.", "name": "Markus B.", "role": "E-Commerce Manager, Hamburg" },
-        "4": { "quote": "Die Rückerstattung kam schneller als erwartet. Ich teste gerne neue Produkte und verdiene dabei — perfekte Kombination für mich als Studentin.", "name": "Lena W.", "role": "Lifestyle Creator, Berlin" },
-        "5": { "quote": "Wir haben bereits 5 Kampagnen durchgeführt und sind jedes Mal beeindruckt von der Qualität des Contents. Das ist echtes Influencer-Marketing.", "name": "Julia R.", "role": "Marketing Lead, Frankfurt" },
-        "6": { "quote": "Der Kundensupport reagiert blitzschnell, die Plattform ist intuitiv, und ich habe schon mehrere Stammprodukte durch Prüffuchs entdeckt.", "name": "Dennis H.", "role": "Tech Reviewer, Köln" }
+        "1": {
+          "quote": "Endlich eine Plattform, die Creators fair behandelt. Ich bekomme gratis Produkte, die ich wirklich liebe, und das Bewerbungssystem ist super einfach.",
+          "name": "Sarah M.",
+          "role": "Beauty Creator, München"
+        },
+        "2": {
+          "quote": "Prüffuchs hat mein Engagement auf Instagram verdoppelt. Die Produkte passen perfekt zu meiner Nische, und die Brands sind unglaublich professionell.",
+          "name": "Tim K.",
+          "role": "Food Influencer, Wien"
+        },
+        "3": {
+          "quote": "Als Brand-Manager war ich skeptisch, aber die Authentizität der Reviews hat mich überzeugt. Unser Amazon-Ranking ist in 2 Monaten um 40% gestiegen.",
+          "name": "Markus B.",
+          "role": "E-Commerce Manager, Hamburg"
+        },
+        "4": {
+          "quote": "Die Rückerstattung kam schneller als erwartet. Ich teste gerne neue Produkte und verdiene dabei — perfekte Kombination für mich als Studentin.",
+          "name": "Lena W.",
+          "role": "Lifestyle Creator, Berlin"
+        },
+        "5": {
+          "quote": "Wir haben bereits 5 Kampagnen durchgeführt und sind jedes Mal beeindruckt von der Qualität des Contents. Das ist echtes Influencer-Marketing.",
+          "name": "Julia R.",
+          "role": "Marketing Lead, Frankfurt"
+        },
+        "6": {
+          "quote": "Der Kundensupport reagiert blitzschnell, die Plattform ist intuitiv, und ich habe schon mehrere Stammprodukte durch Prüffuchs entdeckt.",
+          "name": "Dennis H.",
+          "role": "Tech Reviewer, Köln"
+        }
       }
     },
     "finalCta": {
@@ -241,79 +270,27 @@
       "headline": "Creator-Zusammenarbeit auf",
       "headlineAccent": "Autopilot",
       "cards": {
-        "realPurchases": { "title": "Echte Käufe von echten Kunden", "description": "Influencer kaufen dein Produkt wie normale Kunden — kein Gifting, keine Fake-Reviews. Maximale Authentizität für deine Brand." },
-        "ugc": { "title": "Authentischer UGC", "description": "Hochwertige Fotos und Videos für deine Werbeanzeigen, Produktseiten und Social Media — alles aus echten Kundenerfahrungen." },
-        "ranking": { "title": "Ranking Boost", "description": "Echte Verkäufe und Reviews verbessern dein Amazon-Ranking organisch. Bessere Sichtbarkeit, mehr Sales." },
-        "payForResults": { "title": "Pay for Results", "description": "Kein Risiko, keine versteckten Kosten. Du zahlst nur für verifizierte, veröffentlichte Posts. Rückerstattung erfolgt nach Freigabe." },
-        "dach": { "title": "Creator aus DACH", "description": "Unser Netzwerk besteht aus geprüften Mikro-Influencern aus Deutschland, Österreich und der Schweiz — perfekte Zielgruppe für deutschsprachige Märkte." }
-      }
-    },
-    "influencerHero": {
-      "badge": "Werde Teil der Community",
-      "headline": "Teste Produkte, verdiene",
-      "headlineAccent": "Geld",
-      "tagline": "Kostenlose Produkte. Echte Marken. Deine Kreativit\u00e4t.",
-      "subhead": "Bewirb dich auf Kampagnen von deutschen Top-Marken. Teste Produkte kostenlos, erstelle authentischen Content und erhalte dein Geld zur\u00fcck nach der Ver\u00f6ffentlichung.",
-      "ctaPrimary": "Jetzt kostenlos registrieren",
-      "ctaSecondary": "Mehr erfahren"
-    },
-    "influencerBenefits": {
-      "label": "DEINE VORTEILE",
-      "headline": "Warum Creator",
-      "headlineAccent": "Pr\u00fcffuchs lieben",
-      "cards": {
-        "freeProducts": {
-          "title": "Gratis Produkte",
-          "description": "Teste hochwertige Marken-Produkte ohne Vorauszahlung. Du erh\u00e4ltst dein Geld zur\u00fcck nach der Ver\u00f6ffentlichung deines Posts."
+        "realPurchases": {
+          "title": "Echte Käufe von echten Kunden",
+          "description": "Influencer kaufen dein Produkt wie normale Kunden — kein Gifting, keine Fake-Reviews. Maximale Authentizität für deine Brand."
         },
-        "fullRefund": {
-          "title": "Volle R\u00fcckerstattung",
-          "description": "Nach Freigabe deines Beitrags wird der komplette Kaufpreis direkt auf dein Konto \u00fcberwiesen. Schnell und transparent."
+        "ugc": {
+          "title": "Authentischer UGC",
+          "description": "Hochwertige Fotos und Videos für deine Werbeanzeigen, Produktseiten und Social Media — alles aus echten Kundenerfahrungen."
         },
-        "creativeFreeedom": {
-          "title": "Kreative Freiheit",
-          "description": "Du entscheidest wie du das Produkt pr\u00e4sentierst. Authentischer Content schl\u00e4gt perfekte Werbung jeden Tag."
+        "ranking": {
+          "title": "Ranking Boost",
+          "description": "Echte Verkäufe und Reviews verbessern dein Amazon-Ranking organisch. Bessere Sichtbarkeit, mehr Sales."
         },
-        "community": {
-          "title": "Community Support",
-          "description": "Tausche dich mit anderen Creators aus, lerne aus Best Practices und werde Teil einer wachsenden Community."
+        "payForResults": {
+          "title": "Pay for Results",
+          "description": "Kein Risiko, keine versteckten Kosten. Du zahlst nur für verifizierte, veröffentlichte Posts. Rückerstattung erfolgt nach Freigabe."
+        },
+        "dach": {
+          "title": "Creator aus DACH",
+          "description": "Unser Netzwerk besteht aus geprüften Mikro-Influencern aus Deutschland, Österreich und der Schweiz — perfekte Zielgruppe für deutschsprachige Märkte."
         }
       }
-    },
-    "influencerHowItWorksSimple": {
-      "label": "SO EINFACH GEHT'S",
-      "headline": "In 3 Schritten zum",
-      "headlineAccent": "ersten Verdienst",
-      "step1": {
-        "title": "Registrieren",
-        "description": "Erstelle dein kostenloses Creator-Profil in 2 Minuten"
-      },
-      "step2": {
-        "title": "Bewerben",
-        "description": "Durchsuche offene Kampagnen und bewirb dich mit wenigen Klicks"
-      },
-      "step3": {
-        "title": "Erstellen & Verdienen",
-        "description": "Teste das Produkt, poste authentischen Content, erhalte dein Geld zur\u00fcck"
-      }
-    },
-    "influencerRequirements": {
-      "label": "VORAUSSETZUNGEN",
-      "headline": "Das brauchst du, um",
-      "headlineAccent": "mitzumachen",
-      "items": {
-        "1": "Mindestens 200 Follower auf Instagram, TikTok oder YouTube",
-        "2": "Wohnsitz in Deutschland, \u00d6sterreich oder der Schweiz",
-        "3": "Aktives und \u00f6ffentliches Social-Media-Profil",
-        "4": "Echtes Interesse an Produkten und Marken",
-        "5": "Bereitschaft, authentischen Content zu erstellen"
-      }
-    },
-    "influencerCta": {
-      "headline": "Starte deine Creator-Reise",
-      "headlineAccent": "heute",
-      "cta": "Jetzt kostenlos registrieren \u2192",
-      "trust": "100% kostenlos \u00b7 Keine versteckten Kosten \u00b7 In 2 Minuten einsatzbereit"
     },
     "creatorCommunity": {
       "label": "UNSERE CREATOR COMMUNITY",
@@ -322,15 +299,152 @@
       "headlineEnd": "von Creators",
       "subhead": "Egal welche Nische — wir haben die passenden Mikro-Influencer für deine Marke.",
       "categories": {
-        "beauty": { "label": "BEAUTY & PFLEGE", "title": "Beauty & Pflege", "description": "Make-up, Skincare, Haircare und Self-Care Creator" },
-        "home": { "label": "HAUSHALT & KÜCHE", "title": "Haushalt & Küche", "description": "Home-Organization, Kitchen-Gadgets und Einrichtung" },
-        "fitness": { "label": "SPORT & FITNESS", "title": "Sport & Fitness", "description": "Fitness, Wellness und aktive Lifestyles" },
-        "pets": { "label": "TIER & HAUSTIER", "title": "Tier & Haustier", "description": "Hunde, Katzen und alle tierischen Begleiter" },
-        "fashion": { "label": "MODE & LIFESTYLE", "title": "Mode & Lifestyle", "description": "Fashion, Accessoires und urbane Trends" },
-        "food": { "label": "FOOD & ERNÄHRUNG", "title": "Food & Ernährung", "description": "Rezepte, Cooking und gesunde Ernährung" },
-        "family": { "label": "FAMILIE & KINDER", "title": "Familie & Kinder", "description": "Eltern, Kids und Familienleben" },
-        "tech": { "label": "TECHNIK & GADGETS", "title": "Technik & Gadgets", "description": "Tech-Reviews, Gaming und Smart Home" }
+        "beauty": {
+          "label": "BEAUTY & PFLEGE",
+          "title": "Beauty & Pflege",
+          "description": "Make-up, Skincare, Haircare und Self-Care Creator"
+        },
+        "home": {
+          "label": "HAUSHALT & KÜCHE",
+          "title": "Haushalt & Küche",
+          "description": "Home-Organization, Kitchen-Gadgets und Einrichtung"
+        },
+        "fitness": {
+          "label": "SPORT & FITNESS",
+          "title": "Sport & Fitness",
+          "description": "Fitness, Wellness und aktive Lifestyles"
+        },
+        "pets": {
+          "label": "TIER & HAUSTIER",
+          "title": "Tier & Haustier",
+          "description": "Hunde, Katzen und alle tierischen Begleiter"
+        },
+        "fashion": {
+          "label": "MODE & LIFESTYLE",
+          "title": "Mode & Lifestyle",
+          "description": "Fashion, Accessoires und urbane Trends"
+        },
+        "food": {
+          "label": "FOOD & ERNÄHRUNG",
+          "title": "Food & Ernährung",
+          "description": "Rezepte, Cooking und gesunde Ernährung"
+        },
+        "family": {
+          "label": "FAMILIE & KINDER",
+          "title": "Familie & Kinder",
+          "description": "Eltern, Kids und Familienleben"
+        },
+        "tech": {
+          "label": "TECHNIK & GADGETS",
+          "title": "Technik & Gadgets",
+          "description": "Tech-Reviews, Gaming und Smart Home"
+        }
       }
+    }
+  },
+  "influencer": {
+    "hero": {
+      "headline": "Testen Sie Produkte, verdienen Sie Geld",
+      "subline": "Bewerben Sie sich auf Kampagnen von deutschen Top-Marken. Testen Sie Produkte kostenlos, erstellen Sie authentischen Content und erhalten Sie Ihr Geld zurück nach der Veröffentlichung.",
+      "ctaPrimary": "Jetzt kostenlos registrieren",
+      "ctaSecondary": "Mehr erfahren"
+    },
+    "benefits": {
+      "title": "Warum Creator Prüffuchs lieben",
+      "items": {
+        "authentic": {
+          "title": "Gratis Produkte",
+          "body": "Testen Sie hochwertige Marken-Produkte ohne Vorauszahlung. Sie erhalten Ihr Geld zurück nach der Veröffentlichung Ihres Posts."
+        },
+        "fair": {
+          "title": "Volle Rückerstattung",
+          "body": "Nach Freigabe Ihres Beitrags wird der komplette Kaufpreis direkt auf Ihr Konto überwiesen. Schnell und transparent."
+        },
+        "flexible": {
+          "title": "Kreative Freiheit",
+          "body": "Sie entscheiden, wie Sie das Produkt präsentieren. Authentischer Content schlägt perfekte Werbung jeden Tag."
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "In 3 Schritten zum ersten Verdienst",
+      "step1": {
+        "title": "Registrieren",
+        "body": "Erstellen Sie Ihr kostenloses Creator-Profil in 2 Minuten"
+      },
+      "step2": {
+        "title": "Bewerben",
+        "body": "Durchsuchen Sie offene Kampagnen und bewerben Sie sich mit wenigen Klicks"
+      },
+      "step3": {
+        "title": "Erstellen & Verdienen",
+        "body": "Testen Sie das Produkt, posten Sie authentischen Content, erhalten Sie Ihr Geld zurück"
+      },
+      "step4": {
+        "title": "Vergütung erhalten",
+        "body": "Nach erfolgreicher Veröffentlichung erhalten Sie den vollen Kaufpreis automatisch zurück."
+      }
+    },
+    "requirements": {
+      "title": "Das brauchen Sie, um mitzumachen",
+      "items": {
+        "followers": "Mindestens 200 Follower auf Instagram, TikTok oder YouTube",
+        "engagement": "Aktives und öffentliches Social-Media-Profil",
+        "location": "Wohnsitz in Deutschland, Österreich oder der Schweiz"
+      },
+      "trust": {
+        "gdpr": "DSGVO-konform",
+        "stripe": "Sichere Auszahlung via Stripe",
+        "verification": "Verifizierte Marken"
+      }
+    },
+    "finalCta": {
+      "title": "Starten Sie Ihre Creator-Reise heute",
+      "button": "Jetzt kostenlos registrieren →"
+    }
+  },
+  "landingNav": {
+    "toggleBrand": "Für Marken",
+    "toggleCreator": "Für Creator",
+    "login": "Anmelden",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "brand": {
+      "platform": "Plattform",
+      "platformItems": {
+        "influencerCampaigns": "Influencer-Kampagnen",
+        "verification": "Verifizierung",
+        "campaignMgmt": "Kampagnen-Management",
+        "adminDashboard": "Admin-Dashboard"
+      },
+      "solutions": "Lösungen",
+      "solutionItems": {
+        "amazon": "Amazon",
+        "ottoKaufland": "OTTO & Kaufland",
+        "zalando": "Zalando",
+        "shopify": "Shopify"
+      },
+      "resources": "Ressourcen",
+      "resourceItems": {
+        "faq": "FAQ",
+        "contact": "Kontakt",
+        "imprint": "Impressum"
+      },
+      "pricing": "Preise",
+      "ctaPrimary": "Erstgespräch buchen"
+    },
+    "creator": {
+      "howItWorks": "So funktioniert's",
+      "categories": "Kategorien",
+      "categoryItems": {
+        "beauty": "Beauty & Pflege",
+        "fashion": "Mode & Lifestyle",
+        "home": "Haushalt & Küche",
+        "fitness": "Sport & Fitness",
+        "food": "Food & Ernährung"
+      },
+      "requirements": "Anforderungen",
+      "ctaPrimary": "Jetzt registrieren"
     }
   },
   "auth": {
@@ -386,7 +500,11 @@
       "campaigns": "Meine Kampagnen",
       "createCampaign": "Kampagne erstellen",
       "noCampaigns": "Noch keine Kampagnen",
-      "noCampaignsText": "Erstelle deine erste Kampagne, um passende Influencer zu finden."
+      "noCampaignsText": "Erstelle deine erste Kampagne, um passende Influencer zu finden.",
+      "recentActivity": {
+        "title": "Aktuelle Creator-Aktivität",
+        "subtitle": "Letzte 24 Stunden"
+      }
     },
     "influencer": {
       "title": "Hallo, {name}",

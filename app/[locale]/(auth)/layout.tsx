@@ -24,7 +24,7 @@ export default function AuthLayout({
       <div className="relative sm:mx-auto sm:w-full sm:max-w-md">
         <div className="flex flex-col items-center mb-8">
           <Image src="/prueffuchs-mascot-full.png" alt="Prüffuchs Mascot" priority width={128} height={128} style={{ height: 'auto' }} className="w-32 mb-4 drop-shadow-lg" />
-          <Image src="/fox-logo-white.png" alt="Prüffuchs" width={200} height={0} style={{ width: 'auto', height: '3rem' }} className="object-contain drop-shadow-md" />
+          <Image src="/prueffuchs-logo.png" alt="Prüffuchs" width={200} height={0} style={{ width: 'auto', height: '3rem' }} className="object-contain drop-shadow-md" />
         </div>
       </div>
 

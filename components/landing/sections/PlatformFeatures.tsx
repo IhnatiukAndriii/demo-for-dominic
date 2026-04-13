@@ -5,14 +5,15 @@ export default function PlatformFeatures() {
   const t = useTranslations('landing.platformFeatures')
 
   return (
-    <section id="platform-features" className="py-24 lg:py-32 bg-gradient-to-b from-brand-orange-50 to-white">
+    <section id="platform-features" className="section-wash-orange py-20 lg:py-28 px-6 lg:px-10 scroll-mt-16">
+      <span id="pricing" className="block scroll-mt-24" aria-hidden />
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
           <p className="tracking-widest text-sm text-brand-orange font-semibold mb-4">
             {t('label')}
           </p>
-          <h2 className="text-4xl lg:text-6xl font-bold text-brand-navy animate-fade-in-up">
+          <h2 className="text-3xl lg:text-4xl font-normal text-slate-900 mb-4 animate-fade-in-up">
             {t('headline')}{' '}
             <span className="text-brand-orange font-serif italic font-semibold">{t('headlineAccent')}</span>
           </h2>
@@ -21,7 +22,7 @@ export default function PlatformFeatures() {
         {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 lg:gap-8">
           {/* Card 1: Real Purchases — tall, spans 2 cols and 2 rows */}
-          <div className="lg:col-span-2 lg:row-span-2 rounded-3xl p-8 lg:p-10 border border-brand-orange-100 bg-white hover:border-brand-orange-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500">
+          <div className="lg:col-span-2 lg:row-span-2 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100 p-6 lg:p-8">
             <ShoppingCart className="w-10 h-10 text-brand-orange mb-5" />
             <h3 className="text-2xl font-bold text-brand-navy mb-3">
               {t('cards.realPurchases.title')}
@@ -45,7 +46,7 @@ export default function PlatformFeatures() {
           </div>
 
           {/* Card 2: UGC Content */}
-          <div className="lg:col-span-2 rounded-3xl p-8 lg:p-10 border border-brand-orange-100 bg-white hover:border-brand-orange-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500">
+          <div className="lg:col-span-2 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100 p-6 lg:p-8">
             <Camera className="w-10 h-10 text-brand-orange mb-5" />
             <h3 className="text-2xl font-bold text-brand-navy mb-3">
               {t('cards.ugc.title')}
@@ -56,7 +57,7 @@ export default function PlatformFeatures() {
           </div>
 
           {/* Card 3: Ranking Boost */}
-          <div className="lg:col-span-2 rounded-3xl p-8 lg:p-10 border border-brand-orange-100 bg-white hover:border-brand-orange-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500">
+          <div className="lg:col-span-2 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100 p-6 lg:p-8">
             <TrendingUp className="w-10 h-10 text-brand-orange mb-5" />
             <h3 className="text-2xl font-bold text-brand-navy mb-3">
               {t('cards.ranking.title')}
@@ -85,7 +86,7 @@ export default function PlatformFeatures() {
           </div>
 
           {/* Card 4: Pay for Results */}
-          <div className="lg:col-span-3 rounded-3xl p-8 lg:p-10 border border-brand-orange-100 bg-white hover:border-brand-orange-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500">
+          <div className="lg:col-span-3 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100 p-6 lg:p-8">
             <ShieldCheck className="w-10 h-10 text-brand-orange mb-5" />
             <h3 className="text-2xl font-bold text-brand-navy mb-3">
               {t('cards.payForResults.title')}
@@ -96,7 +97,7 @@ export default function PlatformFeatures() {
           </div>
 
           {/* Card 5: DACH Network */}
-          <div className="lg:col-span-3 rounded-3xl p-8 lg:p-10 border border-brand-orange-100 bg-white hover:border-brand-orange-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 relative">
+          <div className="lg:col-span-3 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100 p-6 lg:p-8 relative">
             <div className="absolute top-6 right-6 text-2xl">🇩🇪 🇦🇹 🇨🇭</div>
             <Users className="w-10 h-10 text-brand-orange mb-5" />
             <h3 className="text-2xl font-bold text-brand-navy mb-3">

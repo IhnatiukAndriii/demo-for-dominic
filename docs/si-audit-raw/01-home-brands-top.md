@@ -1,0 +1,1126 @@
+- generic [active] [ref=e1]:
+  - list [ref=e3]:
+    - listitem [ref=e4]:
+      - generic [ref=e5]: New
+      - link "TikTok Shop solutions are now live" [ref=e6] [cursor=pointer]:
+        - /url: /marketplace-solutions/tiktok
+      - link "Close notification bar" [ref=e7] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e9]
+  - banner [ref=e11]:
+    - navigation [ref=e12]:
+      - generic [ref=e15]:
+        - link "For Brands" [ref=e16] [cursor=pointer]:
+          - /url: /
+        - link "For Creators" [ref=e17] [cursor=pointer]:
+          - /url: /creators
+    - generic [ref=e19]:
+      - link "home" [ref=e20] [cursor=pointer]:
+        - /url: /
+        - img "Stack Influence logo" [ref=e21]
+      - navigation [ref=e22]:
+        - generic [ref=e23]:
+          - button "Platform" [ref=e25] [cursor=pointer]:
+            - img [ref=e27]
+            - generic [ref=e29]: Platform
+          - button "Solutions" [ref=e31] [cursor=pointer]:
+            - img [ref=e33]
+            - generic [ref=e35]: Solutions
+          - link "Pricing" [ref=e36] [cursor=pointer]:
+            - /url: /pricing
+          - button "Resources" [ref=e38] [cursor=pointer]:
+            - img [ref=e40]
+            - generic [ref=e42]: Resources
+        - generic [ref=e44]:
+          - link "Book a demo" [ref=e45] [cursor=pointer]:
+            - /url: /book-a-demo
+          - link "Log in" [ref=e46] [cursor=pointer]:
+            - /url: https://app.stackinfluence.com/brand/dashboard
+  - banner [ref=e47]:
+    - generic [ref=e49]:
+      - paragraph [ref=e50]: Grow on Amazon with everyday creators
+      - heading [level=1] [ref=e51]:
+        - generic [ref=e52]: Grow
+        - generic [ref=e53]: "on"
+        - generic [ref=e54]: Meta Ads
+        - generic [ref=e56]: with
+        - generic [ref=e57]: everyday
+        - generic [ref=e58]: creators
+      - paragraph [ref=e59]: Pay creators with product, automate Micro Influencer posts, improve ads with UGC, and scale online growth. Tap into the top Micro Influencer marketing platform.
+      - generic [ref=e60]:
+        - link "Get started" [ref=e61] [cursor=pointer]:
+          - /url: /book-a-demo
+        - link "I'm a creator" [ref=e62] [cursor=pointer]:
+          - /url: /creators
+    - iframe [ref=e66]:
+      
+  - main [ref=e67]:
+    - generic [ref=e68]:
+      - heading "Trusted by top & up-and-coming brands" [level=2] [ref=e71]
+      - generic [ref=e73]:
+        - list [ref=e74]:
+          - listitem [ref=e75]:
+            - img "Dole logo" [ref=e76]
+          - listitem [ref=e77]:
+            - img "AT&T logo" [ref=e78]
+          - listitem [ref=e79]:
+            - img "Magic Spoon logo" [ref=e80]
+          - listitem [ref=e81]:
+            - img "Naked Sundays logo" [ref=e82]
+          - listitem [ref=e83]:
+            - img "Onnit logo" [ref=e84]
+          - listitem [ref=e85]:
+            - img "Snow logo" [ref=e86]
+          - listitem [ref=e87]:
+            - img "Martha Stewart logo" [ref=e88]
+          - listitem [ref=e89]:
+            - img "Uni logo" [ref=e90]
+          - listitem [ref=e91]:
+            - img "Micinex logo" [ref=e92]
+          - listitem [ref=e93]:
+            - img "P&G logo" [ref=e94]
+          - listitem [ref=e95]:
+            - img "Just Food for Dogs logo" [ref=e96]
+          - listitem [ref=e97]
+          - listitem [ref=e98]
+          - listitem [ref=e99]:
+            - img "Thrasio logo" [ref=e982]
+          - listitem [ref=e100]:
+            - img "Squatty Potty logo" [ref=e983]
+          - listitem [ref=e101]:
+            - img "Monat logo" [ref=e984]
+          - listitem [ref=e102]:
+            - img "Monofuku logo" [ref=e985]
+          - listitem [ref=e103]:
+            - img "Roku logo" [ref=e986]
+          - listitem [ref=e104]:
+            - img "Mixsoon logo" [ref=e987]
+          - listitem [ref=e105]:
+            - img "Rubbermaid logo"
+          - listitem [ref=e106]:
+            - img "Soylent logo"
+          - listitem [ref=e107]:
+            - img "Hopwtr logo"
+          - listitem [ref=e108]:
+            - img "IGK logo"
+          - listitem [ref=e109]:
+            - img "L'Oreal logo"
+          - listitem [ref=e110]:
+            - img "HarperCollins logo"
+          - listitem [ref=e111]:
+            - img "Immi logo"
+          - listitem [ref=e112]:
+            - img "Blueland logo"
+          - listitem [ref=e113]:
+            - img "Curology logo"
+          - listitem [ref=e114]:
+            - img "Clean Cut logo"
+          - listitem [ref=e115]:
+            - img "Ancient Nutrition logo"
+        - list [ref=e116]:
+          - listitem [ref=e117]:
+            - img "Dole logo" [ref=e118]
+          - listitem [ref=e119]:
+            - img "AT&T logo" [ref=e120]
+          - listitem [ref=e121]:
+            - img "Magic Spoon logo" [ref=e122]
+          - listitem [ref=e123]:
+            - img "Naked Sundays logo" [ref=e124]
+          - listitem [ref=e125]:
+            - img "Onnit logo" [ref=e126]
+          - listitem [ref=e127]:
+            - img "Snow logo" [ref=e128]
+          - listitem [ref=e129]:
+            - img "Martha Stewart logo" [ref=e130]
+          - listitem [ref=e131]:
+            - img "Uni logo" [ref=e132]
+          - listitem [ref=e133]:
+            - img "Micinex logo" [ref=e134]
+          - listitem [ref=e135]:
+            - img "P&G logo" [ref=e136]
+          - listitem [ref=e137]:
+            - img "Just Food for Dogs logo" [ref=e138]
+          - listitem [ref=e139]
+          - listitem [ref=e140]
+          - listitem [ref=e141]:
+            - img "Thrasio logo" [ref=e988]
+          - listitem [ref=e142]:
+            - img "Squatty Potty logo" [ref=e989]
+          - listitem [ref=e143]:
+            - img "Monat logo" [ref=e990]
+          - listitem [ref=e144]:
+            - img "Monofuku logo" [ref=e991]
+          - listitem [ref=e145]:
+            - img "Roku logo" [ref=e992]
+          - listitem [ref=e146]:
+            - img "Mixsoon logo" [ref=e993]
+          - listitem [ref=e147]:
+            - img "Rubbermaid logo"
+          - listitem [ref=e148]:
+            - img "Soylent logo"
+          - listitem [ref=e149]:
+            - img "Hopwtr logo"
+          - listitem [ref=e150]:
+            - img "IGK logo"
+          - listitem [ref=e151]:
+            - img "L'Oreal logo"
+          - listitem [ref=e152]:
+            - img "HarperCollins logo"
+          - listitem [ref=e153]:
+            - img "Immi logo"
+          - listitem [ref=e154]:
+            - img "Blueland logo"
+          - listitem [ref=e155]:
+            - img "Curology logo"
+          - listitem [ref=e156]:
+            - img "Clean Cut logo"
+          - listitem [ref=e157]:
+            - img "Ancient Nutrition logo"
+        - list [ref=e158]:
+          - listitem [ref=e159]:
+            - img "Dole logo" [ref=e160]
+          - listitem [ref=e161]:
+            - img "AT&T logo" [ref=e162]
+          - listitem [ref=e163]:
+            - img "Magic Spoon logo" [ref=e164]
+          - listitem [ref=e165]:
+            - img "Naked Sundays logo" [ref=e166]
+          - listitem [ref=e167]:
+            - img "Onnit logo" [ref=e168]
+          - listitem [ref=e169]:
+            - img "Snow logo" [ref=e170]
+          - listitem [ref=e171]:
+            - img "Martha Stewart logo" [ref=e172]
+          - listitem [ref=e173]:
+            - img "Uni logo" [ref=e174]
+          - listitem [ref=e175]:
+            - img "Micinex logo" [ref=e176]
+          - listitem [ref=e177]:
+            - img "P&G logo" [ref=e178]
+          - listitem [ref=e179]:
+            - img "Just Food for Dogs logo" [ref=e180]
+          - listitem [ref=e181]
+          - listitem [ref=e182]
+          - listitem [ref=e183]:
+            - img "Thrasio logo" [ref=e994]
+          - listitem [ref=e184]:
+            - img "Squatty Potty logo" [ref=e995]
+          - listitem [ref=e185]:
+            - img "Monat logo" [ref=e996]
+          - listitem [ref=e186]:
+            - img "Monofuku logo" [ref=e997]
+          - listitem [ref=e187]:
+            - img "Roku logo" [ref=e998]
+          - listitem [ref=e188]:
+            - img "Mixsoon logo" [ref=e999]
+          - listitem [ref=e189]:
+            - img "Rubbermaid logo"
+          - listitem [ref=e190]:
+            - img "Soylent logo"
+          - listitem [ref=e191]:
+            - img "Hopwtr logo"
+          - listitem [ref=e192]:
+            - img "IGK logo"
+          - listitem [ref=e193]:
+            - img "L'Oreal logo"
+          - listitem [ref=e194]:
+            - img "HarperCollins logo"
+          - listitem [ref=e195]:
+            - img "Immi logo"
+          - listitem [ref=e196]:
+            - img "Blueland logo"
+          - listitem [ref=e197]:
+            - img "Curology logo"
+          - listitem [ref=e198]:
+            - img "Clean Cut logo"
+          - listitem [ref=e199]:
+            - img "Ancient Nutrition logo"
+    - generic [ref=e202]:
+      - link "Marketplace Growth Solutions Increase sales & improve marketplace visibility Discover more" [ref=e203] [cursor=pointer]:
+        - /url: /marketplace-solutions
+        - generic [ref=e204]:
+          - generic [ref=e205]: Marketplace Growth Solutions
+          - generic [ref=e206]: Increase sales & improve marketplace visibility
+          - generic [ref=e207]: Discover more
+      - link "Advertising Growth Solutions Turn the best UGC into high‑performing paid media Discover more" [ref=e208] [cursor=pointer]:
+        - /url: /advertising-solutions
+        - generic [ref=e209]:
+          - generic [ref=e210]: Advertising Growth Solutions
+          - generic [ref=e211]: Turn the best UGC into high‑performing paid media
+          - generic [ref=e212]: Discover more
+    - generic [ref=e215]:
+      - heading "stack influence in numbers" [level=2] [ref=e216]
+      - generic [ref=e217]:
+        - generic [ref=e218]:
+          - generic [ref=e219]: 0k
+          - generic [ref=e220]: vetted creators ready to scale your brand
+        - generic [ref=e221]:
+          - generic [ref=e222]: 0hrs
+          - generic [ref=e223]: average time you'll save per month
+        - generic [ref=e224]:
+          - generic [ref=e225]: 0x
+          - generic [ref=e226]: your ad conversions
+    - generic [ref=e229]:
+      - generic [ref=e230]:
+        - heading "How stack influence works" [level=2] [ref=e231]
+        - paragraph [ref=e232]: From product seeding to product growth
+        - group [ref=e233]:
+          - generic [ref=e234]: From
+          - generic [ref=e235]: product
+          - generic [ref=e236]: seeding
+          - generic [ref=e237]:
+            - generic [ref=e238]: to
+            - generic [ref=e239]: product
+            - generic [ref=e240]: growth
+      - generic [ref=e242]:
+        - tablist [ref=e243]:
+          - tab "1 Define Your Goals & Product Tell us about your brand and what Micro Influencer marketing objectives you want to achieve." [ref=e244] [cursor=pointer]:
+            - generic [ref=e245]:
+              - generic [ref=e246]:
+                - generic [ref=e247]: "1"
+                - generic [ref=e249]: Define Your Goals & Product
+              - paragraph [ref=e250]: Tell us about your brand and what Micro Influencer marketing objectives you want to achieve.
+          - tab "2 AI‑Driven Influencer Matchmaking Our Micro Influencer platform analyzes psychographic, demographic and geographic data to find the right Micro Influencers for your niche." [ref=e251] [cursor=pointer]:
+            - generic [ref=e252]:
+              - generic [ref=e253]:
+                - generic [ref=e254]: "2"
+                - generic [ref=e256]: AI‑Driven Influencer Matchmaking
+              - paragraph [ref=e257]: Our Micro Influencer platform analyzes psychographic, demographic and geographic data to find the right Micro Influencers for your niche.
+          - tab "3 Product Seeding & Briefing We ship your products, provide creative briefs, and ensure Micro Influencers know what makes your brand special." [ref=e258] [cursor=pointer]:
+            - generic [ref=e259]:
+              - generic [ref=e260]:
+                - generic [ref=e261]: "3"
+                - generic [ref=e262]: Product Seeding & Briefing
+              - paragraph [ref=e263]: We ship your products, provide creative briefs, and ensure Micro Influencers know what makes your brand special.
+          - tab "4 Content Creation & Syndication Creators share genuine testimonials and visuals across social platforms to boost sales and brand awareness. You gain full rights to all UGC." [ref=e264] [cursor=pointer]:
+            - generic [ref=e265]:
+              - generic [ref=e266]:
+                - generic [ref=e267]: "4"
+                - generic [ref=e268]: Content Creation & Syndication
+              - paragraph [ref=e269]: Creators share genuine testimonials and visuals across social platforms to boost sales and brand awareness. You gain full rights to all UGC.
+          - tab "5 Performance Tracking & Optimization Monitor impressions, engagement, and ROI with real‑time analytics and adjust your strategy with our guidance." [ref=e270] [cursor=pointer]:
+            - generic [ref=e271]:
+              - generic [ref=e272]:
+                - generic [ref=e273]: "5"
+                - generic [ref=e274]: Performance Tracking & Optimization
+              - paragraph [ref=e275]: Monitor impressions, engagement, and ROI with real‑time analytics and adjust your strategy with our guidance.
+          - tab "6 Scale & Repeat Identify top performers and graduate them into long‑term ambassador or affiliate programs, so your growth keeps compounding." [selected] [ref=e276] [cursor=pointer]:
+            - generic [ref=e277]:
+              - generic [ref=e278]:
+                - generic [ref=e279]: "6"
+                - generic [ref=e280]: Scale & Repeat
+              - paragraph [ref=e283]: Identify top performers and graduate them into long‑term ambassador or affiliate programs, so your growth keeps compounding.
+        - tabpanel "6 Scale & Repeat Identify top performers and graduate them into long‑term ambassador or affiliate programs, so your growth keeps compounding." [ref=e286]
+    - generic [ref=e289]:
+      - generic [ref=e290]:
+        - heading "Platform features" [level=2] [ref=e291]
+        - paragraph [ref=e292]: Creator collaboration on autopilot
+        - group [ref=e293]:
+          - generic [ref=e294]: Creator
+          - generic [ref=e295]: collaboration
+          - generic [ref=e296]:
+            - generic [ref=e297]: "on"
+            - generic [ref=e298]: autopilot
+      - generic [ref=e301]:
+        - link "Micro Influencer Promotions Get access to our Micro Influencer community delivering higher trust and engagement than big‑name celebrities. Match with the ideal creators for your product niche. Learn more Hand with pink nail polish holding smartphone displaying an Instagram post of a smiling woman applying makeup." [ref=e302]:
+          - /url: /platform/micro-influencer-promotions
+          - generic [ref=e303]:
+            - generic [ref=e304]:
+              - heading "Micro Influencer Promotions" [level=3] [ref=e305]
+              - generic [ref=e306]: Get access to our Micro Influencer community delivering higher trust and engagement than big‑name celebrities. Match with the ideal creators for your product niche.
+            - generic [ref=e307]: Learn more
+          - generic:
+            - img "Hand with pink nail polish holding smartphone displaying an Instagram post of a smiling woman applying makeup."
+        - link "User Generated Content Turn authentic photos, videos, and product testimonials generated from Micro Influencers into a content war chest to use across your ads and marketing. Learn more" [ref=e308]:
+          - /url: /platform/user-generated-content
+          - generic [ref=e309]:
+            - generic [ref=e310]:
+              - heading "User Generated Content" [level=3] [ref=e311]
+              - generic [ref=e312]: Turn authentic photos, videos, and product testimonials generated from Micro Influencers into a content war chest to use across your ads and marketing.
+            - generic [ref=e313]: Learn more
+        - link "Content Syndication Syndicate Micro Influencer generated content across all your channels, amplifying reach, fueling your paid media ads, and increasing your social proof online. Learn more" [ref=e315]:
+          - /url: /platform/content-syndication
+          - generic [ref=e316]:
+            - heading "Content Syndication" [level=3] [ref=e317]
+            - generic [ref=e318]: Syndicate Micro Influencer generated content across all your channels, amplifying reach, fueling your paid media ads, and increasing your social proof online.
+          - generic [ref=e319]: Learn more
+        - link "Ambassadors & Affiliates Transform top-performing Micro Influencers into affiliates and ambassadors who champion your products for the long haul. Learn more" [ref=e320]:
+          - /url: /platform/ambassador-affiliate-programs
+          - generic [ref=e321]:
+            - heading "Ambassadors & Affiliates" [level=3] [ref=e322]
+            - generic [ref=e323]: Transform top-performing Micro Influencers into affiliates and ambassadors who champion your products for the long haul.
+          - generic [ref=e324]: Learn more
+        - link "Automated Product Seeding Instead of negotiating fees with every creator, simply pay Micro Influencers with your products and automate everything with AI. Learn more" [ref=e325]:
+          - /url: /platform/automated-product-seeding
+          - generic [ref=e326]:
+            - generic [ref=e327]:
+              - heading "Automated Product Seeding" [level=3] [ref=e328]
+              - generic [ref=e329]: Instead of negotiating fees with every creator, simply pay Micro Influencers with your products and automate everything with AI.
+            - generic [ref=e330]: Learn more
+    - generic [ref=e332]:
+      - heading "Featured in leading publications" [level=2] [ref=e335]
+      - generic [ref=e337]:
+        - list [ref=e338]:
+          - listitem [ref=e339]:
+            - img "Inc. logo"
+          - listitem [ref=e340]:
+            - img "Wired logo"
+          - listitem [ref=e341]:
+            - img "Quartz logo"
+          - listitem [ref=e342]:
+            - img "Shopify logo"
+          - listitem [ref=e343]:
+            - img "Forbes"
+          - listitem [ref=e344]:
+            - img "Digiday"
+          - listitem [ref=e345]:
+            - img "Business Insider"
+          - listitem [ref=e346]:
+            - img "WWD logo"
+          - listitem [ref=e347]:
+            - img "Glossy logo"
+        - list [ref=e348]:
+          - listitem [ref=e349]:
+            - img "Inc. logo"
+          - listitem [ref=e350]:
+            - img "Wired logo"
+          - listitem [ref=e351]:
+            - img "Quartz logo"
+          - listitem [ref=e352]:
+            - img "Shopify logo"
+          - listitem [ref=e353]:
+            - img "Forbes"
+          - listitem [ref=e354]:
+            - img "Digiday"
+          - listitem [ref=e355]:
+            - img "Business Insider"
+          - listitem [ref=e356]:
+            - img "WWD logo"
+          - listitem [ref=e357]:
+            - img "Glossy logo"
+        - list [ref=e358]:
+          - listitem [ref=e359]:
+            - img "Inc. logo"
+          - listitem [ref=e360]:
+            - img "Wired logo"
+          - listitem [ref=e361]:
+            - img "Quartz logo"
+          - listitem [ref=e362]:
+            - img "Shopify logo"
+          - listitem [ref=e363]:
+            - img "Forbes"
+          - listitem [ref=e364]:
+            - img "Digiday"
+          - listitem [ref=e365]:
+            - img "Business Insider"
+          - listitem [ref=e366]:
+            - img "WWD logo"
+          - listitem [ref=e367]:
+            - img "Glossy logo"
+    - generic [ref=e370]:
+      - generic [ref=e371]:
+        - generic [ref=e372]:
+          - heading "Customer success stories" [level=2] [ref=e373]
+          - paragraph [ref=e374]: Trusted by thousands of eCommerce brands
+          - group [ref=e375]:
+            - generic [ref=e376]: Trusted
+            - generic [ref=e377]: by
+            - generic [ref=e379]: thousands
+            - generic [ref=e380]: of
+            - generic [ref=e381]: eCommerce
+            - generic [ref=e382]: brands
+        - link "View all" [ref=e383] [cursor=pointer]:
+          - /url: /customer-stories
+      - generic [ref=e386]:
+        - list [ref=e388] [cursor=pointer]:
+          - listitem [ref=e389]:
+            - link "Aunt Fannie’s scaled an eco-cleaner to 8x Amazon sales in 90 days":
+              - /url: /customer-stories/aunt-fannies
+        - list [ref=e391] [cursor=pointer]:
+          - listitem [ref=e392]:
+            - link "How Naked Sunday scaled BeautyScreen™ to 10x Amazon sales in 4 months":
+              - /url: /customer-stories/naked-sunday
+              - generic [ref=e394]:
+                - generic [ref=e395]:
+                  - generic [ref=e396]: Naked Sunday
+                  - heading "How Naked Sunday scaled BeautyScreen™ to 10x Amazon sales in 4 months" [level=3] [ref=e397]
+                - generic [ref=e398]:
+                  - generic [ref=e399]:
+                    - generic [ref=e400]: 10x
+                    - generic [ref=e401]: Revenue
+                  - generic [ref=e402]:
+                    - generic [ref=e403]: 1.4m
+                    - generic [ref=e404]: Impressions
+                  - generic [ref=e405]:
+                    - generic [ref=e406]: 2.4x
+                    - generic [ref=e407]: Rank Boost
+        - list [ref=e409] [cursor=pointer]:
+          - listitem [ref=e410]:
+            - link "InoPro scaled Amazon sales 7x with Influencer-driven demand":
+              - /url: /customer-stories/inopro
+    - generic [ref=e412]:
+      - heading "Trusted by thousands of ecommerce brands" [level=2] [ref=e413]
+      - generic [ref=e414]:
+        - region "Testimonias Slider" [ref=e415]:
+          - generic [ref=e416]:
+            - group [ref=e417]:
+              - link [ref=e418] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e419]:
+                  - generic [ref=e420]: Engagement rate skyrocketed
+                  - generic [ref=e421]: Besides the influencers generating content for promotional channels and brand awareness we’ve been seeing that our engagement rate has been much higher – number of likes, comments compared to other influencer collaborations.
+                - generic [ref=e422]: March 20, 2025
+            - group [ref=e423]:
+              - link [ref=e424] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e425]:
+                  - generic [ref=e426]: Pay influencers only in product
+                  - generic [ref=e427]: I’ve been working with stack influencers for five months. Instead of paying between $500 and $1,000 for one post, as you would with larger influencers, you give them a product of their choosing.
+                - generic [ref=e428]: May 7, 2025
+            - group [ref=e429]:
+              - link [ref=e430] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e431]:
+                  - generic [ref=e432]: Unilever loves Stack Influence
+                  - generic [ref=e433]: Stack Influence is a cost-effective solution to run micro-influencer campaigns that abstracts out the hard bits for you, like influencer accumulation, managing influencers to make sure they complete their tasks, and compensation.
+                - generic [ref=e434]: April 14, 2025
+            - group [ref=e435]:
+              - link [ref=e436] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e437]:
+                  - generic [ref=e438]: Innovative influencer program
+                  - generic [ref=e439]: Easy of use. Fast onboarding. Great team that is very educated. Helped us get a ton of micro influencers for our amazon products. It really helped us boost things. There was nothing we disliked about Stack Influence.
+                - generic [ref=e440]: April 18, 2025
+            - group [ref=e441]:
+              - link [ref=e442] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e443]:
+                  - generic [ref=e444]: Connecting with influencers has never been easier
+                  - generic [ref=e445]: Easy to manage the influencers. I don't have to worry about reaching out to multiple influencers multiple times. Connecting with influencers is now more convenient than ever.
+                - generic [ref=e446]: May 13, 2025
+            - group [ref=e447]:
+              - link [ref=e448] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e449]:
+                  - generic [ref=e450]: Stack Influence Partners with you
+                  - generic [ref=e451]: Stack Influence understands the ecom landscape and works hard to create unique solutions to generate sales and reviews for your products. Stack Influence also generates interest and gathers market intelligence about the products we are offering.
+                - generic [ref=e452]: May 21, 2025
+            - group [ref=e453]:
+              - link [ref=e454] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e455]:
+                  - generic [ref=e456]: Helped grow our Amazon business
+                  - generic [ref=e457]: The program set up was very easy and it appears to be improving reviews and generating UGC for us. We are continuing to lean in as we do see Stack Influence increasing awareness and helping lift our organic ranking.
+                - generic [ref=e458]: June 4, 2025
+            - group [ref=e459]:
+              - link [ref=e460] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e461]:
+                  - generic [ref=e462]: Stack helped my haircare brand grow on Amazon!
+                  - generic [ref=e463]: I found Stack while looking for a way to grow awareness for my independent hair care brand online, mostly on Amazon. Stack has proven to be very effective in getting great UGC and improving my organic seller ranking and online presence.
+                - generic [ref=e464]: June 18, 2025
+            - group [ref=e465]:
+              - link [ref=e466] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e467]:
+                  - generic [ref=e468]: Great way to develop authentic user generated content
+                  - generic [ref=e469]: Stack influence puts your product in front of customers who create authentic user generated content. Its a great way to get real people to try your product and helping create brand awareness.
+                - generic [ref=e470]: June 26, 2025
+            - group [ref=e471]:
+              - link [ref=e472] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e473]:
+                  - generic [ref=e474]: Stack is great
+                  - generic [ref=e475]: I have participated in many of these influencer programs, and Stack is the only one that has ever worked! I have burned a lot of cash on worthless programs. We crushed it with them. I am doing another program with Stack as we speak.
+                - generic [ref=e476]: July 4, 2025
+            - group [ref=e1000]:
+              - link [ref=e1001] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e479]:
+                  - generic [ref=e480]: Engagement rate skyrocketed
+                  - generic [ref=e481]: Besides the influencers generating content for promotional channels and brand awareness we’ve been seeing that our engagement rate has been much higher – number of likes, comments compared to other influencer collaborations.
+                - generic [ref=e482]: March 20, 2025
+            - group [ref=e1002]:
+              - link [ref=e1003] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e485]:
+                  - generic [ref=e486]: Pay influencers only in product
+                  - generic [ref=e487]: I’ve been working with stack influencers for five months. Instead of paying between $500 and $1,000 for one post, as you would with larger influencers, you give them a product of their choosing.
+                - generic [ref=e488]: May 7, 2025
+            - group "3 of 10" [ref=e489]:
+              - link "Unilever loves Stack Influence Stack Influence is a cost-effective solution to run micro-influencer campaigns that abstracts out the hard bits for you, like influencer accumulation, managing influencers to make sure they complete their tasks, and compensation. April 14, 2025" [ref=e490] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e491]:
+                  - generic [ref=e492]: Unilever loves Stack Influence
+                  - generic [ref=e493]: Stack Influence is a cost-effective solution to run micro-influencer campaigns that abstracts out the hard bits for you, like influencer accumulation, managing influencers to make sure they complete their tasks, and compensation.
+                - generic [ref=e494]: April 14, 2025
+            - group "4 of 10" [ref=e1004]:
+              - link "Innovative influencer program Easy of use. Fast onboarding. Great team that is very educated. Helped us get a ton of micro influencers for our amazon products. It really helped us boost things. There was nothing we disliked about Stack Influence. April 18, 2025" [ref=e1005] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e497]:
+                  - generic [ref=e498]: Innovative influencer program
+                  - generic [ref=e499]: Easy of use. Fast onboarding. Great team that is very educated. Helped us get a ton of micro influencers for our amazon products. It really helped us boost things. There was nothing we disliked about Stack Influence.
+                - generic [ref=e500]: April 18, 2025
+            - group [ref=e501]:
+              - link [ref=e502] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e503]:
+                  - generic [ref=e504]: Connecting with influencers has never been easier
+                  - generic [ref=e505]: Easy to manage the influencers. I don't have to worry about reaching out to multiple influencers multiple times. Connecting with influencers is now more convenient than ever.
+                - generic [ref=e506]: May 13, 2025
+            - group [ref=e507]:
+              - link [ref=e508] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e509]:
+                  - generic [ref=e510]: Stack Influence Partners with you
+                  - generic [ref=e511]: Stack Influence understands the ecom landscape and works hard to create unique solutions to generate sales and reviews for your products. Stack Influence also generates interest and gathers market intelligence about the products we are offering.
+                - generic [ref=e512]: May 21, 2025
+            - group [ref=e513]:
+              - link [ref=e514] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e515]:
+                  - generic [ref=e516]: Helped grow our Amazon business
+                  - generic [ref=e517]: The program set up was very easy and it appears to be improving reviews and generating UGC for us. We are continuing to lean in as we do see Stack Influence increasing awareness and helping lift our organic ranking.
+                - generic [ref=e518]: June 4, 2025
+            - group [ref=e519]:
+              - link [ref=e520] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e521]:
+                  - generic [ref=e522]: Stack helped my haircare brand grow on Amazon!
+                  - generic [ref=e523]: I found Stack while looking for a way to grow awareness for my independent hair care brand online, mostly on Amazon. Stack has proven to be very effective in getting great UGC and improving my organic seller ranking and online presence.
+                - generic [ref=e524]: June 18, 2025
+            - group [ref=e525]:
+              - link [ref=e526] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e527]:
+                  - generic [ref=e528]: Great way to develop authentic user generated content
+                  - generic [ref=e529]: Stack influence puts your product in front of customers who create authentic user generated content. Its a great way to get real people to try your product and helping create brand awareness.
+                - generic [ref=e530]: June 26, 2025
+            - group [ref=e531]:
+              - link [ref=e532] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e533]:
+                  - generic [ref=e534]: Stack is great
+                  - generic [ref=e535]: I have participated in many of these influencer programs, and Stack is the only one that has ever worked! I have burned a lot of cash on worthless programs. We crushed it with them. I am doing another program with Stack as we speak.
+                - generic [ref=e536]: July 4, 2025
+            - group [ref=e537]:
+              - link [ref=e538] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e539]:
+                  - generic [ref=e540]: Engagement rate skyrocketed
+                  - generic [ref=e541]: Besides the influencers generating content for promotional channels and brand awareness we’ve been seeing that our engagement rate has been much higher – number of likes, comments compared to other influencer collaborations.
+                - generic [ref=e542]: March 20, 2025
+            - group [ref=e543]:
+              - link [ref=e544] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e545]:
+                  - generic [ref=e546]: Pay influencers only in product
+                  - generic [ref=e547]: I’ve been working with stack influencers for five months. Instead of paying between $500 and $1,000 for one post, as you would with larger influencers, you give them a product of their choosing.
+                - generic [ref=e548]: May 7, 2025
+            - group [ref=e549]:
+              - link [ref=e550] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e551]:
+                  - generic [ref=e552]: Unilever loves Stack Influence
+                  - generic [ref=e553]: Stack Influence is a cost-effective solution to run micro-influencer campaigns that abstracts out the hard bits for you, like influencer accumulation, managing influencers to make sure they complete their tasks, and compensation.
+                - generic [ref=e554]: April 14, 2025
+            - group [ref=e555]:
+              - link [ref=e556] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e557]:
+                  - generic [ref=e558]: Innovative influencer program
+                  - generic [ref=e559]: Easy of use. Fast onboarding. Great team that is very educated. Helped us get a ton of micro influencers for our amazon products. It really helped us boost things. There was nothing we disliked about Stack Influence.
+                - generic [ref=e560]: April 18, 2025
+            - group [ref=e561]:
+              - link [ref=e562] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e563]:
+                  - generic [ref=e564]: Connecting with influencers has never been easier
+                  - generic [ref=e565]: Easy to manage the influencers. I don't have to worry about reaching out to multiple influencers multiple times. Connecting with influencers is now more convenient than ever.
+                - generic [ref=e566]: May 13, 2025
+            - group [ref=e567]:
+              - link [ref=e568] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e569]:
+                  - generic [ref=e570]: Stack Influence Partners with you
+                  - generic [ref=e571]: Stack Influence understands the ecom landscape and works hard to create unique solutions to generate sales and reviews for your products. Stack Influence also generates interest and gathers market intelligence about the products we are offering.
+                - generic [ref=e572]: May 21, 2025
+            - group [ref=e573]:
+              - link [ref=e574] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e575]:
+                  - generic [ref=e576]: Helped grow our Amazon business
+                  - generic [ref=e577]: The program set up was very easy and it appears to be improving reviews and generating UGC for us. We are continuing to lean in as we do see Stack Influence increasing awareness and helping lift our organic ranking.
+                - generic [ref=e578]: June 4, 2025
+            - group [ref=e579]:
+              - link [ref=e580] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e581]:
+                  - generic [ref=e582]: Stack helped my haircare brand grow on Amazon!
+                  - generic [ref=e583]: I found Stack while looking for a way to grow awareness for my independent hair care brand online, mostly on Amazon. Stack has proven to be very effective in getting great UGC and improving my organic seller ranking and online presence.
+                - generic [ref=e584]: June 18, 2025
+            - group [ref=e585]:
+              - link [ref=e586] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e587]:
+                  - generic [ref=e588]: Great way to develop authentic user generated content
+                  - generic [ref=e589]: Stack influence puts your product in front of customers who create authentic user generated content. Its a great way to get real people to try your product and helping create brand awareness.
+                - generic [ref=e590]: June 26, 2025
+            - group [ref=e591]:
+              - link [ref=e592] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e593]:
+                  - generic [ref=e594]: Stack is great
+                  - generic [ref=e595]: I have participated in many of these influencer programs, and Stack is the only one that has ever worked! I have burned a lot of cash on worthless programs. We crushed it with them. I am doing another program with Stack as we speak.
+                - generic [ref=e596]: July 4, 2025
+        - region "Testimonias Slider" [ref=e597]:
+          - generic [ref=e598]:
+            - group [ref=e599]:
+              - link [ref=e600] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e601]:
+                  - generic [ref=e602]: Effective platform at driving online brand awareness
+                  - generic [ref=e603]: It is reasonably priced, their team is very responsive, and it has helped us drive awareness of our e-commerce site. Stack Influence helps us increase online sales and general brand awareness.
+                - generic [ref=e604]: July 23, 2025
+            - group [ref=e605]:
+              - link [ref=e606] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e607]:
+                  - generic [ref=e608]: By far the best product launch service I've used.
+                  - generic [ref=e609]: Stack Influence makes finding influencers an absolutely automated process. You basically don't even have to do anything after set up, they just roll in. Professional, easy to use platform that brings real results!
+                - generic [ref=e610]: August 6, 2025
+            - group [ref=e611]:
+              - link [ref=e612] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e613]:
+                  - generic [ref=e614]: Amazing platform to scale Amazon focused UGC
+                  - generic [ref=e615]: Stack overall was a great experience from the content generation and scaling UGC content. The platform is extremely easy to use with a great interface for reviewing content, the content stats, downloading and using UGC videos, and viewing credits.
+                - generic [ref=e616]: August 25, 2025
+            - group [ref=e617]:
+              - link [ref=e618] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e619]:
+                  - generic [ref=e620]: Promote products in volume on social channels
+                  - generic [ref=e621]: Stack allows us one arm of influencer marketing that can operate without excessive maintenance on our end. We get some content we can use and it helps push consumers to our ecommerce sites.
+                - generic [ref=e622]: August 28, 2025
+            - group [ref=e623]:
+              - link [ref=e624] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e625]:
+                  - generic [ref=e626]: This is a solid marketing arm of our strategic growth
+                  - generic [ref=e627]: This is a very affordable marketing tool to grow a new product, and to also generate additional growth for an existing product. Stack takes a LOT of the workload off of our shoulders, and is giving us a completely new marketing avenue that we never had before.
+                - generic [ref=e628]: September 12, 2025
+            - group [ref=e629]:
+              - link [ref=e630] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e631]:
+                  - generic [ref=e632]: Great customer service and quick results
+                  - generic [ref=e633]: We find that the team at Stack Influencer responds and sets up campaigns quickly. Their community brings the results we are looking for and then some. Stack Influence helps boost popularity of new products on instagram and bring new consumers to the product as
+                - generic [ref=e634]: September 15, 2025
+            - group [ref=e635]:
+              - link [ref=e636] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e637]:
+                  - generic [ref=e638]: User friendly platform - multifuncional benefits
+                  - generic [ref=e639]: I like that you can direct your purchases not only to Amazon or to your own website but to other websites as well. As a company that also works with wholesale customers this is very helpful for us getting more sales to their websites to jumpstart our products/
+                - generic [ref=e640]: October 3, 2025
+            - group [ref=e641]:
+              - link [ref=e642] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e643]:
+                  - generic [ref=e644]: Great Platform to Help Build Brand Awareness on Amazon
+                  - generic [ref=e645]: I find the platform to be a very efficient way to gift product to influencers that can support our Amazon business and help build overall brand awareness, which is becoming increasingly more important on the channel. It is highly scalable and looking forward
+                - generic [ref=e646]: September 22, 2025
+            - group [ref=e647]:
+              - link [ref=e648] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e649]:
+                  - generic [ref=e650]: Exceptional Partner with Genuine Dedication
+                  - generic [ref=e651]: The staff at Stack Influence is incredibly prompt, kind, and always approach everything with genuine sincerity and effort. Their professionalism and dedication make them an exceptional partner, and we are truly happy to collaborate with them.
+                - generic [ref=e652]: October 6, 2025
+            - group [ref=e653]:
+              - link [ref=e654] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e655]:
+                  - generic [ref=e656]: Useful tool
+                  - generic [ref=e657]: Overall, Stack Influence is a great service, especially for sellers looking for authentic, scalable ways to improve their brand presence on Amazon. The concept is strong — connecting brands with micro-influencers to generate social posts, build sales momentum,
+                - generic [ref=e658]: September 29, 2025
+            - group [ref=e1006]:
+              - link [ref=e1007] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e661]:
+                  - generic [ref=e662]: Effective platform at driving online brand awareness
+                  - generic [ref=e663]: It is reasonably priced, their team is very responsive, and it has helped us drive awareness of our e-commerce site. Stack Influence helps us increase online sales and general brand awareness.
+                - generic [ref=e664]: July 23, 2025
+            - group [ref=e1008]:
+              - link [ref=e1009] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e667]:
+                  - generic [ref=e668]: By far the best product launch service I've used.
+                  - generic [ref=e669]: Stack Influence makes finding influencers an absolutely automated process. You basically don't even have to do anything after set up, they just roll in. Professional, easy to use platform that brings real results!
+                - generic [ref=e670]: August 6, 2025
+            - group [ref=e1010]:
+              - link [ref=e1011] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e673]:
+                  - generic [ref=e674]: Amazing platform to scale Amazon focused UGC
+                  - generic [ref=e675]: Stack overall was a great experience from the content generation and scaling UGC content. The platform is extremely easy to use with a great interface for reviewing content, the content stats, downloading and using UGC videos, and viewing credits.
+                - generic [ref=e676]: August 25, 2025
+            - group [ref=e677]:
+              - link [ref=e678] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e679]:
+                  - generic [ref=e680]: Promote products in volume on social channels
+                  - generic [ref=e681]: Stack allows us one arm of influencer marketing that can operate without excessive maintenance on our end. We get some content we can use and it helps push consumers to our ecommerce sites.
+                - generic [ref=e682]: August 28, 2025
+            - group [ref=e683]:
+              - link [ref=e684] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e685]:
+                  - generic [ref=e686]: This is a solid marketing arm of our strategic growth
+                  - generic [ref=e687]: This is a very affordable marketing tool to grow a new product, and to also generate additional growth for an existing product. Stack takes a LOT of the workload off of our shoulders, and is giving us a completely new marketing avenue that we never had before.
+                - generic [ref=e688]: September 12, 2025
+            - group [ref=e689]:
+              - link [ref=e690] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e691]:
+                  - generic [ref=e692]: Great customer service and quick results
+                  - generic [ref=e693]: We find that the team at Stack Influencer responds and sets up campaigns quickly. Their community brings the results we are looking for and then some. Stack Influence helps boost popularity of new products on instagram and bring new consumers to the product as
+                - generic [ref=e694]: September 15, 2025
+            - group [ref=e695]:
+              - link [ref=e696] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e697]:
+                  - generic [ref=e698]: User friendly platform - multifuncional benefits
+                  - generic [ref=e699]: I like that you can direct your purchases not only to Amazon or to your own website but to other websites as well. As a company that also works with wholesale customers this is very helpful for us getting more sales to their websites to jumpstart our products/
+                - generic [ref=e700]: October 3, 2025
+            - group [ref=e701]:
+              - link [ref=e702] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e703]:
+                  - generic [ref=e704]: Great Platform to Help Build Brand Awareness on Amazon
+                  - generic [ref=e705]: I find the platform to be a very efficient way to gift product to influencers that can support our Amazon business and help build overall brand awareness, which is becoming increasingly more important on the channel. It is highly scalable and looking forward
+                - generic [ref=e706]: September 22, 2025
+            - group "9 of 10" [ref=e1012]:
+              - link "Exceptional Partner with Genuine Dedication The staff at Stack Influence is incredibly prompt, kind, and always approach everything with genuine sincerity and effort. Their professionalism and dedication make them an exceptional partner, and we are truly happy to collaborate with them. October 6, 2025" [ref=e1013] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e709]:
+                  - generic [ref=e710]: Exceptional Partner with Genuine Dedication
+                  - generic [ref=e711]: The staff at Stack Influence is incredibly prompt, kind, and always approach everything with genuine sincerity and effort. Their professionalism and dedication make them an exceptional partner, and we are truly happy to collaborate with them.
+                - generic [ref=e712]: October 6, 2025
+            - group "10 of 10" [ref=e1014]:
+              - link "Useful tool Overall, Stack Influence is a great service, especially for sellers looking for authentic, scalable ways to improve their brand presence on Amazon. The concept is strong — connecting brands with micro-influencers to generate social posts, build sales momentum, September 29, 2025" [ref=e1015] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e715]:
+                  - generic [ref=e716]: Useful tool
+                  - generic [ref=e717]: Overall, Stack Influence is a great service, especially for sellers looking for authentic, scalable ways to improve their brand presence on Amazon. The concept is strong — connecting brands with micro-influencers to generate social posts, build sales momentum,
+                - generic [ref=e718]: September 29, 2025
+            - group "1 of 10" [ref=e1016]:
+              - link "Effective platform at driving online brand awareness It is reasonably priced, their team is very responsive, and it has helped us drive awareness of our e-commerce site. Stack Influence helps us increase online sales and general brand awareness. July 23, 2025" [ref=e1017] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e721]:
+                  - generic [ref=e722]: Effective platform at driving online brand awareness
+                  - generic [ref=e723]: It is reasonably priced, their team is very responsive, and it has helped us drive awareness of our e-commerce site. Stack Influence helps us increase online sales and general brand awareness.
+                - generic [ref=e724]: July 23, 2025
+            - group [ref=e725]:
+              - link [ref=e726] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e727]:
+                  - generic [ref=e728]: By far the best product launch service I've used.
+                  - generic [ref=e729]: Stack Influence makes finding influencers an absolutely automated process. You basically don't even have to do anything after set up, they just roll in. Professional, easy to use platform that brings real results!
+                - generic [ref=e730]: August 6, 2025
+            - group [ref=e731]:
+              - link [ref=e732] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e733]:
+                  - generic [ref=e734]: Amazing platform to scale Amazon focused UGC
+                  - generic [ref=e735]: Stack overall was a great experience from the content generation and scaling UGC content. The platform is extremely easy to use with a great interface for reviewing content, the content stats, downloading and using UGC videos, and viewing credits.
+                - generic [ref=e736]: August 25, 2025
+            - group [ref=e737]:
+              - link [ref=e738] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e739]:
+                  - generic [ref=e740]: Promote products in volume on social channels
+                  - generic [ref=e741]: Stack allows us one arm of influencer marketing that can operate without excessive maintenance on our end. We get some content we can use and it helps push consumers to our ecommerce sites.
+                - generic [ref=e742]: August 28, 2025
+            - group [ref=e743]:
+              - link [ref=e744] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e745]:
+                  - generic [ref=e746]: This is a solid marketing arm of our strategic growth
+                  - generic [ref=e747]: This is a very affordable marketing tool to grow a new product, and to also generate additional growth for an existing product. Stack takes a LOT of the workload off of our shoulders, and is giving us a completely new marketing avenue that we never had before.
+                - generic [ref=e748]: September 12, 2025
+            - group [ref=e749]:
+              - link [ref=e750] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e751]:
+                  - generic [ref=e752]: Great customer service and quick results
+                  - generic [ref=e753]: We find that the team at Stack Influencer responds and sets up campaigns quickly. Their community brings the results we are looking for and then some. Stack Influence helps boost popularity of new products on instagram and bring new consumers to the product as
+                - generic [ref=e754]: September 15, 2025
+            - group [ref=e755]:
+              - link [ref=e756] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e757]:
+                  - generic [ref=e758]: User friendly platform - multifuncional benefits
+                  - generic [ref=e759]: I like that you can direct your purchases not only to Amazon or to your own website but to other websites as well. As a company that also works with wholesale customers this is very helpful for us getting more sales to their websites to jumpstart our products/
+                - generic [ref=e760]: October 3, 2025
+            - group [ref=e761]:
+              - link [ref=e762] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e763]:
+                  - generic [ref=e764]: Great Platform to Help Build Brand Awareness on Amazon
+                  - generic [ref=e765]: I find the platform to be a very efficient way to gift product to influencers that can support our Amazon business and help build overall brand awareness, which is becoming increasingly more important on the channel. It is highly scalable and looking forward
+                - generic [ref=e766]: September 22, 2025
+            - group [ref=e767]:
+              - link [ref=e768] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e769]:
+                  - generic [ref=e770]: Exceptional Partner with Genuine Dedication
+                  - generic [ref=e771]: The staff at Stack Influence is incredibly prompt, kind, and always approach everything with genuine sincerity and effort. Their professionalism and dedication make them an exceptional partner, and we are truly happy to collaborate with them.
+                - generic [ref=e772]: October 6, 2025
+            - group [ref=e773]:
+              - link [ref=e774] [cursor=pointer]:
+                - /url: https://www.g2.com/products/stack-influence/reviews
+                - generic [ref=e775]:
+                  - generic [ref=e776]: Useful tool
+                  - generic [ref=e777]: Overall, Stack Influence is a great service, especially for sellers looking for authentic, scalable ways to improve their brand presence on Amazon. The concept is strong — connecting brands with micro-influencers to generate social posts, build sales momentum,
+                - generic [ref=e778]: September 29, 2025
+    - generic [ref=e781]:
+      - generic [ref=e782]:
+        - heading "Start scaling micro influencers today" [level=2] [ref=e783]
+        - generic [ref=e784]: Join 1000s of brands already growing with Stack Influence
+      - link "Get started" [ref=e785] [cursor=pointer]:
+        - /url: /book-a-demo
+    - generic [ref=e788]:
+      - generic [ref=e789]:
+        - generic [ref=e790]:
+          - heading "Stack Influence blog" [level=2] [ref=e791]
+          - paragraph [ref=e792]: Influencer marketing trends and news
+          - group [ref=e793]:
+            - generic [ref=e794]: Influencer
+            - generic [ref=e795]: marketing
+            - generic [ref=e796]:
+              - generic [ref=e797]: trends
+              - generic [ref=e798]: and
+              - generic [ref=e799]: news
+        - link "View all blogs" [ref=e800] [cursor=pointer]:
+          - /url: /blog
+      - region [ref=e801]:
+        - generic [ref=e802]:
+          - group "1 of 3" [ref=e803]:
+            - link "How to Pick The Best Baseball Instagram Accounts in 2026" [ref=e804] [cursor=pointer]:
+              - /url: /blog/how-to-pick-best-baseball-instagram-accounts-in-2026
+            - generic [ref=e805]:
+              - generic [ref=e806]:
+                - generic [ref=e807]:
+                  - link "Influencer Marketing" [ref=e808] [cursor=pointer]:
+                    - /url: https://stackinfluence.webflow.io/blog?category_equal=Influencer+Marketing
+                    - generic [ref=e809]: Influencer Marketing
+                  - img [ref=e811]
+                - link "How to Pick The Best Baseball Instagram Accounts in 2026" [ref=e813] [cursor=pointer]:
+                  - /url: /blog/how-to-pick-best-baseball-instagram-accounts-in-2026
+                  - heading "How to Pick The Best Baseball Instagram Accounts in 2026" [level=3] [ref=e814]
+              - generic [ref=e817]:
+                - generic [ref=e818]: William Gasner
+                - generic [ref=e820]: April 13, 2026
+          - group "2 of 3" [ref=e821]:
+            - link "The Best Instagram Shoutout Deal Playbook This Year" [ref=e822] [cursor=pointer]:
+              - /url: /blog/the-best-instagram-shoutout-deal-playbook-this-year
+            - generic [ref=e823]:
+              - generic [ref=e824]:
+                - generic [ref=e825]:
+                  - link "Influencer Marketing" [ref=e826] [cursor=pointer]:
+                    - /url: https://stackinfluence.webflow.io/blog?category_equal=Influencer+Marketing
+                    - generic [ref=e827]: Influencer Marketing
+                  - img [ref=e829]
+                - link "The Best Instagram Shoutout Deal Playbook This Year" [ref=e831] [cursor=pointer]:
+                  - /url: /blog/the-best-instagram-shoutout-deal-playbook-this-year
+                  - heading "The Best Instagram Shoutout Deal Playbook This Year" [level=3] [ref=e832]
+              - generic [ref=e835]:
+                - generic [ref=e836]: William Gasner
+                - generic [ref=e838]: April 13, 2026
+          - group "3 of 3" [ref=e839]:
+            - 'link "Free Influencer Insights Tools: The eCommerce Playbook for 2026" [ref=e840] [cursor=pointer]':
+              - /url: /blog/influencer-insights-tool-free-ecommerce-playbook-2026
+            - generic [ref=e841]:
+              - generic [ref=e842]:
+                - generic [ref=e843]:
+                  - link "Influencer Marketing" [ref=e844] [cursor=pointer]:
+                    - /url: https://stackinfluence.webflow.io/blog?category_equal=Influencer+Marketing
+                    - generic [ref=e845]: Influencer Marketing
+                  - img [ref=e847]
+                - 'link "Free Influencer Insights Tools: The eCommerce Playbook for 2026" [ref=e849] [cursor=pointer]':
+                  - /url: /blog/influencer-insights-tool-free-ecommerce-playbook-2026
+                  - 'heading "Free Influencer Insights Tools: The eCommerce Playbook for 2026" [level=3] [ref=e850]'
+              - generic [ref=e853]:
+                - generic [ref=e854]: William Gasner
+                - generic [ref=e856]: April 13, 2026
+  - contentinfo [ref=e857]:
+    - generic [ref=e858]:
+      - generic [ref=e859]:
+        - generic [ref=e860]:
+          - generic [ref=e861]:
+            - heading "Join the brand newsletter" [level=2] [ref=e862]
+            - generic [ref=e863]: The latest info on influencer marketing trends, micro influencer news, and the world of social media.
+          - iframe [ref=e866]:
+            - generic [ref=f3e4]:
+              - textbox "Enter your email" [ref=f3e7]
+              - button "Subscribe" [ref=f3e8]
+        - generic [ref=e867]:
+          - generic [ref=e868]:
+            - heading "Join the creator newsletter" [level=2] [ref=e869]
+            - generic [ref=e870]: The latest info on influencer marketing trends, micro influencer news, and the world of social media.
+          - iframe [ref=e873]:
+            - generic [ref=f4e4]:
+              - textbox "Enter your email" [ref=f4e7]
+              - button "Subscribe" [ref=f4e8]
+      - generic [ref=e874]:
+        - link "Stack Influence home" [ref=e875] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e877]:
+          - link "Download on the App Store":
+            - /url: https://apps.apple.com/us/app/stack-influence-creator-deals/id6481402069
+            - img "Apple App Store logo"
+          - link "Get it on Google Play":
+            - /url: https://play.google.com/store/apps/details?id=com.stackinfluence.creators
+            - img "Google play logo"
+      - generic [ref=e878]:
+        - generic [ref=e880]:
+          - generic [ref=e881]: Brand platform
+          - generic [ref=e883]:
+            - link "Platform Demo" [ref=e884] [cursor=pointer]:
+              - /url: /platform/platform-overview
+              - generic [ref=e885]: Platform Demo
+            - link "Customer Stories" [ref=e886] [cursor=pointer]:
+              - /url: /customer-stories
+              - generic [ref=e887]: Customer Stories
+            - link "Pricing" [ref=e888] [cursor=pointer]:
+              - /url: /pricing
+              - generic [ref=e889]: Pricing
+            - link "Brand FAQs" [ref=e890] [cursor=pointer]:
+              - /url: https://intercom.help/stackinfluence/en/
+              - generic [ref=e891]: Brand FAQs
+            - link "Brand sign up" [ref=e892] [cursor=pointer]:
+              - /url: /book-a-demo
+              - generic [ref=e893]: Brand sign up
+            - link "Brand login" [ref=e894] [cursor=pointer]:
+              - /url: https://app.stackinfluence.com/brand/dashboard
+              - generic [ref=e895]: Brand login
+        - generic [ref=e897]:
+          - generic [ref=e898]: Platform features
+          - link "Micro-influencer promotions" [ref=e899] [cursor=pointer]:
+            - /url: /platform/micro-influencer-promotions
+            - generic [ref=e900]: Micro-influencer promotions
+          - link "Managed Service" [ref=e901] [cursor=pointer]:
+            - /url: /platform/managed-service
+            - generic [ref=e902]: Managed Service
+          - link "Ambassador & affiliate programs" [ref=e903] [cursor=pointer]:
+            - /url: /platform/ambassador-affiliate-programs
+            - generic [ref=e904]: Ambassador & affiliate programs
+          - link "User generated content" [ref=e905] [cursor=pointer]:
+            - /url: /platform/user-generated-content
+            - generic [ref=e906]: User generated content
+          - link "Content syndication" [ref=e907] [cursor=pointer]:
+            - /url: /platform/content-syndication
+            - generic [ref=e908]: Content syndication
+          - link "Automated product seeding" [ref=e909] [cursor=pointer]:
+            - /url: /platform/automated-product-seeding
+            - generic [ref=e910]: Automated product seeding
+        - generic [ref=e912]:
+          - generic [ref=e913]: Brand solutions
+          - link "Amazon Solutions" [ref=e914] [cursor=pointer]:
+            - /url: /marketplace-solutions/amazon
+            - generic [ref=e915]: Amazon Solutions
+          - link "Walmart Solutions" [ref=e916] [cursor=pointer]:
+            - /url: /marketplace-solutions/walmart
+            - generic [ref=e917]: Walmart Solutions
+          - link "Target Solutions" [ref=e918] [cursor=pointer]:
+            - /url: /marketplace-solutions/shopify
+            - generic [ref=e919]: Target Solutions
+          - link "TikTok Solutions" [ref=e920] [cursor=pointer]:
+            - /url: /marketplace-solutions/tiktok
+            - generic [ref=e921]: TikTok Solutions
+          - link "Meta Partnership Ads" [ref=e922] [cursor=pointer]:
+            - /url: /advertising-solutions/meta-partnership-ads
+            - generic [ref=e923]: Meta Partnership Ads
+          - link "TikTok Spark Ads" [ref=e924] [cursor=pointer]:
+            - /url: /advertising-solutions/tiktok-spark-ads
+            - generic [ref=e925]: TikTok Spark Ads
+        - generic [ref=e927]:
+          - generic [ref=e928]: Creator platform
+          - link "Opportunities" [ref=e929] [cursor=pointer]:
+            - /url: /opportunities
+            - generic [ref=e930]: Opportunities
+          - link "How it works" [ref=e931] [cursor=pointer]:
+            - /url: /creators/how-it-works
+            - generic [ref=e932]: How it works
+          - link "Creator benefits" [ref=e933] [cursor=pointer]:
+            - /url: /creators/benefits
+            - generic [ref=e934]: Creator benefits
+          - link "Creator FAQs" [ref=e935] [cursor=pointer]:
+            - /url: /creators/faq
+            - generic [ref=e936]: Creator FAQs
+          - link "Creator sign up" [ref=e937] [cursor=pointer]:
+            - /url: https://app.stackinfluence.com/influencer/signup?source=website
+            - generic [ref=e938]: Creator sign up
+          - link "Creator login" [ref=e939] [cursor=pointer]:
+            - /url: https://app.stackinfluence.com/influencer/login
+            - generic [ref=e940]: Creator login
+        - generic [ref=e942]:
+          - generic [ref=e943]: Company
+          - link "About us" [ref=e944] [cursor=pointer]:
+            - /url: /about
+            - generic [ref=e945]: About us
+          - link "Contact" [ref=e946] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e947]: Contact
+          - link "Partners" [ref=e948] [cursor=pointer]:
+            - /url: /partners
+            - generic [ref=e949]: Partners
+          - link "Blog" [ref=e950] [cursor=pointer]:
+            - /url: /blog
+            - generic [ref=e951]: Blog
+          - link "Glossary" [ref=e952] [cursor=pointer]:
+            - /url: /glossary
+            - generic [ref=e953]: Glossary
+          - link "Join us" [ref=e954] [cursor=pointer]:
+            - /url: https://stack-influence.breezy.hr/
+            - generic [ref=e955]: Join us
+        - generic [ref=e957]:
+          - generic [ref=e958]: Social
+          - link "Instagram" [ref=e959] [cursor=pointer]:
+            - /url: https://www.instagram.com/stackinfluence
+            - generic [ref=e960]: Instagram
+          - link "Facebook" [ref=e961] [cursor=pointer]:
+            - /url: https://www.facebook.com/stackinfluence/
+            - generic [ref=e962]: Facebook
+          - link "LinkedIn" [ref=e963] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/stack-influence/
+            - generic [ref=e964]: LinkedIn
+          - link "TikTok" [ref=e965] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@stackinfluence
+            - generic [ref=e966]: TikTok
+          - link "YouTube" [ref=e967] [cursor=pointer]:
+            - /url: https://www.youtube.com/@stackinfluence
+            - generic [ref=e968]: YouTube
+          - link "X" [ref=e969] [cursor=pointer]:
+            - /url: https://x.com/stackinfluence
+            - generic [ref=e970]: X
+      - generic [ref=e971]:
+        - generic [ref=e972]:
+          - img "Meta Business Partners logo"
+        - generic:
+          - img "G2 high Performer logo"
+          - img "G2 User love Us Milestone logo"
+          - img "G2 Best Support logo"
+      - generic [ref=e973]:
+        - generic [ref=e974]:
+          - generic [ref=e975]: © 2026 Stack Influence Inc
+          - generic [ref=e976]: 111 NE 1st St, Miami, FL 33132
+        - generic [ref=e978]:
+          - link "Creator terms" [ref=e979] [cursor=pointer]:
+            - /url: /influencer-terms
+          - link "Website terms" [ref=e980] [cursor=pointer]:
+            - /url: /terms-conditions
+          - link "Privacy" [ref=e981] [cursor=pointer]:
+            - /url: /privacy-policy

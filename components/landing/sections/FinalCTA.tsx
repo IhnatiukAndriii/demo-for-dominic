@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+import { CALENDLY_URL } from '@/lib/site-config'
 
 export default function FinalCTA() {
   const t = useTranslations('landing.finalCta')
@@ -39,12 +40,14 @@ export default function FinalCTA() {
             {t('ctaPrimary')}
             <ArrowRight className="w-5 h-5" />
           </Link>
-          <Link
-            href="#"
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-white/30 text-white font-semibold text-lg hover:border-white/60 transition-colors"
           >
             {t('ctaSecondary')}
-          </Link>
+          </a>
         </div>
 
         {/* Trust text */}

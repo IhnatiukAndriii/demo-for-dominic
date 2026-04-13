@@ -17,14 +17,14 @@ export default function Testimonials() {
   const t = useTranslations('landing.testimonials')
 
   return (
-    <section id="testimonials" className="py-24 lg:py-32 bg-white">
+    <section id="testimonials" className="bg-white py-20 lg:py-28 px-6 lg:px-10">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
           <p className="tracking-widest text-sm text-brand-orange font-semibold mb-4">
             {t('label')}
           </p>
-          <h2 className="text-4xl lg:text-6xl font-bold text-brand-navy animate-fade-in-up">
+          <h2 className="text-3xl lg:text-4xl font-normal text-slate-900 mb-4 animate-fade-in-up">
             {t('headline')}{' '}
             <span className="text-brand-orange font-serif italic font-semibold">{t('headlineAccent')}</span>
           </h2>
@@ -35,7 +35,7 @@ export default function Testimonials() {
           {testimonialIds.map((id, index) => (
             <div
               key={id}
-              className="rounded-2xl p-8 border border-brand-orange-100 bg-brand-orange-50/30 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500"
+              className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100 p-6 lg:p-8"
             >
               {/* Stars */}
               <div className="flex gap-1 mb-4">

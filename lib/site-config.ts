@@ -1,3 +1,5 @@
+export const CALENDLY_URL = 'https://calendly.com/amzideal/30min'
+
 export const siteConfig = {
   stats: {
     creators: { value: '500+', label: 'Creator in der Community' },

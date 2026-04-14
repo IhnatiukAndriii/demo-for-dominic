@@ -175,174 +175,178 @@ export default function Navbar() {
   return (
     <header
       data-view-toggle-host
-      className={`sticky top-0 z-50 w-full transition-all duration-200 ${
-        scrolled
-          ? 'bg-white/70 backdrop-blur-md shadow-sm border-b border-brand-orange-100/50'
-          : 'bg-white/70 backdrop-blur-md'
-      }`}
+      className="sticky top-0 z-50 w-full transition-all duration-200"
     >
-      <div className="hidden md:block border-b border-slate-100/80 bg-white/70 backdrop-blur">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex justify-center">
-          <div
-            role="tablist"
-            aria-label={isCreatorView ? t('toggleCreator') : t('toggleBrand')}
-            className="inline-flex items-center gap-1 rounded-full bg-gray-100 p-1 view-toggle segmented"
-            data-view-toggle
-          >
-            <button
-              type="button"
-              role="tab"
-              aria-selected={!isCreatorView}
-              onClick={goToBrand}
-              disabled={isPending}
-              className={`${pillBase} ${!isCreatorView ? pillActive : pillInactive}`}
+      <div className={scrolled ? 'hidden' : 'w-full bg-white'}>
+        <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 pt-2 pb-2">
+          <div className="hidden md:flex justify-center">
+            <div
+              role="tablist"
+              aria-label={isCreatorView ? t('toggleCreator') : t('toggleBrand')}
+              className="inline-flex items-center gap-1 rounded-full bg-gray-100 p-1 view-toggle segmented"
+              data-view-toggle
             >
-              {t('toggleBrand')}
-            </button>
-            <button
-              type="button"
-              role="tab"
-              aria-selected={isCreatorView}
-              onClick={goToCreator}
-              disabled={isPending}
-              className={`${pillBase} ${isCreatorView ? pillActive : pillInactive}`}
-            >
-              {t('toggleCreator')}
-            </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected={!isCreatorView}
+                onClick={goToBrand}
+                disabled={isPending}
+                className={`${pillBase} ${!isCreatorView ? pillActive : pillInactive}`}
+              >
+                {t('toggleBrand')}
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected={isCreatorView}
+                onClick={goToCreator}
+                disabled={isPending}
+                className={`${pillBase} ${isCreatorView ? pillActive : pillInactive}`}
+              >
+                {t('toggleCreator')}
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-4 h-20">
-          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <img
-              src="/prueffuchs-logo.png"
-              alt="Prüffuchs"
-              className="h-10 lg:h-12 w-auto"
-            />
-          </Link>
 
-          <div className="hidden lg:flex flex-1 items-center justify-center">
-            {isCreatorView ? <CreatorDesktopNav nav={nav} /> : <BrandDesktopNav nav={nav} />}
-          </div>
+      <div className={scrolled
+        ? 'w-full bg-white/90 backdrop-blur-md shadow-sm border-b border-brand-orange-100/50'
+        : 'w-full bg-gradient-to-b from-brand-orange-50 to-brand-cream/30'
+      }>
+        <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 py-3">
+          <div className="flex items-center justify-between gap-4">
+            <Link href="/" className="flex items-center gap-2 flex-shrink-0">
+              <img
+                src="/prueffuchs-logo.png"
+                alt="Prüffuchs"
+                className="h-12 lg:h-14 w-auto"
+              />
+            </Link>
 
-          <div className="hidden lg:flex items-center gap-2 flex-shrink-0">
-            <button
-              onClick={switchLocale}
-              disabled={isPending}
-              className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-brand-navy/70 hover:text-brand-orange rounded-lg transition-colors disabled:opacity-50"
-              aria-label={`Switch to ${locale === 'de' ? 'English' : 'Deutsch'}`}
-            >
-              <Globe className="w-4 h-4" />
-              <span>{locale === 'de' ? 'EN' : 'DE'}</span>
-            </button>
-            <NavLinkRenderer
-              item={nav.ctaSecondary}
-              className="px-4 py-2 text-base font-medium text-brand-navy hover:text-brand-orange transition-colors"
-            />
-            <NavLinkRenderer
-              item={nav.ctaPrimary}
-              className="px-5 py-2.5 text-base font-semibold text-white bg-brand-orange hover:bg-brand-orange-600 rounded-xl shadow-md hover:shadow-lg transition-all duration-200"
-            />
-          </div>
+            <div className="hidden lg:flex flex-1 items-center justify-center">
+              {isCreatorView ? <CreatorDesktopNav nav={nav} /> : <BrandDesktopNav nav={nav} />}
+            </div>
 
-          <div className="flex lg:hidden items-center gap-1">
-            <button
-              onClick={switchLocale}
-              disabled={isPending}
-              className="flex items-center gap-1 px-2 py-2 text-sm font-medium text-brand-navy/70 hover:text-brand-orange rounded-lg transition-colors"
-              aria-label={`Switch to ${locale === 'de' ? 'English' : 'Deutsch'}`}
-            >
-              <Globe className="w-4 h-4" />
-              <span className="text-xs">{locale === 'de' ? 'EN' : 'DE'}</span>
-            </button>
-
-            <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
-              <SheetTrigger
-                render={
-                  <button
-                    className="p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors"
-                    aria-label={tLegacy('openMenu')}
-                  />
-                }
+            <div className="hidden lg:flex items-center gap-2 flex-shrink-0">
+              <button
+                onClick={switchLocale}
+                disabled={isPending}
+                className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-brand-navy/70 hover:text-brand-orange rounded-lg transition-colors disabled:opacity-50"
+                aria-label={`Switch to ${locale === 'de' ? 'English' : 'Deutsch'}`}
               >
-                {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-              </SheetTrigger>
-              <SheetContent side="right" className="w-80 pt-16 overflow-y-auto">
-                <div className="flex flex-col gap-4">
-                  <div
-                    role="tablist"
-                    className="inline-flex items-center gap-1 rounded-full bg-gray-100 p-1 self-start view-toggle segmented"
-                  >
-                    <button
-                      type="button"
-                      role="tab"
-                      aria-selected={!isCreatorView}
-                      onClick={() => {
-                        setMobileOpen(false)
-                        goToBrand()
-                      }}
-                      className={`${pillBase} ${!isCreatorView ? pillActive : pillInactive}`}
-                    >
-                      {t('toggleBrand')}
-                    </button>
-                    <button
-                      type="button"
-                      role="tab"
-                      aria-selected={isCreatorView}
-                      onClick={() => {
-                        setMobileOpen(false)
-                        goToCreator()
-                      }}
-                      className={`${pillBase} ${isCreatorView ? pillActive : pillInactive}`}
-                    >
-                      {t('toggleCreator')}
-                    </button>
-                  </div>
+                <Globe className="w-4 h-4" />
+                <span>{locale === 'de' ? 'EN' : 'DE'}</span>
+              </button>
+              <NavLinkRenderer
+                item={nav.ctaSecondary}
+                className="px-4 py-2 text-base font-medium text-brand-navy hover:text-brand-orange transition-colors"
+              />
+              <NavLinkRenderer
+                item={nav.ctaPrimary}
+                className="px-5 py-2.5 text-base font-semibold text-white bg-brand-orange hover:bg-brand-orange-600 rounded-xl shadow-md hover:shadow-lg transition-all duration-200"
+              />
+            </div>
 
-                  <nav className="flex flex-col gap-1">
-                    {nav.links.map((link) => (
+            <div className="flex lg:hidden items-center gap-1">
+              <button
+                onClick={switchLocale}
+                disabled={isPending}
+                className="flex items-center gap-1 px-2 py-2 text-sm font-medium text-brand-navy/70 hover:text-brand-orange rounded-lg transition-colors"
+                aria-label={`Switch to ${locale === 'de' ? 'English' : 'Deutsch'}`}
+              >
+                <Globe className="w-4 h-4" />
+                <span className="text-xs">{locale === 'de' ? 'EN' : 'DE'}</span>
+              </button>
+
+              <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
+                <SheetTrigger
+                  render={
+                    <button
+                      className="p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+                      aria-label={tLegacy('openMenu')}
+                    />
+                  }
+                >
+                  {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+                </SheetTrigger>
+                <SheetContent side="right" className="w-80 pt-16 overflow-y-auto">
+                  <div className="flex flex-col gap-4">
+                    <div
+                      role="tablist"
+                      className="inline-flex items-center gap-1 rounded-full bg-gray-100 p-1 self-start view-toggle segmented"
+                    >
+                      <button
+                        type="button"
+                        role="tab"
+                        aria-selected={!isCreatorView}
+                        onClick={() => {
+                          setMobileOpen(false)
+                          goToBrand()
+                        }}
+                        className={`${pillBase} ${!isCreatorView ? pillActive : pillInactive}`}
+                      >
+                        {t('toggleBrand')}
+                      </button>
+                      <button
+                        type="button"
+                        role="tab"
+                        aria-selected={isCreatorView}
+                        onClick={() => {
+                          setMobileOpen(false)
+                          goToCreator()
+                        }}
+                        className={`${pillBase} ${isCreatorView ? pillActive : pillInactive}`}
+                      >
+                        {t('toggleCreator')}
+                      </button>
+                    </div>
+
+                    <nav className="flex flex-col gap-1">
+                      {nav.links.map((link) => (
+                        <NavLinkRenderer
+                          key={link.label}
+                          item={link}
+                          onClick={() => setMobileOpen(false)}
+                          className="px-3 py-2.5 text-base font-medium text-brand-navy hover:text-brand-orange rounded-lg transition-colors"
+                        />
+                      ))}
+                      {nav.groups.map((group) => (
+                        <div key={group.label} className="mt-2">
+                          <div className="px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-brand-navy/50">
+                            {group.label}
+                          </div>
+                          <div className="flex flex-col">
+                            {group.items.map((item) => (
+                              <NavLinkRenderer
+                                key={`${group.label}-${item.label}`}
+                                item={item}
+                                onClick={() => setMobileOpen(false)}
+                                className="px-3 py-2 text-sm font-medium text-brand-navy/80 hover:text-brand-orange rounded-lg transition-colors"
+                              />
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </nav>
+
+                    <div className="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-2">
                       <NavLinkRenderer
-                        key={link.label}
-                        item={link}
+                        item={nav.ctaSecondary}
                         onClick={() => setMobileOpen(false)}
-                        className="px-3 py-2.5 text-base font-medium text-brand-navy hover:text-brand-orange rounded-lg transition-colors"
+                        className="w-full text-center px-5 py-2.5 text-base font-medium text-brand-navy hover:text-brand-orange border border-brand-orange-200 rounded-xl transition-colors"
                       />
-                    ))}
-                    {nav.groups.map((group) => (
-                      <div key={group.label} className="mt-2">
-                        <div className="px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-brand-navy/50">
-                          {group.label}
-                        </div>
-                        <div className="flex flex-col">
-                          {group.items.map((item) => (
-                            <NavLinkRenderer
-                              key={`${group.label}-${item.label}`}
-                              item={item}
-                              onClick={() => setMobileOpen(false)}
-                              className="px-3 py-2 text-sm font-medium text-brand-navy/80 hover:text-brand-orange rounded-lg transition-colors"
-                            />
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-                  </nav>
-
-                  <div className="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-2">
-                    <NavLinkRenderer
-                      item={nav.ctaSecondary}
-                      onClick={() => setMobileOpen(false)}
-                      className="w-full text-center px-5 py-2.5 text-base font-medium text-brand-navy hover:text-brand-orange border border-brand-orange-200 rounded-xl transition-colors"
-                    />
-                    <NavLinkRenderer
-                      item={nav.ctaPrimary}
-                      onClick={() => setMobileOpen(false)}
-                      className="w-full text-center px-6 py-2.5 text-base font-semibold text-white bg-brand-orange hover:bg-brand-orange-600 rounded-xl shadow-md transition-all duration-200"
-                    />
+                      <NavLinkRenderer
+                        item={nav.ctaPrimary}
+                        onClick={() => setMobileOpen(false)}
+                        className="w-full text-center px-6 py-2.5 text-base font-semibold text-white bg-brand-orange hover:bg-brand-orange-600 rounded-xl shadow-md transition-all duration-200"
+                      />
+                    </div>
                   </div>
-                </div>
-              </SheetContent>
-            </Sheet>
+                </SheetContent>
+              </Sheet>
+            </div>
           </div>
         </div>
       </div>

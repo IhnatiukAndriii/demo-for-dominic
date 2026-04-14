@@ -29,13 +29,13 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-[45fr_55fr] gap-10 lg:gap-12 items-center">
+      <div className="relative max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        <div className="grid grid-cols-1 lg:grid-cols-[32fr_68fr] gap-10 lg:gap-12 items-center">
           {/* Visual composition — shows first on mobile */}
           <div className="relative order-first lg:order-last min-w-0 flex justify-center lg:justify-end overflow-visible">
-            <div className="relative flex items-end max-w-full gap-0">
+            <div className="relative flex items-center max-w-full gap-0">
               {/* Mascot — left side, next to dashboard */}
-              <div className="relative z-20 -mr-12 flex-shrink-0 self-end hidden lg:block">
+              <div className="relative z-20 -mr-12 flex-shrink-0 self-center hidden lg:block">
                 <Image
                   src="/prueffuchs-mascot-full.png"
                   alt="Prüffuchs Mascot"
@@ -47,7 +47,7 @@ export default function Hero() {
               </div>
 
               {/* Dashboard screenshot — right side */}
-              <div className="relative z-10 w-full sm:w-[400px] lg:w-[560px] flex-shrink min-w-0">
+              <div className="relative z-10 w-full sm:w-[440px] lg:w-[820px] xl:w-[920px] flex-shrink min-w-0">
                 <div className="relative w-full rounded-2xl shadow-2xl overflow-hidden border border-gray-200/60 bg-white">
                   {/* Browser chrome bar */}
                   <div className="flex items-center justify-between px-4 py-2.5 bg-gray-50 border-b border-gray-200">

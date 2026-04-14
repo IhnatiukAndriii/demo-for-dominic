@@ -35,19 +35,19 @@ export function brandNav(t: Translator): LandingNav {
       {
         label: t('brand.platform'),
         items: [
-          { label: t('brand.platformItems.influencerCampaigns'), href: '#platform-features' },
-          { label: t('brand.platformItems.verification'), href: '#platform-features' },
+          { label: t('brand.platformItems.influencerCampaigns'), href: '#feat-influencer-campaigns' },
+          { label: t('brand.platformItems.verification'), href: '#feat-verification' },
           { label: t('brand.platformItems.campaignMgmt'), href: '#how-it-works' },
-          { label: t('brand.platformItems.adminDashboard'), href: '#platform-features' },
+          { label: t('brand.platformItems.adminDashboard'), href: '#feat-admin-dashboard' },
         ],
       },
       {
         label: t('brand.solutions'),
         items: [
-          { label: t('brand.solutionItems.amazon'), href: '#marketplaces' },
-          { label: t('brand.solutionItems.ottoKaufland'), href: '#marketplaces' },
-          { label: t('brand.solutionItems.zalando'), href: '#marketplaces' },
-          { label: t('brand.solutionItems.shopify'), href: '#marketplaces' },
+          { label: t('brand.solutionItems.amazon'), href: '#mp-amazon' },
+          { label: t('brand.solutionItems.ottoKaufland'), href: '#mp-otto-kaufland' },
+          { label: t('brand.solutionItems.zalando'), href: '#mp-zalando' },
+          { label: t('brand.solutionItems.shopify'), href: '#mp-shopify' },
         ],
       },
       {
@@ -80,11 +80,12 @@ export function creatorNav(t: Translator): LandingNav {
       {
         label: t('creator.categories'),
         items: [
-          { label: t('creator.categoryItems.beauty'), href: '/influencer#categories' },
-          { label: t('creator.categoryItems.fashion'), href: '/influencer#categories' },
-          { label: t('creator.categoryItems.home'), href: '/influencer#categories' },
-          { label: t('creator.categoryItems.fitness'), href: '/influencer#categories' },
-          { label: t('creator.categoryItems.food'), href: '/influencer#categories' },
+          { label: t('creator.categoryItems.beauty'), href: '/#cat-beauty' },
+          { label: t('creator.categoryItems.fashion'), href: '/#cat-fashion' },
+          { label: t('creator.categoryItems.home'), href: '/#cat-home' },
+          { label: t('creator.categoryItems.fitness'), href: '/#cat-fitness' },
+          { label: t('creator.categoryItems.food'), href: '/#cat-food' },
+          { label: t('creator.categoryItems.pets'), href: '/#cat-pets' },
         ],
       },
     ],

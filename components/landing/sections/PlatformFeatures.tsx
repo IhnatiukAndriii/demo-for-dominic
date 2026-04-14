@@ -22,7 +22,7 @@ export default function PlatformFeatures() {
         {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 lg:gap-8">
           {/* Card 1: Real Purchases — tall, spans 2 cols and 2 rows */}
-          <div className="lg:col-span-2 lg:row-span-2 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100 p-6 lg:p-8">
+          <div id="feat-influencer-campaigns" className="scroll-mt-24 lg:col-span-2 lg:row-span-2 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100 p-6 lg:p-8">
             <ShoppingCart className="w-10 h-10 text-brand-orange mb-5" />
             <h3 className="text-2xl font-bold text-brand-navy mb-3">
               {t('cards.realPurchases.title')}
@@ -46,7 +46,7 @@ export default function PlatformFeatures() {
           </div>
 
           {/* Card 2: UGC Content */}
-          <div className="lg:col-span-2 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100 p-6 lg:p-8">
+          <div id="feat-verification" className="scroll-mt-24 lg:col-span-2 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100 p-6 lg:p-8">
             <Camera className="w-10 h-10 text-brand-orange mb-5" />
             <h3 className="text-2xl font-bold text-brand-navy mb-3">
               {t('cards.ugc.title')}
@@ -86,7 +86,7 @@ export default function PlatformFeatures() {
           </div>
 
           {/* Card 4: Pay for Results */}
-          <div className="lg:col-span-3 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100 p-6 lg:p-8">
+          <div id="feat-admin-dashboard" className="scroll-mt-24 lg:col-span-3 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100 p-6 lg:p-8">
             <ShieldCheck className="w-10 h-10 text-brand-orange mb-5" />
             <h3 className="text-2xl font-bold text-brand-navy mb-3">
               {t('cards.payForResults.title')}

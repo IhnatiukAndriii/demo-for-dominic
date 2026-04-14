@@ -8,6 +8,10 @@ export default function MarketplaceMarquee() {
 
   return (
     <section id="marketplaces" className="bg-white py-10 lg:py-12 scroll-mt-16 scroll-mt-24">
+      <span id="mp-amazon" className="block scroll-mt-24" aria-hidden />
+      <span id="mp-otto-kaufland" className="block scroll-mt-24" aria-hidden />
+      <span id="mp-zalando" className="block scroll-mt-24" aria-hidden />
+      <span id="mp-shopify" className="block scroll-mt-24" aria-hidden />
       <p className="text-center text-xs lg:text-sm uppercase tracking-wider text-brand-navy/60 font-medium mb-8 lg:mb-10">
         {t('label')}
       </p>

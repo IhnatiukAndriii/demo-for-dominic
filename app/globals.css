@@ -125,6 +125,15 @@
     background: linear-gradient(180deg, rgba(249, 115, 22, 0.08) 0%, rgba(255, 255, 255, 1) 100%);
   }
 
+  .hero-strong-wash {
+    background: linear-gradient(135deg,
+      rgba(251, 146, 60, 0.25) 0%,
+      rgba(254, 215, 170, 0.35) 35%,
+      rgba(255, 237, 213, 0.30) 65%,
+      rgba(255, 247, 237, 0.25) 100%
+    );
+  }
+
   .section-wash-orange {
     background: linear-gradient(180deg, rgba(249, 115, 22, 0.08) 0%, rgba(255, 255, 255, 1) 100%);
   }
